@@ -106,7 +106,7 @@ WHERE        (Ruby_Jamner123.OPD_Patient_Registration.PatientOPDId=@OPDID)", con
             cmd.Parameters.AddWithValue("@RadiologyID", RadiologyTestId);
             cmd.Parameters.AddWithValue("@RadiologyName", comboBox1.Text);
             cmd.Parameters.AddWithValue("@Charges", RadiologyCharges);
-            cmd.Parameters.AddWithValue("@TestDate", dtptestDate.Value);
+            cmd.Parameters.AddWithValue("@TestDate", System.DateTime.Now);
             cmd.ExecuteNonQuery();
             show_ADD();
             OTTotalAmount = Convert.ToDecimal(lbOnlyTest.Text) + Convert.ToDecimal(RadiologyCharges.ToString());
