@@ -14,6 +14,7 @@ namespace Ruby_Hospital
     public partial class OPD_Billing_List : Form
     {
         public int ID;
+        public decimal opdBalance;
         public OPD_Billing_List()
         {
             InitializeComponent();
@@ -23,23 +24,33 @@ namespace Ruby_Hospital
         {
             SqlConnection con = new SqlConnection(@"Data Source=208.91.198.196;User ID=Ruby_Jamner123;Password=ruby@jamner");
             con.Open();
-            SqlCommand cmb = new SqlCommand(@"SELECT        Ruby_Jamner123.OPD_Patient_Registration.PatientOPDId,Ruby_Jamner123.OPD_Patient_Registration.PatientOPDIdWithSr, Ruby_Jamner123.Patient_Registration.Name, Ruby_Jamner123.Patient_Registration.Mobile_Number, Ruby_Jamner123.Patient_Registration.Purpose, 
-                         Ruby_Jamner123.Billing_OPDProcedure.OPDProcedureAmount, Ruby_Jamner123.Billing_OPDTotalALabTest.TotalLabAmount, Ruby_Jamner123.Billing_OPDRadiologyTAmount.OPDRadiologyAmount
-FROM            Ruby_Jamner123.OPD_Patient_Registration INNER JOIN
-                         Ruby_Jamner123.Patient_Registration ON Ruby_Jamner123.OPD_Patient_Registration.PatientId = Ruby_Jamner123.Patient_Registration.PID INNER JOIN
-                         Ruby_Jamner123.Billing_OPDTotalALabTest ON Ruby_Jamner123.OPD_Patient_Registration.PatientOPDId = Ruby_Jamner123.Billing_OPDTotalALabTest.OPDID INNER JOIN
-                         Ruby_Jamner123.Billing_OPDProcedure ON Ruby_Jamner123.OPD_Patient_Registration.PatientOPDId = Ruby_Jamner123.Billing_OPDProcedure.OPDID INNER JOIN
-                         Ruby_Jamner123.Billing_OPDRadiologyTAmount ON Ruby_Jamner123.OPD_Patient_Registration.PatientOPDId = Ruby_Jamner123.Billing_OPDRadiologyTAmount.OPDID", con);
+            SqlCommand cmb = new SqlCommand(@"SELECT         Ruby_Jamner123.OPD_Patient_Registration.PatientOPDId, Ruby_Jamner123.OPD_Patient_Registration.PatientOPDIdWithSr, Ruby_Jamner123.Patient_Registration.Name, 
+                         Ruby_Jamner123.Patient_Registration.Mobile_Number, Ruby_Jamner123.Patient_Registration.Purpose, Ruby_Jamner123.Billing_OPDProcedure.OPDProcedureAmount, 
+                         Ruby_Jamner123.Billing_OPDTotalALabTest.TotalLabAmount, Ruby_Jamner123.Billing_OPDRadiologyTAmount.OPDRadiologyAmount, Ruby_Jamner123.Billing_OPDFinal.OPD_Balance, 
+                         Ruby_Jamner123.Billing_OPDFinal.OPD_RadiologyBalance, Ruby_Jamner123.Billing_OPDFinal.OPD_LabBalance
+FROM            Ruby_Jamner123.OPD_Patient_Registration LEFT OUTER JOIN
+                         Ruby_Jamner123.Patient_Registration ON Ruby_Jamner123.OPD_Patient_Registration.PatientId = Ruby_Jamner123.Patient_Registration.PID LEFT OUTER JOIN
+                         Ruby_Jamner123.Billing_OPDTotalALabTest ON Ruby_Jamner123.OPD_Patient_Registration.PatientOPDId = Ruby_Jamner123.Billing_OPDTotalALabTest.OPDID LEFT OUTER JOIN
+                         Ruby_Jamner123.Billing_OPDProcedure ON Ruby_Jamner123.OPD_Patient_Registration.PatientOPDId = Ruby_Jamner123.Billing_OPDProcedure.OPDID LEFT OUTER JOIN
+                         Ruby_Jamner123.Billing_OPDRadiologyTAmount ON Ruby_Jamner123.OPD_Patient_Registration.PatientOPDId = Ruby_Jamner123.Billing_OPDRadiologyTAmount.OPDID LEFT OUTER JOIN
+                         Ruby_Jamner123.Billing_OPDFinal ON Ruby_Jamner123.OPD_Patient_Registration.PatientOPDId = Ruby_Jamner123.Billing_OPDFinal.OPDID WHERE Ruby_Jamner123.Patient_Registration.Purpose='OPD'
+                         AND
+						 (
+						 (Ruby_Jamner123.Billing_OPDFinal.OPD_Balance IS NULL OR Ruby_Jamner123.Billing_OPDFinal.OPD_Balance!=0 )
+						 OR
+						 (Ruby_Jamner123.Billing_OPDFinal.OPD_LabBalance IS NULL OR Ruby_Jamner123.Billing_OPDFinal.OPD_LabBalance!=0 )
+						 OR
+						 (Ruby_Jamner123.Billing_OPDFinal.OPD_RadiologyBalance IS NULL OR Ruby_Jamner123.Billing_OPDFinal.OPD_RadiologyBalance!=0 ))", con);
             SqlDataAdapter adt = new SqlDataAdapter(cmb);
             DataTable o = new DataTable();
             adt.Fill(o);
             if (o.Rows.Count > 0)
             {
-                OPDdatagridview.ColumnHeadersDefaultCellStyle.Font = new Font(OPDdatagridview.ColumnHeadersDefaultCellStyle.Font, FontStyle.Bold);
-                OPDdatagridview.DataSource = o;
-                OPDdatagridview.Columns["PatientOPDId"].Visible = false;
-                OPDdatagridview.Columns["PatientOPDIdWithSr"].HeaderText = "Patient OPD ID";
-
+               
+                    OPDdatagridview.ColumnHeadersDefaultCellStyle.Font = new Font(OPDdatagridview.ColumnHeadersDefaultCellStyle.Font, FontStyle.Bold);
+                    OPDdatagridview.DataSource = o;
+                    OPDdatagridview.Columns["PatientOPDId"].Visible = false;
+                    OPDdatagridview.Columns["PatientOPDIdWithSr"].HeaderText = "Patient OPD ID";
 
 
             }
