@@ -234,10 +234,10 @@ WHERE        (OPDID = @OPDID)", con);
             con.Open();
             SqlCommand cmb = new SqlCommand(@"SELECT        Ruby_Jamner123.OPD_Patient_Registration.PatientOPDId,Ruby_Jamner123.OPD_Patient_Registration.PatientOPDIdWithSr, Ruby_Jamner123.Patient_Registration.Name, Ruby_Jamner123.Patient_Registration.Mobile_Number, Ruby_Jamner123.Patient_Registration.Purpose, 
                          Ruby_Jamner123.Billing_OPDProcedure.OPDProcedureAmount, Ruby_Jamner123.Billing_OPDTotalALabTest.TotalLabAmount, Ruby_Jamner123.Billing_OPDRadiologyTAmount.OPDRadiologyAmount
-FROM            Ruby_Jamner123.OPD_Patient_Registration INNER JOIN
-                         Ruby_Jamner123.Patient_Registration ON Ruby_Jamner123.OPD_Patient_Registration.PatientId = Ruby_Jamner123.Patient_Registration.PID INNER JOIN
-                         Ruby_Jamner123.Billing_OPDTotalALabTest ON Ruby_Jamner123.OPD_Patient_Registration.PatientOPDId = Ruby_Jamner123.Billing_OPDTotalALabTest.OPDID INNER JOIN
-                         Ruby_Jamner123.Billing_OPDProcedure ON Ruby_Jamner123.OPD_Patient_Registration.PatientOPDId = Ruby_Jamner123.Billing_OPDProcedure.OPDID INNER JOIN
+FROM            Ruby_Jamner123.OPD_Patient_Registration LEFT OUTER JOIN
+                         Ruby_Jamner123.Patient_Registration ON Ruby_Jamner123.OPD_Patient_Registration.PatientId = Ruby_Jamner123.Patient_Registration.PID LEFT OUTER JOIN
+                         Ruby_Jamner123.Billing_OPDTotalALabTest ON Ruby_Jamner123.OPD_Patient_Registration.PatientOPDId = Ruby_Jamner123.Billing_OPDTotalALabTest.OPDID LEFT OUTER JOIN
+                         Ruby_Jamner123.Billing_OPDProcedure ON Ruby_Jamner123.OPD_Patient_Registration.PatientOPDId = Ruby_Jamner123.Billing_OPDProcedure.OPDID LEFT OUTER JOIN
                          Ruby_Jamner123.Billing_OPDRadiologyTAmount ON Ruby_Jamner123.OPD_Patient_Registration.PatientOPDId = Ruby_Jamner123.Billing_OPDRadiologyTAmount.OPDID where (OPD_Patient_Registration.PatientOPDId=@PatientOPDId)", con);
             cmb.Parameters.AddWithValue("@PatientOPDId", A);
             SqlDataAdapter adt = new SqlDataAdapter(cmb);

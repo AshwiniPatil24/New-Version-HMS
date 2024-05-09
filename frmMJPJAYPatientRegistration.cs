@@ -72,34 +72,8 @@ where Ruby_Jamner123.IPD_Registration.IPDID=@IPDID", connection1);
 
                 PatientIPD_Public = IPDID;
 
-
-
-
-
-                ////filling DGV
-                //objDOPatientIntro.PatientId = PatientId;
-                //objDOPatientIntro.Flag = 5;
-                //DataTable DT = objDALPatientIntro.Load(objDOPatientIntro).Tables[0];
-                //dataGridView1.DataSource = DT;
-                //PatientId_Public = PatientId;
-                //dataGridView1.Columns["AgeYear"].Visible = false;
-                //dataGridView1.Columns["AgeMonth"].Visible = false;
-                //dataGridView1.Columns["Sex"].Visible = false;
-                //dataGridView1.Columns["State"].Visible = false;
-                //dataGridView1.Columns["PurposeId"].Visible = false;
-                //dataGridView1.Columns["ReferredId"].Visible = false;
-                //dataGridView1.Columns["ConsultantId"].Visible = false;
-                //dataGridView1.Columns["Reason"].Visible = false;
-                //dataGridView1.Columns["AddedBy"].Visible = false;
-                //dataGridView1.Columns["AddedOn"].Visible = false;
-                //dataGridView1.Columns["Qty"].Visible = false;
-                //dataGridView1.Columns["Nationality"].Visible = false;
-                //dataGridView1.Columns["Infant"].Visible = false;
-                //dataGridView1.Columns["MRMS"].Visible = false;
-                //dataGridView1.Columns["RegistrationFee"].Visible = false;
-                //dataGridView1.Columns["Days"].Visible = false;
                 connection1.Open();
-                SqlCommand cmd1 = new SqlCommand(@"select * from MJPJAY_PatientDetailsnew  WHERE IPDID=@IPDID and PackageAmount=0 ", connection1);
+                SqlCommand cmd1 = new SqlCommand(@"select * from MJPJAY_PatientDetailsnew  WHERE IPDID=@IPDID", connection1);
                 cmd1.Parameters.AddWithValue(@"IPDID",PatientIPD_Public);
                 SqlDataAdapter sda = new SqlDataAdapter(cmd1);
                 DataTable dtPublic = new DataTable();
@@ -159,6 +133,8 @@ where Ruby_Jamner123.IPD_Registration.IPDID=@IPDID", connection1);
             this.Location = new Point(0, 0);
             this.Size = new Size(w, h);
             show_mjpjayPatientDetails();
+           
+
         }
 
         private void lblHeading_Click(object sender, EventArgs e)
@@ -292,13 +268,13 @@ where Ruby_Jamner123.IPD_Registration.IPDID=@IPDID", connection1);
         private void button3_Click(object sender, EventArgs e)
         {
 
-            connection1.Open();
-            SqlCommand cmd1 = new SqlCommand(@"select * from MJPJAY_PatientDetailsnew  WHERE IPDID=@IPDID and PackageAmount=0 ", connection1);
-            cmd1.Parameters.AddWithValue(@"IPDID", PatientIPD_Public);
-            SqlDataAdapter sda = new SqlDataAdapter(cmd1);
-            DataTable dtPublic = new DataTable();
-            sda.Fill(dtPublic);            
-            DVGMJPJAYAddSurgery.DataSource = dtPublic;
+            //connection1.Open();
+            //SqlCommand cmd1 = new SqlCommand(@"select * from MJPJAY_PatientDetailsnew  WHERE IPDID=@IPDID and PackageAmount=0 ", connection1);
+            //cmd1.Parameters.AddWithValue(@"IPDID", PatientIPD_Public);
+            //SqlDataAdapter sda = new SqlDataAdapter(cmd1);
+            //DataTable dtPublic = new DataTable();
+            //sda.Fill(dtPublic);            
+            //DVGMJPJAYAddSurgery.DataSource = dtPublic;
             try
             {
                 MJPJAYNo();
@@ -310,27 +286,34 @@ where Ruby_Jamner123.IPD_Registration.IPDID=@IPDID", connection1);
 
                 else
                 {
-                    DataRow dr = dtPublic.NewRow();
-                    dr["MJPJAY_NO"] = txtMJPJAYNO.Text;
+                    connection1.Open();
+                    SqlCommand cmd = new SqlCommand(@"insert into MJPJAY_PatientDetailsnew (IPDID,MJPJAY_NO,Date,Doctor_Check,MJPJAY_MainCategory,MJPJAY_SubCategory,MJPJAY_Surgery,PackageAmount,Surgery_Date,Due_Amount,Partial_Amount,Received,Partial)
+                                                                                         values(@IPDID,@MJPJAY_NO,@Date,@Doctor_Check,@MJPJAY_MainCategory,@MJPJAY_SubCategory,@MJPJAY_Surgery,@PackageAmount,@Surgery_Date,@Due_Amount,@Partial_Amount,@Received,@Partial)", connection1);
+                    cmd.Parameters.AddWithValue(@"IPDID", PatientIPD_Public);
+                    cmd.Parameters.AddWithValue(@"Date", dtpAddedOn.Value);
+                    cmd.Parameters.AddWithValue(@"Doctor_Check", 0);
+                    cmd.Parameters.AddWithValue(@"MJPJAY_NO", txtMJPJAYNO.Text);
+                    cmd.Parameters.AddWithValue(@"MJPJAY_Surgery", txtSurgeryName.Text);
+                    cmd.Parameters.AddWithValue(@"MJPJAY_MainCategory", publicMainSurgery);
+                    cmd.Parameters.AddWithValue(@"MJPJAY_SubCategory", publicSubSurgery);
+                    cmd.Parameters.AddWithValue(@"PackageAmount", PublicPackageAmount);
+                    cmd.Parameters.AddWithValue(@"Surgery_Date", System.DateTime.Now);
+
+                    cmd.Parameters.AddWithValue(@"Due_Amount", 0);
+                    cmd.Parameters.AddWithValue(@"Partial_Amount", 0);
+                    cmd.Parameters.AddWithValue(@"Received", 0);
+                    cmd.Parameters.AddWithValue(@"Partial", 0);
 
 
-                    txtMainCategory.Text = publicMainSurgery.ToString();
-                    dr["MJPJAY_MainCategory"] = txtMainCategory.Text;
+                    cmd.ExecuteNonQuery();
+                    connection1.Close();
 
-                    txtSubSurgery.Text = publicSubSurgery.ToString();
-                    dr["MJPJAY_SubCategory"] = txtSubSurgery.Text;
-
-                    dr["MJPJAY_Surgery"] = txtSurgeryName.Text;
-
-                    txtPackageAmount.Text = PublicPackageAmount.ToString();
-                    dr["PackageAmount"] = txtPackageAmount.Text;
-                    //dr["ForDays"] = txtDays.Text;
-                    // dr["Packet"] = txtPacket.Text;
-                    // dtPublic.Rows.Add(dr);
-                    //DVGMJPJAYAddSurgery.DataSource = dtPublic;
-
-                    
-                    dtPublic.Rows.Add(dr);
+                    connection1.Open();
+                    SqlCommand cmd1 = new SqlCommand(@"select * from MJPJAY_PatientDetailsnew  WHERE IPDID=@IPDID", connection1);
+                    cmd1.Parameters.AddWithValue(@"IPDID", PatientIPD_Public);
+                    SqlDataAdapter sda = new SqlDataAdapter(cmd1);
+                    DataTable dtPublic = new DataTable();
+                    sda.Fill(dtPublic);                               
                     DVGMJPJAYAddSurgery.DataSource = dtPublic;
                     PatientMJPJAY_Public = Convert.ToString(dtPublic.Rows[0]["MJPJAY_NO"]);
 
@@ -399,43 +382,43 @@ where Ruby_Jamner123.IPD_Registration.IPDID=@IPDID", connection1);
                 
                    // dtpAddedOn.Value = Convert.ToDateTime(o.dtAddedOn);
 
-                    for (int i = 0; i < DVGMJPJAYAddSurgery.Rows.Count; i++)
-                    {
+                    //for (int i = 0; i < DVGMJPJAYAddSurgery.Rows.Count; i++)
+                    //{
 
-                        //|| Convert.ToString(DVGMJPJAYAddSurgery["MJPJAY_Surgery", i].Value) == ""
-                        // if (DVGMJPJAYAddSurgery["MJPJAY_NO", i].Value.ToString() == "" || Convert.ToString(DVGMJPJAYAddSurgery["MJPJAY_Surgery", i].Value) == "")
-                        if (flag_for_ADDSurgery == 1)
-                        {
+                    //    //|| Convert.ToString(DVGMJPJAYAddSurgery["MJPJAY_Surgery", i].Value) == ""
+                    //    // if (DVGMJPJAYAddSurgery["MJPJAY_NO", i].Value.ToString() == "" || Convert.ToString(DVGMJPJAYAddSurgery["MJPJAY_Surgery", i].Value) == "")
+                    //    if (flag_for_ADDSurgery == 1)
+                    //    {
 
-                        connection1.Open();
-                        SqlCommand cmd = new SqlCommand(@"insert into MJPJAY_PatientDetailsnew (IPDID,MJPJAY_NO,Date,Doctor_Check,MJPJAY_MainCategory,MJPJAY_SubCategory,MJPJAY_Surgery,PackageAmount,Surgery_Date,Due_Amount,Partial_Amount,Received,Partial)
-                                                                                         values(@IPDID,@MJPJAY_NO,@Date,@Doctor_Check,@MJPJAY_MainCategory,@MJPJAY_SubCategory,@MJPJAY_Surgery,@PackageAmount,@Surgery_Date,@Due_Amount,@Partial_Amount,@Received,@Partial)", connection1);
-                        cmd.Parameters.AddWithValue(@"IPDID", PatientIPD_Public);
-                        cmd.Parameters.AddWithValue(@"Date", dtpAddedOn.Value);
-                        cmd.Parameters.AddWithValue(@"Doctor_Check", 0);
-                        cmd.Parameters.AddWithValue(@"MJPJAY_NO", DVGMJPJAYAddSurgery["MJPJAY_NO", i].Value.ToString());
-                        cmd.Parameters.AddWithValue(@"MJPJAY_Surgery", DVGMJPJAYAddSurgery["MJPJAY_Surgery", i].Value.ToString());
-                        cmd.Parameters.AddWithValue(@"MJPJAY_MainCategory", Convert.ToInt32(DVGMJPJAYAddSurgery["MJPJAY_MainCategory", i].Value));
-                        cmd.Parameters.AddWithValue(@"MJPJAY_SubCategory", Convert.ToInt32(DVGMJPJAYAddSurgery["MJPJAY_SubCategory", i].Value));
-                        cmd.Parameters.AddWithValue(@"PackageAmount", Convert.ToDecimal(DVGMJPJAYAddSurgery["PackageAmount", i].Value));
-                        cmd.Parameters.AddWithValue(@"Surgery_Date", System.DateTime.Now);
+                    //    connection1.Open();
+                    //    SqlCommand cmd = new SqlCommand(@"insert into MJPJAY_PatientDetailsnew (IPDID,MJPJAY_NO,Date,Doctor_Check,MJPJAY_MainCategory,MJPJAY_SubCategory,MJPJAY_Surgery,PackageAmount,Surgery_Date,Due_Amount,Partial_Amount,Received,Partial)
+                    //                                                                     values(@IPDID,@MJPJAY_NO,@Date,@Doctor_Check,@MJPJAY_MainCategory,@MJPJAY_SubCategory,@MJPJAY_Surgery,@PackageAmount,@Surgery_Date,@Due_Amount,@Partial_Amount,@Received,@Partial)", connection1);
+                    //    cmd.Parameters.AddWithValue(@"IPDID", PatientIPD_Public);
+                    //    cmd.Parameters.AddWithValue(@"Date", dtpAddedOn.Value);
+                    //    cmd.Parameters.AddWithValue(@"Doctor_Check", 0);
+                    //    cmd.Parameters.AddWithValue(@"MJPJAY_NO", DVGMJPJAYAddSurgery["MJPJAY_NO", i].Value.ToString());
+                    //    cmd.Parameters.AddWithValue(@"MJPJAY_Surgery", DVGMJPJAYAddSurgery["MJPJAY_Surgery", i].Value.ToString());
+                    //    cmd.Parameters.AddWithValue(@"MJPJAY_MainCategory", Convert.ToInt32(DVGMJPJAYAddSurgery["MJPJAY_MainCategory", i].Value));
+                    //    cmd.Parameters.AddWithValue(@"MJPJAY_SubCategory", Convert.ToInt32(DVGMJPJAYAddSurgery["MJPJAY_SubCategory", i].Value));
+                    //    cmd.Parameters.AddWithValue(@"PackageAmount", Convert.ToDecimal(DVGMJPJAYAddSurgery["PackageAmount", i].Value));
+                    //    cmd.Parameters.AddWithValue(@"Surgery_Date", System.DateTime.Now);
                         
-                        cmd.Parameters.AddWithValue(@"Due_Amount", 0);
-                        cmd.Parameters.AddWithValue(@"Partial_Amount", 0);
-                        cmd.Parameters.AddWithValue(@"Received", 0);
-                        cmd.Parameters.AddWithValue(@"Partial", 0);
+                    //    cmd.Parameters.AddWithValue(@"Due_Amount", 0);
+                    //    cmd.Parameters.AddWithValue(@"Partial_Amount", 0);
+                    //    cmd.Parameters.AddWithValue(@"Received", 0);
+                    //    cmd.Parameters.AddWithValue(@"Partial", 0);
 
                         
-                        cmd.ExecuteNonQuery();
-                        connection1.Close();
+                    //    cmd.ExecuteNonQuery();
+                    //    connection1.Close();
 
-                        }
-                        else
-                        {
-                            MessageBox.Show("Please Select Surgery Details.");
-                        }
+                    //    }
+                    //    else
+                    //    {
+                    //        MessageBox.Show("Please Select Surgery Details.");
+                    //    }
 
-                    }
+                    //}
                     MessageBox.Show("Record Added Successfully...");
                     btnPrintMJPJAYConsent_Click(sender, e);
                     savedata();

@@ -29,15 +29,24 @@ namespace Ruby_Hospital
         {
             SqlConnection con = new SqlConnection(@"Data Source=208.91.198.196;User ID=Ruby_Jamner123;Password=ruby@jamner");
             con.Open();
-            DataTable dataTable1 = ExecuteQuery(@"SELECT distinct Ruby_Jamner123.Patient_Registration.Purpose,Ruby_Jamner123.Patient_Registration.Patient_Id,Ruby_Jamner123.Patient_Registration.PID,Ruby_Jamner123.IPD_Registration.IPDID,Ruby_Jamner123.Patient_Registration.Name, Ruby_Jamner123.Patient_Registration.Age, Ruby_Jamner123.Patient_Registration.Mobile_Number, Ruby_Jamner123.Patient_Registration.Adhaar_ID,
+            DataTable dataTable1 = ExecuteQuery(@"SELECT DISTINCT Ruby_Jamner123.Patient_Registration.Purpose, Ruby_Jamner123.Patient_Registration.Patient_ID, Ruby_Jamner123.Patient_Registration.PID, Ruby_Jamner123.IPD_Registration.IPDID, 
+                         Ruby_Jamner123.Patient_Registration.Name, Ruby_Jamner123.Patient_Registration.Age, Ruby_Jamner123.Patient_Registration.Mobile_Number, Ruby_Jamner123.Patient_Registration.Adhaar_ID, 
                          Ruby_Jamner123.Patient_Registration.Doctors_Name
-                        FROM            Ruby_Jamner123.IPD_Registration INNER JOIN
-                         Ruby_Jamner123.Patient_Registration ON Ruby_Jamner123.Patient_Registration.PID = Ruby_Jamner123.IPD_Registration.Patient_Id
-                         inner join Ruby_Jamner123.AssignIPDLabTest on Ruby_Jamner123.AssignIPDLabTest.IPDID = Ruby_Jamner123.IPD_Registration.IPDID");
+FROM            Ruby_Jamner123.IPD_Registration INNER JOIN
+                         Ruby_Jamner123.Patient_Registration ON Ruby_Jamner123.Patient_Registration.PID = Ruby_Jamner123.IPD_Registration.Patient_Id INNER JOIN
+                         Ruby_Jamner123.AssignIPDLabTest ON Ruby_Jamner123.AssignIPDLabTest.IPDID = Ruby_Jamner123.IPD_Registration.IPDID LEFT OUTER JOIN
+                         Ruby_Jamner123.PatientTestBilling_IPDnOnlyTest ON Ruby_Jamner123.AssignIPDLabTest.IPDID = Ruby_Jamner123.PatientTestBilling_IPDnOnlyTest.IPDID
+WHERE        (Ruby_Jamner123.PatientTestBilling_IPDnOnlyTest.Balance IS NULL) OR
+                         (Ruby_Jamner123.PatientTestBilling_IPDnOnlyTest.Balance != 0)");
 
-            DataTable dataTable2 = ExecuteQuery(@"select distinct Ruby_Jamner123.Patient_Registration.Purpose,Patient_Registration.PID,Patient_Registration.Patient_Id,Patient_Registration.Name, Patient_Registration.Age, Patient_Registration.Mobile_Number, Patient_Registration.Adhaar_ID,OPD_Patient_Registration.patientopdid,OPD_Patient_Registration.patientopdidwithsr,AssignOnlyTest_Lab.OPDID from 
-OPD_Patient_Registration inner join patient_registration on patient_registration.pid = OPD_Patient_Registration.patientid
-inner join AssignOnlyTest_Lab on AssignOnlyTest_Lab.opdid = OPD_Patient_Registration.patientopdid");
+            DataTable dataTable2 = ExecuteQuery(@"SELECT DISTINCT 
+                         Ruby_Jamner123.Patient_Registration.Purpose, Ruby_Jamner123.Patient_Registration.PID, Ruby_Jamner123.Patient_Registration.Patient_ID, Ruby_Jamner123.Patient_Registration.Name, 
+                         Ruby_Jamner123.Patient_Registration.Age, Ruby_Jamner123.Patient_Registration.Mobile_Number, Ruby_Jamner123.Patient_Registration.Adhaar_ID, Ruby_Jamner123.OPD_Patient_Registration.PatientOPDId, 
+                         Ruby_Jamner123.OPD_Patient_Registration.PatientOPDIdWithSr, Ruby_Jamner123.AssignOnlyTest_Lab.OPDID, Ruby_Jamner123.PatientTestBilling_IPDnOnlyTest.Balance,Ruby_Jamner123.PatientTestBilling_IPDnOnlyTest.Bill_Amount
+FROM            Ruby_Jamner123.OPD_Patient_Registration INNER JOIN
+                         Ruby_Jamner123.Patient_Registration ON Ruby_Jamner123.Patient_Registration.PID = Ruby_Jamner123.OPD_Patient_Registration.PatientId INNER JOIN
+                         Ruby_Jamner123.AssignOnlyTest_Lab ON Ruby_Jamner123.AssignOnlyTest_Lab.OPDID = Ruby_Jamner123.OPD_Patient_Registration.PatientOPDId LEFT OUTER JOIN
+                         Ruby_Jamner123.PatientTestBilling_IPDnOnlyTest ON Ruby_Jamner123.AssignOnlyTest_Lab.OPDID = Ruby_Jamner123.PatientTestBilling_IPDnOnlyTest.OPDID WHERE Ruby_Jamner123.PatientTestBilling_IPDnOnlyTest.Balance IS NULL OR Ruby_Jamner123.PatientTestBilling_IPDnOnlyTest.Balance !=0");
 
             DataTable mergedDataTable = MergeDataTables(dataTable1, dataTable2);
             labbilling.DataSource = mergedDataTable;
@@ -72,14 +81,23 @@ inner join AssignOnlyTest_Lab on AssignOnlyTest_Lab.opdid = OPD_Patient_Registra
         {
             SqlConnection con = new SqlConnection(@"Data Source=208.91.198.196;User ID=Ruby_Jamner123;Password=ruby@jamner");
             con.Open();
-            DataTable datatable1 = ExecuteQuery(@"SELECT distinct Ruby_Jamner123.Patient_Registration.Purpose,Ruby_Jamner123.Patient_Registration.Patient_Id,Ruby_Jamner123.Patient_Registration.PID,Ruby_Jamner123.IPD_Registration.IPDID,Ruby_Jamner123.Patient_Registration.Name, Ruby_Jamner123.Patient_Registration.Age, Ruby_Jamner123.Patient_Registration.Mobile_Number, Ruby_Jamner123.Patient_Registration.Adhaar_ID,
-                         Ruby_Jamner123.Patient_Registration.Doctors_Name
-                        FROM            Ruby_Jamner123.IPD_Registration INNER JOIN
-                         Ruby_Jamner123.Patient_Registration ON Ruby_Jamner123.Patient_Registration.PID = Ruby_Jamner123.IPD_Registration.Patient_Id
-                         inner join Ruby_Jamner123.Assign_IPDRadiology_test on Ruby_Jamner123.Assign_IPDRadiology_test.IPDID = Ruby_Jamner123.IPD_Registration.IPDID");
-            DataTable datatable2 = ExecuteQuery(@"select distinct Ruby_Jamner123.Patient_Registration.Purpose,Patient_Registration.PID,Patient_Registration.Patient_Id,Patient_Registration.Name, Patient_Registration.Age, Patient_Registration.Mobile_Number, Patient_Registration.Adhaar_ID,OPD_Patient_Registration.patientopdid,OPD_Patient_Registration.patientopdidwithsr,AssignOnlyTest_Radiology.OPDID from 
-OPD_Patient_Registration inner join patient_registration on patient_registration.pid = OPD_Patient_Registration.patientid
-inner join AssignOnlyTest_Radiology on AssignOnlyTest_Radiology.OPDID = OPD_Patient_Registration.patientopdid");
+            DataTable datatable1 = ExecuteQuery(@"
+						 SELECT DISTINCT 
+                         Ruby_Jamner123.Patient_Registration.Purpose, Ruby_Jamner123.Patient_Registration.Patient_ID, Ruby_Jamner123.Patient_Registration.PID, Ruby_Jamner123.IPD_Registration.IPDID, 
+                         Ruby_Jamner123.Patient_Registration.Name, Ruby_Jamner123.Patient_Registration.Age, Ruby_Jamner123.Patient_Registration.Mobile_Number, Ruby_Jamner123.Patient_Registration.Adhaar_ID, 
+                         Ruby_Jamner123.Patient_Registration.Doctors_Name, Ruby_Jamner123.PatientRadiologyBilling_IPDnOnlyTest.Balance
+FROM            Ruby_Jamner123.IPD_Registration INNER JOIN
+                         Ruby_Jamner123.Patient_Registration ON Ruby_Jamner123.Patient_Registration.PID = Ruby_Jamner123.IPD_Registration.Patient_Id INNER JOIN
+                         Ruby_Jamner123.Assign_IPDRadiology_test ON Ruby_Jamner123.Assign_IPDRadiology_test.IPDID = Ruby_Jamner123.IPD_Registration.IPDID LEFT OUTER JOIN
+                         Ruby_Jamner123.PatientRadiologyBilling_IPDnOnlyTest ON Ruby_Jamner123.Assign_IPDRadiology_test.IPDID = Ruby_Jamner123.PatientRadiologyBilling_IPDnOnlyTest.IPDID WHERE Ruby_Jamner123.PatientRadiologyBilling_IPDnOnlyTest.Balance IS NULL OR Ruby_Jamner123.PatientRadiologyBilling_IPDnOnlyTest.Balance !=0");
+
+            DataTable datatable2 = ExecuteQuery(@"SELECT DISTINCT Ruby_Jamner123.Patient_Registration.Purpose, Ruby_Jamner123.Patient_Registration.PID, Ruby_Jamner123.Patient_Registration.Patient_ID, Ruby_Jamner123.Patient_Registration.Name, 
+                         Ruby_Jamner123.Patient_Registration.Age, Ruby_Jamner123.Patient_Registration.Mobile_Number, Ruby_Jamner123.Patient_Registration.Adhaar_ID, Ruby_Jamner123.OPD_Patient_Registration.PatientOPDId, 
+                         Ruby_Jamner123.OPD_Patient_Registration.PatientOPDIdWithSr, Ruby_Jamner123.AssignOnlyTest_Radiology.OPDID, Ruby_Jamner123.PatientRadiologyBilling_IPDnOnlyTest.Balance
+FROM            Ruby_Jamner123.OPD_Patient_Registration INNER JOIN
+                         Ruby_Jamner123.Patient_Registration ON Ruby_Jamner123.Patient_Registration.PID = Ruby_Jamner123.OPD_Patient_Registration.PatientId INNER JOIN
+                         Ruby_Jamner123.AssignOnlyTest_Radiology ON Ruby_Jamner123.AssignOnlyTest_Radiology.OPDID = Ruby_Jamner123.OPD_Patient_Registration.PatientOPDId LEFT OUTER JOIN
+                         Ruby_Jamner123.PatientRadiologyBilling_IPDnOnlyTest ON Ruby_Jamner123.AssignOnlyTest_Radiology.OPDID = Ruby_Jamner123.PatientRadiologyBilling_IPDnOnlyTest.OPDID WHERE Ruby_Jamner123.PatientRadiologyBilling_IPDnOnlyTest.Balance IS NULL OR Ruby_Jamner123.PatientRadiologyBilling_IPDnOnlyTest.Balance !=0");
             DataTable mergedDataTable = MergeDataTables(datatable1, datatable2);
             radiologybilling.DataSource = mergedDataTable;
             //radiologybilling.Columns["IPDID"].Visible = false;
