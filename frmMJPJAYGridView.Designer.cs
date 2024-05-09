@@ -95,6 +95,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Teal;
+            this.panel2.BackgroundImage = global::Ruby_Hospital.Properties.Resources.bg;
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -118,12 +119,13 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Century", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label1.Location = new System.Drawing.Point(-3, 3);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(396, 38);
+            this.label1.Size = new System.Drawing.Size(421, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Approve MJPJAY Patient";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -152,6 +154,7 @@
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridView1.Location = new System.Drawing.Point(28, 168);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -160,7 +163,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView1.Size = new System.Drawing.Size(1209, 300);
+            this.dataGridView1.Size = new System.Drawing.Size(1209, 397);
             this.dataGridView1.TabIndex = 41;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -180,13 +183,15 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1249, 507);
+            this.ClientSize = new System.Drawing.Size(1249, 577);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.txtpatient);
             this.Controls.Add(this.txtpatientsearch);
             this.Controls.Add(this.label2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmMJPJAYGridView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMJPJAYGridView";

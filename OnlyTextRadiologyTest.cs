@@ -46,7 +46,7 @@ namespace Ruby_Hospital
             SqlConnection con = new SqlConnection(@"Data Source=208.91.198.196;User ID=Ruby_Jamner123;Password=ruby@jamner");
             con.Open();
 
-            SqlCommand cmd = new SqlCommand(@"SELECT        Ruby_Jamner123.OPD_Patient_Registration.PatientOPDIdWithSr, Ruby_Jamner123.Patient_Registration.Name, Ruby_Jamner123.Patient_Registration.Age, Ruby_Jamner123.Patient_Registration.Mobile_Number, 
+            SqlCommand cmd = new SqlCommand(@"SELECT        Ruby_Jamner123.OPD_Patient_Registration.PatientOPDIdWithSr, Ruby_Jamner123.Patient_Registration.Name, Ruby_Jamner123.Patient_Registration.Age,  
                          Ruby_Jamner123.Patient_Registration.Doctors_Name, Ruby_Jamner123.Patient_Registration.Referred_By, Ruby_Jamner123.OPD_Patient_Registration.PatientOPDId, 
                          Ruby_Jamner123.OPD_Patient_Registration.PatientId
 FROM            Ruby_Jamner123.OPD_Patient_Registration INNER JOIN
@@ -62,6 +62,7 @@ WHERE        (Ruby_Jamner123.OPD_Patient_Registration.PatientOPDId=@OPDID)", con
                 dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font(dataGridView1.Font, FontStyle.Bold);
                 dataGridView1.Columns["PatientOPDIdWithSr"].HeaderText = "OPD_ID";
                 dataGridView1.Columns["PatientOPDId"].Visible = false;
+                dataGridView1.Columns["PatientId"].Visible = false;
             }
 
 

@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnPrintMJPJAYConsent = new System.Windows.Forms.Button();
             this.DVGMJPJAYAddSurgery = new System.Windows.Forms.DataGridView();
@@ -82,7 +82,7 @@
             this.panel1.Controls.Add(this.lblPatientInformation);
             this.panel1.Location = new System.Drawing.Point(3, 31);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1332, 487);
+            this.panel1.Size = new System.Drawing.Size(1332, 593);
             this.panel1.TabIndex = 0;
             // 
             // btnPrintMJPJAYConsent
@@ -92,7 +92,7 @@
             this.btnPrintMJPJAYConsent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPrintMJPJAYConsent.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrintMJPJAYConsent.ForeColor = System.Drawing.Color.White;
-            this.btnPrintMJPJAYConsent.Location = new System.Drawing.Point(778, 450);
+            this.btnPrintMJPJAYConsent.Location = new System.Drawing.Point(705, 548);
             this.btnPrintMJPJAYConsent.Name = "btnPrintMJPJAYConsent";
             this.btnPrintMJPJAYConsent.Size = new System.Drawing.Size(188, 34);
             this.btnPrintMJPJAYConsent.TabIndex = 200;
@@ -106,35 +106,35 @@
             this.DVGMJPJAYAddSurgery.AllowUserToAddRows = false;
             this.DVGMJPJAYAddSurgery.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.DVGMJPJAYAddSurgery.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DVGMJPJAYAddSurgery.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DVGMJPJAYAddSurgery.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.DVGMJPJAYAddSurgery.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DVGMJPJAYAddSurgery.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.btnRemove});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DVGMJPJAYAddSurgery.DefaultCellStyle = dataGridViewCellStyle2;
-            this.DVGMJPJAYAddSurgery.Location = new System.Drawing.Point(349, 289);
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DVGMJPJAYAddSurgery.DefaultCellStyle = dataGridViewCellStyle8;
+            this.DVGMJPJAYAddSurgery.Location = new System.Drawing.Point(349, 386);
             this.DVGMJPJAYAddSurgery.Name = "DVGMJPJAYAddSurgery";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DVGMJPJAYAddSurgery.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DVGMJPJAYAddSurgery.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.DVGMJPJAYAddSurgery.Size = new System.Drawing.Size(679, 155);
             this.DVGMJPJAYAddSurgery.TabIndex = 199;
             this.DVGMJPJAYAddSurgery.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DVGMJPJAYAddSurgery_CellClick);
@@ -179,11 +179,11 @@
             // 
             this.btnSubmit.BackColor = System.Drawing.Color.DarkGreen;
             this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubmit.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubmit.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit.ForeColor = System.Drawing.Color.White;
-            this.btnSubmit.Location = new System.Drawing.Point(620, 450);
+            this.btnSubmit.Location = new System.Drawing.Point(576, 548);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(143, 34);
+            this.btnSubmit.Size = new System.Drawing.Size(114, 34);
             this.btnSubmit.TabIndex = 6;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = false;
@@ -207,9 +207,10 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtMJPJAYNO);
             this.groupBox1.Controls.Add(this.lblPhone);
-            this.groupBox1.Location = new System.Drawing.Point(42, 128);
+            this.groupBox1.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(42, 174);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1273, 155);
+            this.groupBox1.Size = new System.Drawing.Size(1273, 171);
             this.groupBox1.TabIndex = 123;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Surgery Details";
@@ -218,7 +219,7 @@
             // 
             this.txtPackageAmount.Location = new System.Drawing.Point(1068, 14);
             this.txtPackageAmount.Name = "txtPackageAmount";
-            this.txtPackageAmount.Size = new System.Drawing.Size(151, 20);
+            this.txtPackageAmount.Size = new System.Drawing.Size(151, 26);
             this.txtPackageAmount.TabIndex = 199;
             this.txtPackageAmount.Visible = false;
             // 
@@ -226,7 +227,7 @@
             // 
             this.txtSubSurgery.Location = new System.Drawing.Point(932, 79);
             this.txtSubSurgery.Name = "txtSubSurgery";
-            this.txtSubSurgery.Size = new System.Drawing.Size(236, 20);
+            this.txtSubSurgery.Size = new System.Drawing.Size(236, 26);
             this.txtSubSurgery.TabIndex = 198;
             this.txtSubSurgery.Visible = false;
             // 
@@ -234,7 +235,7 @@
             // 
             this.txtMainCategory.Location = new System.Drawing.Point(919, 47);
             this.txtMainCategory.Name = "txtMainCategory";
-            this.txtMainCategory.Size = new System.Drawing.Size(236, 20);
+            this.txtMainCategory.Size = new System.Drawing.Size(236, 26);
             this.txtMainCategory.TabIndex = 197;
             this.txtMainCategory.Visible = false;
             // 
@@ -242,7 +243,7 @@
             // 
             this.txtSurgeryName.Location = new System.Drawing.Point(966, 117);
             this.txtSurgeryName.Name = "txtSurgeryName";
-            this.txtSurgeryName.Size = new System.Drawing.Size(253, 20);
+            this.txtSurgeryName.Size = new System.Drawing.Size(253, 26);
             this.txtSurgeryName.TabIndex = 196;
             this.txtSurgeryName.Visible = false;
             this.txtSurgeryName.TextChanged += new System.EventHandler(this.txtSurgeryName_TextChanged);
@@ -252,9 +253,10 @@
             this.button3.BackColor = System.Drawing.Color.Orange;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(891, 105);
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(902, 132);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(69, 34);
+            this.button3.Size = new System.Drawing.Size(58, 26);
             this.button3.TabIndex = 5;
             this.button3.Text = "Add New";
             this.button3.UseVisualStyleBackColor = false;
@@ -263,9 +265,9 @@
             // cmbSurgeryName
             // 
             this.cmbSurgeryName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbSurgeryName.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbSurgeryName.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbSurgeryName.FormattingEnabled = true;
-            this.cmbSurgeryName.Location = new System.Drawing.Point(385, 113);
+            this.cmbSurgeryName.Location = new System.Drawing.Point(385, 132);
             this.cmbSurgeryName.Name = "cmbSurgeryName";
             this.cmbSurgeryName.Size = new System.Drawing.Size(495, 26);
             this.cmbSurgeryName.TabIndex = 4;
@@ -275,21 +277,21 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(299, 113);
+            this.label4.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(299, 131);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 23);
+            this.label4.Size = new System.Drawing.Size(80, 23);
             this.label4.TabIndex = 132;
             this.label4.Text = "Surgery";
             // 
             // cmbSubCategory
             // 
             this.cmbSubCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbSubCategory.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbSubCategory.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbSubCategory.FormattingEnabled = true;
-            this.cmbSubCategory.Location = new System.Drawing.Point(385, 81);
+            this.cmbSubCategory.Location = new System.Drawing.Point(385, 92);
             this.cmbSubCategory.Name = "cmbSubCategory";
-            this.cmbSubCategory.Size = new System.Drawing.Size(495, 26);
+            this.cmbSubCategory.Size = new System.Drawing.Size(495, 31);
             this.cmbSubCategory.TabIndex = 3;
             this.cmbSubCategory.SelectedIndexChanged += new System.EventHandler(this.cmbSubCategory_SelectedIndexChanged);
             this.cmbSubCategory.SelectedValueChanged += new System.EventHandler(this.cmbSubCategory_SelectedValueChanged);
@@ -298,21 +300,21 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(197, 80);
+            this.label3.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(175, 91);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(175, 23);
+            this.label3.Size = new System.Drawing.Size(205, 23);
             this.label3.TabIndex = 130;
             this.label3.Text = "Disease Sub Category";
             // 
             // cmbMainCategory
             // 
             this.cmbMainCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbMainCategory.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbMainCategory.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbMainCategory.FormattingEnabled = true;
-            this.cmbMainCategory.Location = new System.Drawing.Point(387, 49);
+            this.cmbMainCategory.Location = new System.Drawing.Point(387, 52);
             this.cmbMainCategory.Name = "cmbMainCategory";
-            this.cmbMainCategory.Size = new System.Drawing.Size(493, 26);
+            this.cmbMainCategory.Size = new System.Drawing.Size(493, 31);
             this.cmbMainCategory.TabIndex = 2;
             this.cmbMainCategory.SelectedIndexChanged += new System.EventHandler(this.cmbMainCategory_SelectedIndexChanged);
             // 
@@ -320,10 +322,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(189, 48);
+            this.label2.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(167, 51);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(185, 23);
+            this.label2.Size = new System.Drawing.Size(217, 23);
             this.label2.TabIndex = 128;
             this.label2.Text = "Disease Main Category";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -351,11 +353,11 @@
             // 
             // txtMJPJAYNO
             // 
-            this.txtMJPJAYNO.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMJPJAYNO.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMJPJAYNO.Location = new System.Drawing.Point(387, 14);
             this.txtMJPJAYNO.MaxLength = 10;
             this.txtMJPJAYNO.Name = "txtMJPJAYNO";
-            this.txtMJPJAYNO.Size = new System.Drawing.Size(190, 23);
+            this.txtMJPJAYNO.Size = new System.Drawing.Size(190, 30);
             this.txtMJPJAYNO.TabIndex = 1;
             this.txtMJPJAYNO.TextChanged += new System.EventHandler(this.txtMJPJAYNO_TextChanged);
             this.txtMJPJAYNO.Leave += new System.EventHandler(this.txtMJPJAYNO_Leave);
@@ -364,10 +366,10 @@
             // 
             this.lblPhone.AutoSize = true;
             this.lblPhone.BackColor = System.Drawing.Color.Transparent;
-            this.lblPhone.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPhone.Location = new System.Drawing.Point(277, 16);
+            this.lblPhone.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPhone.Location = new System.Drawing.Point(255, 16);
             this.lblPhone.Name = "lblPhone";
-            this.lblPhone.Size = new System.Drawing.Size(95, 23);
+            this.lblPhone.Size = new System.Drawing.Size(125, 23);
             this.lblPhone.TabIndex = 124;
             this.lblPhone.Text = "MJPJAY NO";
             // 
@@ -377,44 +379,44 @@
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle5;
-            this.dataGridView1.Location = new System.Drawing.Point(45, 46);
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle11;
+            this.dataGridView1.Location = new System.Drawing.Point(45, 70);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dataGridView1.Size = new System.Drawing.Size(1270, 70);
             this.dataGridView1.TabIndex = 122;
             // 
             // lblPatientInformation
             // 
             this.lblPatientInformation.AutoSize = true;
-            this.lblPatientInformation.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPatientInformation.Location = new System.Drawing.Point(38, 18);
+            this.lblPatientInformation.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPatientInformation.Location = new System.Drawing.Point(38, 38);
             this.lblPatientInformation.Name = "lblPatientInformation";
-            this.lblPatientInformation.Size = new System.Drawing.Size(163, 23);
+            this.lblPatientInformation.Size = new System.Drawing.Size(188, 23);
             this.lblPatientInformation.TabIndex = 121;
             this.lblPatientInformation.Text = "Patient Information";
             // 
@@ -424,7 +426,7 @@
             this.pnlBottom.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlBottom.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlBottom.Location = new System.Drawing.Point(0, 524);
+            this.pnlBottom.Location = new System.Drawing.Point(0, 630);
             this.pnlBottom.Name = "pnlBottom";
             this.pnlBottom.Size = new System.Drawing.Size(1347, 27);
             this.pnlBottom.TabIndex = 2;
@@ -459,10 +461,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1347, 551);
+            this.ClientSize = new System.Drawing.Size(1347, 657);
             this.Controls.Add(this.pnlTop);
             this.Controls.Add(this.pnlBottom);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmMJPJAYPatientRegistration";
             this.Text = "frmMJPJAYPatientRegistration";
             this.Load += new System.EventHandler(this.frmMJPJAYPatientRegistration_Load);
