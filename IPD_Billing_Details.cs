@@ -21,6 +21,8 @@ namespace Ruby_Hospital
         public IPD_Billing_Details()
         {
             InitializeComponent();
+            this.AutoSize = true;
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void IPD_Summary_Load(object sender, EventArgs e)

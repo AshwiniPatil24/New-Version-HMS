@@ -22,7 +22,8 @@ namespace Ruby_Hospital
         public frmMJPJAYPaymentDetails()
         {
             InitializeComponent();
-
+            this.AutoSize = true;
+            this.WindowState = FormWindowState.Maximized;
             connection1.Open();
             SqlCommand cmd = new SqlCommand(@"select * from MJPJAY_PatientDetailsnew where  Doctor_Check=1 AND Received=0", connection1);
             SqlDataAdapter sd = new SqlDataAdapter(cmd);

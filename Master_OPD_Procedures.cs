@@ -19,6 +19,8 @@ namespace Ruby_Hospital
         public Master_OPD_Procedures()
         {
             InitializeComponent();
+            this.AutoSize = true;
+            this.WindowState = FormWindowState.Maximized;
         }
         int Save = 0;
         public void Search()

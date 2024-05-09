@@ -295,6 +295,7 @@ namespace Ruby_Hospital
             // 
             // groupBox1
             // 
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(168)))), ((int)(((byte)(168)))));
             this.groupBox1.BackgroundImage = global::Ruby_Hospital.Properties.Resources.bg;
             this.groupBox1.Controls.Add(this.txtloginEmp);
@@ -339,7 +340,6 @@ namespace Ruby_Hospital
             this.groupBox1.Controls.Add(this.cbmmaritalstatus);
             this.groupBox1.Controls.Add(this.txtprofix);
             this.groupBox1.Controls.Add(this.label3);
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
@@ -886,6 +886,8 @@ namespace Ruby_Hospital
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Patient_Registration";
             this.Load += new System.EventHandler(this.Patient_Registration_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();

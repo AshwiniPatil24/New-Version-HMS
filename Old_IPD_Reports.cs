@@ -17,6 +17,8 @@ namespace Ruby_Hospital
         public Old_IPD_Reports()
         {
             InitializeComponent();
+            this.AutoSize = true;
+            this.WindowState = FormWindowState.Maximized;
         }
 
 

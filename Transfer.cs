@@ -15,6 +15,8 @@ namespace Ruby_Hospital
         public Transfer()
         {
             InitializeComponent();
+            this.AutoSize = true;
+            this.WindowState = FormWindowState.Maximized;
         }
     }
 }

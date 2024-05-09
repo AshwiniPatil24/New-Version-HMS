@@ -21,6 +21,8 @@ namespace Ruby_Hospital
         public frmMJPJAYGridView()
         {
             InitializeComponent();
+            this.AutoSize = true;
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void frmMJPJAYGridView_Load(object sender, EventArgs e)

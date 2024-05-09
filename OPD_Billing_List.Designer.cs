@@ -42,7 +42,6 @@ namespace Ruby_Hospital
             this.txtopdbillname = new System.Windows.Forms.TextBox();
             this.txtopdbillsearch = new System.Windows.Forms.ComboBox();
             this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OPDdatagridview)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -60,7 +59,7 @@ namespace Ruby_Hospital
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(11, 10, 11, 10);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1028, 40);
+            this.panel2.Size = new System.Drawing.Size(1370, 40);
             this.panel2.TabIndex = 30;
             // 
             // label1
@@ -68,12 +67,12 @@ namespace Ruby_Hospital
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Century Schoolbook", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(183, 15, 183, 281);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(172, 36);
+            this.label1.Size = new System.Drawing.Size(204, 34);
             this.label1.TabIndex = 2;
             this.label1.Text = "OPD Billing ";
             // 
@@ -81,8 +80,7 @@ namespace Ruby_Hospital
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.OPDdatagridview);
-            this.panel1.Location = new System.Drawing.Point(12, 202);
+            this.panel1.Location = new System.Drawing.Point(183, 272);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1010, 395);
             this.panel1.TabIndex = 38;
@@ -90,28 +88,30 @@ namespace Ruby_Hospital
             // OPDdatagridview
             // 
             this.OPDdatagridview.AllowUserToAddRows = false;
+            this.OPDdatagridview.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.OPDdatagridview.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.OPDdatagridview.BackgroundColor = System.Drawing.Color.White;
             this.OPDdatagridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.OPDdatagridview.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.OPDdatagridview.Location = new System.Drawing.Point(0, 0);
+            this.OPDdatagridview.Location = new System.Drawing.Point(24, 229);
             this.OPDdatagridview.Name = "OPDdatagridview";
-            this.OPDdatagridview.Size = new System.Drawing.Size(1010, 395);
+            this.OPDdatagridview.Size = new System.Drawing.Size(1319, 450);
             this.OPDdatagridview.TabIndex = 0;
             this.OPDdatagridview.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.OPDdatagridview_CellClick);
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Century Schoolbook", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(345, 145);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(127, 28);
+            this.label2.Size = new System.Drawing.Size(140, 30);
             this.label2.TabIndex = 33;
             this.label2.Text = "Search By";
             // 
             // pictureBox4
             // 
+            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(1009, 149);
             this.pictureBox4.Name = "pictureBox4";
@@ -122,6 +122,7 @@ namespace Ruby_Hospital
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(965, 148);
             this.pictureBox3.Name = "pictureBox3";
@@ -153,6 +154,7 @@ namespace Ruby_Hospital
             // 
             // txtopdbillname
             // 
+            this.txtopdbillname.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtopdbillname.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtopdbillname.ForeColor = System.Drawing.Color.Gray;
             this.txtopdbillname.Location = new System.Drawing.Point(680, 148);
@@ -166,6 +168,7 @@ namespace Ruby_Hospital
             // 
             // txtopdbillsearch
             // 
+            this.txtopdbillsearch.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtopdbillsearch.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtopdbillsearch.FormattingEnabled = true;
             this.txtopdbillsearch.Items.AddRange(new object[] {
@@ -180,7 +183,8 @@ namespace Ruby_Hospital
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1028, 609);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.OPDdatagridview);
             this.Controls.Add(this.txtopdbillsearch);
             this.Controls.Add(this.txtopdbillname);
             this.Controls.Add(this.panel2);
@@ -190,6 +194,8 @@ namespace Ruby_Hospital
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "OPD_Billing_List";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OPD_Billing_List";
@@ -197,7 +203,6 @@ namespace Ruby_Hospital
             this.Load += new System.EventHandler(this.OPD_Billing_List_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.OPDdatagridview)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

@@ -84,7 +84,8 @@ namespace Ruby_Hospital
             dataGridView3.Columns["ID"].Visible = false;
             dataGridView3.Columns["Patient_OPDID"].Visible = false;
             dataGridView3.Columns["OPDProcedure_ID"].Visible = false;
-            //dataGridView3.Columns["Charges"].Visible = false;
+            dataGridView3.Columns["Charges"].Visible = false;
+            dataGridView3.Columns["Date"].Visible = false;
             dataGridView3.Columns["Name"].HeaderText = "Procedure_Name";
             dataGridView3.ColumnHeadersDefaultCellStyle.Font = new Font(dataGridView3.Font, FontStyle.Bold);
 
@@ -360,7 +361,7 @@ namespace Ruby_Hospital
             dataGridView4.Columns["ID"].Visible = false;
             dataGridView4.Columns["OPDID"].Visible = false;
             dataGridView4.Columns["RadiologyID"].Visible = false;
-            // dataGridView4.Columns["Charges"].Visible = false;
+            dataGridView4.Columns["Charges"].Visible = false;
             dataGridView4.Columns["TestDate"].Visible = false;
             dataGridView4.Columns["RadiologyName"].HeaderText = "Radiology Test";
             dataGridView4.ColumnHeadersDefaultCellStyle.Font = new Font(dataGridView4.Font, FontStyle.Bold);
@@ -802,7 +803,7 @@ namespace Ruby_Hospital
             {
                 MessageBox.Show(ex.ToString());
             }
-            //opdprocedurerpt();
+            opdprocedurerpt();
         }
         public void opdprocedurerpt()
         {
@@ -1013,7 +1014,7 @@ namespace Ruby_Hospital
                         global_OPDAmounRadiology_data();
                     }
                 }
-                //opdtestrpt();
+                opdtestrpt();
             }
             catch (Exception ex)
             {
@@ -1146,7 +1147,7 @@ namespace Ruby_Hospital
             {
                 MessageBox.Show(ex.ToString());
             }
-           // labtestrpt();
+            labtestrpt();
         }
         public void labtestrpt()
         {

@@ -65,16 +65,17 @@ namespace Ruby_Hospital
             this.panel1.BackgroundImage = global::Ruby_Hospital.Properties.Resources.bg;
             this.panel1.Location = new System.Drawing.Point(-1, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1335, 47);
+            this.panel1.Size = new System.Drawing.Size(1372, 47);
             this.panel1.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(225, 26);
+            this.label1.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(246, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(164, 23);
+            this.label1.Size = new System.Drawing.Size(125, 20);
             this.label1.TabIndex = 54;
             this.label1.Text = "Procedure Type";
             this.label1.Visible = false;
@@ -83,9 +84,10 @@ namespace Ruby_Hospital
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(214, 81);
+            this.label2.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(235, 81);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(179, 23);
+            this.label2.Size = new System.Drawing.Size(132, 20);
             this.label2.TabIndex = 54;
             this.label2.Text = "Procedure Name";
             // 
@@ -93,9 +95,10 @@ namespace Ruby_Hospital
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(202, 229);
+            this.label3.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(223, 229);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(192, 23);
+            this.label3.Size = new System.Drawing.Size(143, 20);
             this.label3.TabIndex = 54;
             this.label3.Text = "Procedure Charge";
             // 
@@ -103,7 +106,7 @@ namespace Ruby_Hospital
             // 
             this.txtname.Location = new System.Drawing.Point(403, 78);
             this.txtname.Name = "txtname";
-            this.txtname.Size = new System.Drawing.Size(526, 32);
+            this.txtname.Size = new System.Drawing.Size(526, 27);
             this.txtname.TabIndex = 55;
             // 
             // txttype
@@ -113,7 +116,7 @@ namespace Ruby_Hospital
             "Hospital Procedures"});
             this.txttype.Location = new System.Drawing.Point(403, 23);
             this.txttype.Name = "txttype";
-            this.txttype.Size = new System.Drawing.Size(526, 31);
+            this.txttype.Size = new System.Drawing.Size(526, 29);
             this.txttype.TabIndex = 56;
             this.txttype.Visible = false;
             // 
@@ -129,14 +132,14 @@ namespace Ruby_Hospital
             // 
             this.txtprocedure.Location = new System.Drawing.Point(403, 226);
             this.txtprocedure.Name = "txtprocedure";
-            this.txtprocedure.Size = new System.Drawing.Size(183, 32);
+            this.txtprocedure.Size = new System.Drawing.Size(183, 27);
             this.txtprocedure.TabIndex = 55;
             // 
             // txtsearch
             // 
-            this.txtsearch.Location = new System.Drawing.Point(606, 154);
+            this.txtsearch.Location = new System.Drawing.Point(549, 154);
             this.txtsearch.Name = "txtsearch";
-            this.txtsearch.Size = new System.Drawing.Size(384, 32);
+            this.txtsearch.Size = new System.Drawing.Size(384, 27);
             this.txtsearch.TabIndex = 55;
             this.txtsearch.Text = "enter procedure name";
             this.txtsearch.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtsearch_MouseClick);
@@ -147,9 +150,10 @@ namespace Ruby_Hospital
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(210, 134);
+            this.label4.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(231, 134);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(183, 23);
+            this.label4.Size = new System.Drawing.Size(140, 20);
             this.label4.TabIndex = 54;
             this.label4.Text = "Procedure Details";
             // 
@@ -157,9 +161,10 @@ namespace Ruby_Hospital
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Location = new System.Drawing.Point(266, 293);
+            this.label6.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(287, 293);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(111, 23);
+            this.label6.Size = new System.Drawing.Size(78, 20);
             this.label6.TabIndex = 54;
             this.label6.Text = "Added on";
             // 
@@ -167,14 +172,17 @@ namespace Ruby_Hospital
             // 
             this.txtdate.Location = new System.Drawing.Point(403, 288);
             this.txtdate.Name = "txtdate";
-            this.txtdate.Size = new System.Drawing.Size(221, 32);
+            this.txtdate.Size = new System.Drawing.Size(221, 27);
             this.txtdate.TabIndex = 57;
             // 
             // button2
             // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button2.BackColor = System.Drawing.Color.DarkGreen;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(777, 637);
+            this.button2.Font = new System.Drawing.Font("Century Schoolbook", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.Location = new System.Drawing.Point(934, 635);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(85, 33);
             this.button2.TabIndex = 58;
@@ -185,14 +193,16 @@ namespace Ruby_Hospital
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(414, 157);
+            this.label7.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(398, 157);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(163, 23);
+            this.label7.Size = new System.Drawing.Size(145, 19);
             this.label7.TabIndex = 54;
             this.label7.Text = "Search Lab Test";
             // 
             // panel2
             // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.BackColor = System.Drawing.Color.Teal;
             this.panel2.BackgroundImage = global::Ruby_Hospital.Properties.Resources.bg;
             this.panel2.Controls.Add(this.txttype);
@@ -207,7 +217,7 @@ namespace Ruby_Hospital
             this.panel2.Controls.Add(this.txtdetails);
             this.panel2.Controls.Add(this.txthospcharge);
             this.panel2.Controls.Add(this.txtprocedure);
-            this.panel2.Location = new System.Drawing.Point(61, 222);
+            this.panel2.Location = new System.Drawing.Point(90, 242);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1219, 337);
             this.panel2.TabIndex = 59;
@@ -216,9 +226,10 @@ namespace Ruby_Hospital
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(624, 229);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(144, 23);
+            this.label8.Size = new System.Drawing.Size(109, 20);
             this.label8.TabIndex = 54;
             this.label8.Text = "Hosp. Charge";
             // 
@@ -226,16 +237,16 @@ namespace Ruby_Hospital
             // 
             this.txthospcharge.Location = new System.Drawing.Point(746, 226);
             this.txthospcharge.Name = "txthospcharge";
-            this.txthospcharge.Size = new System.Drawing.Size(183, 32);
+            this.txthospcharge.Size = new System.Drawing.Size(183, 27);
             this.txthospcharge.TabIndex = 55;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox3.Image = global::Ruby_Hospital.Properties.Resources.line_40935;
-            this.pictureBox3.Location = new System.Drawing.Point(-1, 114);
+            this.pictureBox3.Location = new System.Drawing.Point(-1, 125);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(1327, 44);
+            this.pictureBox3.Size = new System.Drawing.Size(1364, 44);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 63;
             this.pictureBox3.TabStop = false;
@@ -244,9 +255,9 @@ namespace Ruby_Hospital
             // 
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.Image = global::Ruby_Hospital.Properties.Resources.line_40935;
-            this.pictureBox2.Location = new System.Drawing.Point(-1, 574);
+            this.pictureBox2.Location = new System.Drawing.Point(-1, 585);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1327, 44);
+            this.pictureBox2.Size = new System.Drawing.Size(1364, 44);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 53;
             this.pictureBox2.TabStop = false;
@@ -255,9 +266,9 @@ namespace Ruby_Hospital
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = global::Ruby_Hospital.Properties.Resources.line_40935;
-            this.pictureBox1.Location = new System.Drawing.Point(-1, 181);
+            this.pictureBox1.Location = new System.Drawing.Point(-1, 192);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1327, 44);
+            this.pictureBox1.Size = new System.Drawing.Size(1364, 44);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 53;
             this.pictureBox1.TabStop = false;
@@ -265,7 +276,7 @@ namespace Ruby_Hospital
             // pictureBox4
             // 
             this.pictureBox4.Image = global::Ruby_Hospital.Properties.Resources._264294910_108862081637008_8238947895213189007_n_removebg_preview;
-            this.pictureBox4.Location = new System.Drawing.Point(1135, 54);
+            this.pictureBox4.Location = new System.Drawing.Point(1189, 58);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(174, 61);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -275,10 +286,10 @@ namespace Ruby_Hospital
             // pictureBox5
             // 
             this.pictureBox5.Image = global::Ruby_Hospital.Properties.Resources.icons8_search_50__1_1;
-            this.pictureBox5.Location = new System.Drawing.Point(997, 154);
+            this.pictureBox5.Location = new System.Drawing.Point(940, 154);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(39, 31);
+            this.pictureBox5.Size = new System.Drawing.Size(32, 27);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 94;
             this.pictureBox5.TabStop = false;
@@ -286,9 +297,9 @@ namespace Ruby_Hospital
             // 
             // Master_Procedures
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1333, 727);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.txtsearch);
@@ -302,6 +313,7 @@ namespace Ruby_Hospital
             this.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Master_Procedures";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Master_Procedures";

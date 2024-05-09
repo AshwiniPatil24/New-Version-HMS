@@ -505,10 +505,11 @@ WHERE        (Ruby_Jamner123.IPD_Registration.IPDID = @IPDID)", connection1);
                             cmd.Parameters.AddWithValue(@"Remark", txtRemark.Text);
                             
                             cmd.ExecuteNonQuery();
+                            MessageBox.Show("Record Save Successfully...");
                             connection1.Close();
                         }
                     }
-                    MessageBox.Show("Record Save Successfully...");
+                   
 
                     //Due_AmountCalculation();
 

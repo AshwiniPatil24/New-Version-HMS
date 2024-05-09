@@ -20,6 +20,8 @@ namespace Ruby_Hospital
         public Discharge_Details()
         {
             InitializeComponent();
+            this.AutoSize = true;
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void Discharge_Details_Load(object sender, EventArgs e)
