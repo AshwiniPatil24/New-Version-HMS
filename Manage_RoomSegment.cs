@@ -17,6 +17,7 @@ namespace Ruby_Hospital
         public Manage_RoomSegment()
         {
             InitializeComponent();
+
         }
 
         private void Manage_RoomSegment_NursingCharges_Load(object sender, EventArgs e)

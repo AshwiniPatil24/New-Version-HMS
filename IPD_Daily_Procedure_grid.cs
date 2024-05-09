@@ -18,6 +18,8 @@ namespace Ruby_Hospital
         public IPD_Daily_Procedure_grid()
         {
             InitializeComponent();
+            this.AutoSize = true;
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void IPD_Daily_Procedure_Load(object sender, EventArgs e)

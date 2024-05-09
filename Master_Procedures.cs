@@ -17,6 +17,8 @@ namespace Ruby_Hospital
         public Master_Procedures()
         {
             InitializeComponent();
+            this.AutoSize = true;
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void Master_Procedures_Load(object sender, EventArgs e)

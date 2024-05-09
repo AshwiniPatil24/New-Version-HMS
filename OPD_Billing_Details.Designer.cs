@@ -106,22 +106,23 @@ namespace Ruby_Hospital
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Century Schoolbook", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(0, 0);
             this.label10.Margin = new System.Windows.Forms.Padding(50, 5, 50, 90);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(266, 36);
+            this.label10.Size = new System.Drawing.Size(311, 34);
             this.label10.TabIndex = 2;
             this.label10.Text = "OPD Billing Details";
             // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(24, 180);
+            this.dataGridView1.Location = new System.Drawing.Point(265, 139);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1374, 71);
             this.dataGridView1.TabIndex = 76;
@@ -129,10 +130,10 @@ namespace Ruby_Hospital
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Century Schoolbook", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(22, 154);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(183, 23);
+            this.label5.Size = new System.Drawing.Size(208, 23);
             this.label5.TabIndex = 77;
             this.label5.Text = "Patient Information";
             // 
@@ -148,9 +149,9 @@ namespace Ruby_Hospital
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(26, 526);
+            this.groupBox1.Location = new System.Drawing.Point(26, 532);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1374, 83);
+            this.groupBox1.Size = new System.Drawing.Size(1872, 83);
             this.groupBox1.TabIndex = 78;
             this.groupBox1.TabStop = false;
             // 
@@ -171,7 +172,7 @@ namespace Ruby_Hospital
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.textBox2.Location = new System.Drawing.Point(888, 21);
+            this.textBox2.Location = new System.Drawing.Point(888, 26);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(377, 42);
@@ -181,10 +182,10 @@ namespace Ruby_Hospital
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(437, 37);
+            this.label3.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(453, 39);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(127, 19);
+            this.label3.Size = new System.Drawing.Size(134, 19);
             this.label3.TabIndex = 2;
             this.label3.Text = "Payment Mode";
             // 
@@ -192,17 +193,17 @@ namespace Ruby_Hospital
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(813, 39);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 19);
+            this.label2.Size = new System.Drawing.Size(75, 19);
             this.label2.TabIndex = 2;
             this.label2.Text = "Remark";
             // 
             // textBox1
             // 
             this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(209, 35);
+            this.textBox1.Location = new System.Drawing.Point(209, 33);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(222, 27);
             this.textBox1.TabIndex = 3;
@@ -211,10 +212,10 @@ namespace Ruby_Hospital
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(67, 37);
+            this.label1.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(67, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 19);
+            this.label1.Size = new System.Drawing.Size(134, 19);
             this.label1.TabIndex = 2;
             this.label1.Text = "Receiver Name";
             // 
@@ -247,10 +248,10 @@ namespace Ruby_Hospital
             this.groupBox2.Controls.Add(this.lblradio);
             this.groupBox2.Controls.Add(this.label19);
             this.groupBox2.Controls.Add(this.lblopd);
-            this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(23, 259);
+            this.groupBox2.Font = new System.Drawing.Font("Century Schoolbook", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(24, 231);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1374, 169);
+            this.groupBox2.Size = new System.Drawing.Size(1872, 169);
             this.groupBox2.TabIndex = 78;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Billing";
@@ -259,10 +260,10 @@ namespace Ruby_Hospital
             // 
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(1200, 19);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(74, 19);
+            this.label13.Size = new System.Drawing.Size(76, 19);
             this.label13.TabIndex = 13;
             this.label13.Text = "Balance";
             // 
@@ -270,10 +271,10 @@ namespace Ruby_Hospital
             // 
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(437, 17);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(74, 19);
+            this.label12.Size = new System.Drawing.Size(84, 19);
             this.label12.TabIndex = 12;
             this.label12.Text = "Discount";
             // 
@@ -281,10 +282,10 @@ namespace Ruby_Hospital
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(685, 17);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(79, 19);
+            this.label11.Size = new System.Drawing.Size(85, 19);
             this.label11.TabIndex = 11;
             this.label11.Text = "  Amount";
             // 
@@ -293,7 +294,7 @@ namespace Ruby_Hospital
             this.payLabA.Enabled = false;
             this.payLabA.Location = new System.Drawing.Point(648, 125);
             this.payLabA.Name = "payLabA";
-            this.payLabA.Size = new System.Drawing.Size(186, 31);
+            this.payLabA.Size = new System.Drawing.Size(186, 30);
             this.payLabA.TabIndex = 8;
             this.payLabA.Text = "0";
             this.payLabA.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -303,7 +304,7 @@ namespace Ruby_Hospital
             this.payradioA.Enabled = false;
             this.payradioA.Location = new System.Drawing.Point(648, 86);
             this.payradioA.Name = "payradioA";
-            this.payradioA.Size = new System.Drawing.Size(186, 31);
+            this.payradioA.Size = new System.Drawing.Size(186, 30);
             this.payradioA.TabIndex = 9;
             this.payradioA.Text = "0";
             this.payradioA.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -313,7 +314,7 @@ namespace Ruby_Hospital
             this.payopdA.Enabled = false;
             this.payopdA.Location = new System.Drawing.Point(648, 47);
             this.payopdA.Name = "payopdA";
-            this.payopdA.Size = new System.Drawing.Size(186, 31);
+            this.payopdA.Size = new System.Drawing.Size(186, 30);
             this.payopdA.TabIndex = 10;
             this.payopdA.Text = "0";
             this.payopdA.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -333,7 +334,7 @@ namespace Ruby_Hospital
             this.disLab.Enabled = false;
             this.disLab.Location = new System.Drawing.Point(395, 125);
             this.disLab.Name = "disLab";
-            this.disLab.Size = new System.Drawing.Size(186, 31);
+            this.disLab.Size = new System.Drawing.Size(186, 30);
             this.disLab.TabIndex = 4;
             this.disLab.Text = "0";
             this.disLab.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -344,7 +345,7 @@ namespace Ruby_Hospital
             this.disradiology.Enabled = false;
             this.disradiology.Location = new System.Drawing.Point(395, 86);
             this.disradiology.Name = "disradiology";
-            this.disradiology.Size = new System.Drawing.Size(186, 31);
+            this.disradiology.Size = new System.Drawing.Size(186, 30);
             this.disradiology.TabIndex = 5;
             this.disradiology.Text = "0";
             this.disradiology.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -355,7 +356,7 @@ namespace Ruby_Hospital
             this.disOpd.Enabled = false;
             this.disOpd.Location = new System.Drawing.Point(395, 45);
             this.disOpd.Name = "disOpd";
-            this.disOpd.Size = new System.Drawing.Size(186, 31);
+            this.disOpd.Size = new System.Drawing.Size(186, 30);
             this.disOpd.TabIndex = 6;
             this.disOpd.Text = "0";
             this.disOpd.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -365,10 +366,10 @@ namespace Ruby_Hospital
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(174, 17);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(100, 19);
+            this.label9.Size = new System.Drawing.Size(115, 19);
             this.label9.TabIndex = 3;
             this.label9.Text = " Bill Amount";
             // 
@@ -378,7 +379,7 @@ namespace Ruby_Hospital
             this.ballab.Enabled = false;
             this.ballab.Location = new System.Drawing.Point(1148, 131);
             this.ballab.Name = "ballab";
-            this.ballab.Size = new System.Drawing.Size(186, 31);
+            this.ballab.Size = new System.Drawing.Size(186, 30);
             this.ballab.TabIndex = 1;
             this.ballab.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.ballab.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
@@ -388,7 +389,7 @@ namespace Ruby_Hospital
             this.pailab.Enabled = false;
             this.pailab.Location = new System.Drawing.Point(902, 125);
             this.pailab.Name = "pailab";
-            this.pailab.Size = new System.Drawing.Size(186, 31);
+            this.pailab.Size = new System.Drawing.Size(186, 30);
             this.pailab.TabIndex = 1;
             this.pailab.Text = "0";
             this.pailab.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -400,7 +401,7 @@ namespace Ruby_Hospital
             this.balradio.Enabled = false;
             this.balradio.Location = new System.Drawing.Point(1148, 89);
             this.balradio.Name = "balradio";
-            this.balradio.Size = new System.Drawing.Size(186, 31);
+            this.balradio.Size = new System.Drawing.Size(186, 30);
             this.balradio.TabIndex = 1;
             this.balradio.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.balradio.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
@@ -410,7 +411,7 @@ namespace Ruby_Hospital
             this.paidradio.Enabled = false;
             this.paidradio.Location = new System.Drawing.Point(902, 86);
             this.paidradio.Name = "paidradio";
-            this.paidradio.Size = new System.Drawing.Size(186, 31);
+            this.paidradio.Size = new System.Drawing.Size(186, 30);
             this.paidradio.TabIndex = 1;
             this.paidradio.Text = "0";
             this.paidradio.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -421,7 +422,7 @@ namespace Ruby_Hospital
             this.txtlabBilling.Enabled = false;
             this.txtlabBilling.Location = new System.Drawing.Point(140, 125);
             this.txtlabBilling.Name = "txtlabBilling";
-            this.txtlabBilling.Size = new System.Drawing.Size(186, 31);
+            this.txtlabBilling.Size = new System.Drawing.Size(186, 30);
             this.txtlabBilling.TabIndex = 1;
             this.txtlabBilling.Text = "0";
             this.txtlabBilling.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -432,7 +433,7 @@ namespace Ruby_Hospital
             this.balopd.Enabled = false;
             this.balopd.Location = new System.Drawing.Point(1148, 50);
             this.balopd.Name = "balopd";
-            this.balopd.Size = new System.Drawing.Size(186, 31);
+            this.balopd.Size = new System.Drawing.Size(186, 30);
             this.balopd.TabIndex = 1;
             this.balopd.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.balopd.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
@@ -442,7 +443,7 @@ namespace Ruby_Hospital
             this.txtradiologyBilling.Enabled = false;
             this.txtradiologyBilling.Location = new System.Drawing.Point(140, 86);
             this.txtradiologyBilling.Name = "txtradiologyBilling";
-            this.txtradiologyBilling.Size = new System.Drawing.Size(186, 31);
+            this.txtradiologyBilling.Size = new System.Drawing.Size(186, 30);
             this.txtradiologyBilling.TabIndex = 1;
             this.txtradiologyBilling.Text = "0";
             this.txtradiologyBilling.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -452,7 +453,7 @@ namespace Ruby_Hospital
             this.paidopd.Enabled = false;
             this.paidopd.Location = new System.Drawing.Point(902, 47);
             this.paidopd.Name = "paidopd";
-            this.paidopd.Size = new System.Drawing.Size(186, 31);
+            this.paidopd.Size = new System.Drawing.Size(186, 30);
             this.paidopd.TabIndex = 1;
             this.paidopd.Text = "0";
             this.paidopd.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -463,7 +464,7 @@ namespace Ruby_Hospital
             this.txtopdBillAmount.Enabled = false;
             this.txtopdBillAmount.Location = new System.Drawing.Point(140, 47);
             this.txtopdBillAmount.Name = "txtopdBillAmount";
-            this.txtopdBillAmount.Size = new System.Drawing.Size(186, 31);
+            this.txtopdBillAmount.Size = new System.Drawing.Size(186, 30);
             this.txtopdBillAmount.TabIndex = 1;
             this.txtopdBillAmount.Text = "0";
             this.txtopdBillAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -472,10 +473,10 @@ namespace Ruby_Hospital
             // 
             this.lbllab.AutoSize = true;
             this.lbllab.BackColor = System.Drawing.Color.Transparent;
-            this.lbllab.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbllab.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbllab.Location = new System.Drawing.Point(71, 128);
             this.lbllab.Name = "lbllab";
-            this.lbllab.Size = new System.Drawing.Size(38, 19);
+            this.lbllab.Size = new System.Drawing.Size(41, 19);
             this.lbllab.TabIndex = 0;
             this.lbllab.Text = "Lab";
             // 
@@ -483,10 +484,10 @@ namespace Ruby_Hospital
             // 
             this.lblradio.AutoSize = true;
             this.lblradio.BackColor = System.Drawing.Color.Transparent;
-            this.lblradio.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblradio.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblradio.Location = new System.Drawing.Point(23, 89);
             this.lblradio.Name = "lblradio";
-            this.lblradio.Size = new System.Drawing.Size(88, 19);
+            this.lblradio.Size = new System.Drawing.Size(95, 19);
             this.lblradio.TabIndex = 0;
             this.lblradio.Text = "Radiology";
             // 
@@ -494,10 +495,10 @@ namespace Ruby_Hospital
             // 
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.Location = new System.Drawing.Point(962, 19);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(44, 19);
+            this.label19.Size = new System.Drawing.Size(48, 19);
             this.label19.TabIndex = 0;
             this.label19.Text = "Paid";
             // 
@@ -505,22 +506,22 @@ namespace Ruby_Hospital
             // 
             this.lblopd.AutoSize = true;
             this.lblopd.BackColor = System.Drawing.Color.Transparent;
-            this.lblopd.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblopd.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblopd.Location = new System.Drawing.Point(65, 47);
             this.lblopd.Name = "lblopd";
-            this.lblopd.Size = new System.Drawing.Size(42, 19);
+            this.lblopd.Size = new System.Drawing.Size(47, 19);
             this.lblopd.TabIndex = 0;
             this.lblopd.Text = "OPD";
             // 
             // button1
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button1.BackColor = System.Drawing.Color.DarkGreen;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
+            this.button1.Font = new System.Drawing.Font("Century Schoolbook", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(625, 677);
+            this.button1.Location = new System.Drawing.Point(778, 677);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(148, 35);
             this.button1.TabIndex = 81;
@@ -539,45 +540,48 @@ namespace Ruby_Hospital
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.label7);
-            this.groupBox3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(24, 437);
+            this.groupBox3.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(24, 431);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1374, 83);
+            this.groupBox3.Size = new System.Drawing.Size(1872, 83);
             this.groupBox3.TabIndex = 79;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Total ";
             // 
             // TotalB
             // 
+            this.TotalB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TotalB.AutoSize = true;
             this.TotalB.BackColor = System.Drawing.Color.Transparent;
-            this.TotalB.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalB.Location = new System.Drawing.Point(1145, 34);
+            this.TotalB.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalB.Location = new System.Drawing.Point(1150, 39);
             this.TotalB.Name = "TotalB";
-            this.TotalB.Size = new System.Drawing.Size(24, 25);
+            this.TotalB.Size = new System.Drawing.Size(18, 19);
             this.TotalB.TabIndex = 7;
             this.TotalB.Text = "0";
             // 
             // TotalA
             // 
+            this.TotalA.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TotalA.AutoSize = true;
             this.TotalA.BackColor = System.Drawing.Color.Transparent;
-            this.TotalA.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalA.Location = new System.Drawing.Point(205, 34);
+            this.TotalA.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalA.Location = new System.Drawing.Point(220, 36);
             this.TotalA.Name = "TotalA";
-            this.TotalA.Size = new System.Drawing.Size(24, 25);
+            this.TotalA.Size = new System.Drawing.Size(18, 19);
             this.TotalA.TabIndex = 6;
             this.TotalA.Text = "0";
             this.TotalA.Click += new System.EventHandler(this.TotalA_Click);
             // 
             // TotalP
             // 
+            this.TotalP.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TotalP.AutoSize = true;
             this.TotalP.BackColor = System.Drawing.Color.Transparent;
-            this.TotalP.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalP.Location = new System.Drawing.Point(696, 34);
+            this.TotalP.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalP.Location = new System.Drawing.Point(696, 35);
             this.TotalP.Name = "TotalP";
-            this.TotalP.Size = new System.Drawing.Size(24, 25);
+            this.TotalP.Size = new System.Drawing.Size(18, 19);
             this.TotalP.TabIndex = 5;
             this.TotalP.Text = "0";
             // 
@@ -585,10 +589,10 @@ namespace Ruby_Hospital
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(527, 37);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(158, 19);
+            this.label4.Size = new System.Drawing.Size(178, 19);
             this.label4.TabIndex = 2;
             this.label4.Text = "Total Paid Amount :";
             // 
@@ -596,10 +600,10 @@ namespace Ruby_Hospital
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(1025, 37);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(122, 19);
+            this.label6.Size = new System.Drawing.Size(135, 19);
             this.label6.TabIndex = 2;
             this.label6.Text = "Total Balance :";
             // 
@@ -607,10 +611,10 @@ namespace Ruby_Hospital
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(33, 37);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(169, 19);
+            this.label7.Size = new System.Drawing.Size(196, 19);
             this.label7.TabIndex = 2;
             this.label7.Text = "Total Billing Amount :";
             // 
@@ -618,7 +622,7 @@ namespace Ruby_Hospital
             // 
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.Image = global::Ruby_Hospital.Properties.Resources._264294910_108862081637008_8238947895213189007_n_removebg_preview;
-            this.pictureBox2.Location = new System.Drawing.Point(1679, 29);
+            this.pictureBox2.Location = new System.Drawing.Point(2177, 29);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(168, 82);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -628,7 +632,7 @@ namespace Ruby_Hospital
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(16, 101);
+            this.pictureBox1.Location = new System.Drawing.Point(-24, 83);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1502, 50);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -639,7 +643,7 @@ namespace Ruby_Hospital
             // 
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(26, 605);
+            this.pictureBox3.Location = new System.Drawing.Point(-24, 621);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(1524, 50);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -648,13 +652,13 @@ namespace Ruby_Hospital
             // 
             // OPDFinalBill
             // 
-            this.OPDFinalBill.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.OPDFinalBill.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.OPDFinalBill.BackColor = System.Drawing.Color.Goldenrod;
             this.OPDFinalBill.FlatAppearance.BorderSize = 0;
             this.OPDFinalBill.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.OPDFinalBill.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
+            this.OPDFinalBill.Font = new System.Drawing.Font("Century Schoolbook", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.OPDFinalBill.ForeColor = System.Drawing.Color.White;
-            this.OPDFinalBill.Location = new System.Drawing.Point(442, 677);
+            this.OPDFinalBill.Location = new System.Drawing.Point(607, 677);
             this.OPDFinalBill.Name = "OPDFinalBill";
             this.OPDFinalBill.Size = new System.Drawing.Size(148, 35);
             this.OPDFinalBill.TabIndex = 82;
@@ -664,13 +668,13 @@ namespace Ruby_Hospital
             // 
             // OPD_detail_bill
             // 
-            this.OPD_detail_bill.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.OPD_detail_bill.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.OPD_detail_bill.BackColor = System.Drawing.Color.Goldenrod;
             this.OPD_detail_bill.FlatAppearance.BorderSize = 0;
             this.OPD_detail_bill.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.OPD_detail_bill.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
+            this.OPD_detail_bill.Font = new System.Drawing.Font("Century Schoolbook", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.OPD_detail_bill.ForeColor = System.Drawing.Color.White;
-            this.OPD_detail_bill.Location = new System.Drawing.Point(272, 677);
+            this.OPD_detail_bill.Location = new System.Drawing.Point(437, 677);
             this.OPD_detail_bill.Name = "OPD_detail_bill";
             this.OPD_detail_bill.Size = new System.Drawing.Size(148, 35);
             this.OPD_detail_bill.TabIndex = 83;
@@ -682,7 +686,7 @@ namespace Ruby_Hospital
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 724);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.OPD_detail_bill);
             this.Controls.Add(this.OPDFinalBill);
             this.Controls.Add(this.groupBox3);
@@ -698,6 +702,8 @@ namespace Ruby_Hospital
             this.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "OPD_Billing_Details";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OPD_Billing_Details";

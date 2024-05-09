@@ -75,12 +75,12 @@ namespace Ruby_Hospital
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Century Schoolbook", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(50, 5, 50, 90);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(268, 44);
+            this.label1.Size = new System.Drawing.Size(236, 34);
             this.label1.TabIndex = 2;
             this.label1.Text = "IPD Discharge";
             // 
@@ -96,6 +96,7 @@ namespace Ruby_Hospital
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(-155, 126);
             this.pictureBox2.Name = "pictureBox2";
@@ -107,10 +108,10 @@ namespace Ruby_Hospital
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(461, 165);
+            this.label2.Font = new System.Drawing.Font("Century Schoolbook", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(443, 165);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(212, 28);
+            this.label2.Size = new System.Drawing.Size(190, 23);
             this.label2.TabIndex = 72;
             this.label2.Text = "Search Patient By";
             // 
@@ -119,7 +120,7 @@ namespace Ruby_Hospital
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(634, 162);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(156, 31);
+            this.comboBox1.Size = new System.Drawing.Size(156, 29);
             this.comboBox1.TabIndex = 73;
             // 
             // textBox1
@@ -156,21 +157,21 @@ namespace Ruby_Hospital
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(208, 217);
+            this.tabControl1.Font = new System.Drawing.Font("Century Schoolbook", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.Location = new System.Drawing.Point(12, 221);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1249, 516);
+            this.tabControl1.Size = new System.Drawing.Size(1346, 516);
             this.tabControl1.TabIndex = 77;
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.dataGridView1);
             this.tabPage1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage1.Location = new System.Drawing.Point(4, 38);
+            this.tabPage1.Location = new System.Drawing.Point(4, 34);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1241, 474);
+            this.tabPage1.Size = new System.Drawing.Size(1338, 478);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "    New Discharge    ";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -178,20 +179,20 @@ namespace Ruby_Hospital
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 2);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1235, 468);
+            this.dataGridView1.Size = new System.Drawing.Size(1338, 477);
             this.dataGridView1.TabIndex = 1;
             // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.dataGridView2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 38);
+            this.tabPage2.Location = new System.Drawing.Point(4, 32);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1241, 474);
+            this.tabPage2.Size = new System.Drawing.Size(1338, 480);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "    Old Discharge    ";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -202,32 +203,32 @@ namespace Ruby_Hospital
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView2.Location = new System.Drawing.Point(3, 3);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(1235, 468);
+            this.dataGridView2.Size = new System.Drawing.Size(1332, 474);
             this.dataGridView2.TabIndex = 2;
             // 
             // tabPage3
             // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 38);
+            this.tabPage3.Location = new System.Drawing.Point(4, 32);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1241, 474);
+            this.tabPage3.Size = new System.Drawing.Size(1338, 480);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "    Certificate    ";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // tabPage4
             // 
-            this.tabPage4.Location = new System.Drawing.Point(4, 38);
+            this.tabPage4.Location = new System.Drawing.Point(4, 32);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1241, 474);
+            this.tabPage4.Size = new System.Drawing.Size(1338, 480);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "    Old Reports    ";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // Fill_IPD_Discharge_gridview
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.tabControl1);
@@ -241,6 +242,8 @@ namespace Ruby_Hospital
             this.Controls.Add(this.pictureBox2);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Fill_IPD_Discharge_gridview";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fill_IPD_Discharge_gridview";

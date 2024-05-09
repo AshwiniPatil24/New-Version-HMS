@@ -452,6 +452,10 @@ namespace Ruby_Hospital
             panel4.Visible = false;
             panel3.Visible = false;
             panel5.Visible = false;
+            panel6.Visible = false;
+            panel10.Visible = false;
+            panel9.Visible = false;
+            panel_admin_misReport.Visible = false;
 
             //   panel_admin_misreprt.Visible = false;
         }
@@ -467,8 +471,10 @@ namespace Ruby_Hospital
             panel_bill_down.Visible = false;
             panel3.Visible = false;
             panel5.Visible = false;
-
-            //  panel_admin_misreprt.Visible = false;
+            panel6.Visible = false;
+            panel10.Visible = false;
+            panel9.Visible = false;
+            panel_admin_misReport.Visible = false;
         }
 
         private void IPD_Click(object sender, EventArgs e)
@@ -482,7 +488,10 @@ namespace Ruby_Hospital
             panel4.Visible = false;
             panel3.Visible = false;
             panel5.Visible = false;
-            //   panel_admin_misreprt.Visible = false;
+            panel6.Visible = false;
+            panel10.Visible = false;
+            panel9.Visible = false;
+            panel_admin_misReport.Visible = false;
         }
 
         private void Bill_Click(object sender, EventArgs e)
@@ -498,6 +507,10 @@ namespace Ruby_Hospital
             panel3.Visible = false;
             panel5.Visible = false;
             panel8.Visible = false;
+            panel6.Visible = false;
+            panel10.Visible = false;
+            panel9.Visible = false;
+            panel_admin_misReport.Visible = false;
         }
 
         private void Admin_Click(object sender, EventArgs e)
@@ -511,6 +524,7 @@ namespace Ruby_Hospital
             panel_admin_down.Visible = true;
             panel3.Visible = false;
             panel5.Visible = false;
+            panel6.Visible = false;
         }
 
         private void Help_Click(object sender, EventArgs e)
@@ -524,6 +538,10 @@ namespace Ruby_Hospital
             panel4.Visible = false;
             panel3.Visible = false;
             panel5.Visible = false;
+            panel6.Visible = false;
+            panel10.Visible = false;
+            panel9.Visible = false;
+            panel_admin_misReport.Visible = false;
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -839,6 +857,10 @@ namespace Ruby_Hospital
             panel3.Visible = false;
             panel5.Visible = false;
             panel8.Visible = false;
+            panel_IPD_down.Visible = false;
+            panel10.Visible = false;
+            panel9.Visible = false;
+            panel_admin_misReport.Visible = false;
         }
 
         private void button12_Click(object sender, EventArgs e)

@@ -18,6 +18,8 @@ namespace Ruby_Hospital
         public Referred_doctor()
         {
             InitializeComponent();
+            this.AutoSize = true;
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void Referred_doctor_Load(object sender, EventArgs e)

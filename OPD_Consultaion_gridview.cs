@@ -17,6 +17,8 @@ namespace Ruby_Hospital
         public OPD_Consultaion_gridview()
         {
             InitializeComponent();
+            this.AutoSize = true;
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void OPD_Consultaion_Load(object sender, EventArgs e)

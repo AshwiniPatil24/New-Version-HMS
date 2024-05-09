@@ -20,6 +20,8 @@ namespace Ruby_Hospital
         public OPD_Details()
         {
             InitializeComponent();
+            this.AutoSize = true;
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void OPD_Details_Load(object sender, EventArgs e)

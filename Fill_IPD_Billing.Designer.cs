@@ -54,6 +54,7 @@ namespace Ruby_Hospital
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label27 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnDetail = new System.Windows.Forms.Button();
             this.provisional_bill_print = new System.Windows.Forms.Button();
@@ -99,7 +100,6 @@ namespace Ruby_Hospital
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -332,6 +332,12 @@ namespace Ruby_Hospital
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // label27
+            // 
+            resources.ApplyResources(this.label27, "label27");
+            this.label27.ForeColor = System.Drawing.Color.Red;
+            this.label27.Name = "label27";
             // 
             // panel1
             // 
@@ -590,6 +596,7 @@ namespace Ruby_Hospital
             this.infogrid.BackgroundColor = System.Drawing.Color.White;
             this.infogrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.infogrid.Name = "infogrid";
+            this.infogrid.ReadOnly = true;
             // 
             // button7
             // 
@@ -622,12 +629,6 @@ namespace Ruby_Hospital
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.TabStop = false;
             // 
-            // label27
-            // 
-            resources.ApplyResources(this.label27, "label27");
-            this.label27.ForeColor = System.Drawing.Color.Red;
-            this.label27.Name = "label27";
-            // 
             // label28
             // 
             resources.ApplyResources(this.label28, "label28");
@@ -649,6 +650,8 @@ namespace Ruby_Hospital
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.comboBox2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Fill_IPD_Billing";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Fill_IPD_Billing_Load);

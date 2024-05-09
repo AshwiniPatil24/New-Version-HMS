@@ -70,12 +70,12 @@ namespace Ruby_Hospital
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Century Schoolbook", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(183, 15, 183, 281);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(319, 44);
+            this.label1.Size = new System.Drawing.Size(270, 34);
             this.label1.TabIndex = 2;
             this.label1.Text = "Old OPD Receipt";
             // 
@@ -93,17 +93,17 @@ namespace Ruby_Hospital
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.dataGridView1);
-            this.panel1.Location = new System.Drawing.Point(120, 221);
+            this.panel1.Location = new System.Drawing.Point(12, 232);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1360, 459);
+            this.panel1.Size = new System.Drawing.Size(1346, 459);
             this.panel1.TabIndex = 21;
             // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1360, 459);
@@ -114,16 +114,16 @@ namespace Ruby_Hospital
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(679, 82);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(249, 40);
+            this.comboBox1.Size = new System.Drawing.Size(249, 32);
             this.comboBox1.TabIndex = 23;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Century Schoolbook", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(563, 85);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(143, 33);
+            this.label2.Size = new System.Drawing.Size(111, 25);
             this.label2.TabIndex = 22;
             this.label2.Text = "Search By";
             // 
@@ -131,26 +131,26 @@ namespace Ruby_Hospital
             // 
             this.textBox1.Location = new System.Drawing.Point(679, 120);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(249, 40);
+            this.textBox1.Size = new System.Drawing.Size(249, 33);
             this.textBox1.TabIndex = 24;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Century Schoolbook", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(547, 129);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(163, 33);
+            this.label3.Size = new System.Drawing.Size(128, 25);
             this.label3.TabIndex = 25;
             this.label3.Text = "Enter value";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Century Schoolbook", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(606, 174);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 33);
+            this.label4.Size = new System.Drawing.Size(65, 25);
             this.label4.TabIndex = 26;
             this.label4.Text = "From";
             // 
@@ -158,7 +158,7 @@ namespace Ruby_Hospital
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(679, 168);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(223, 40);
+            this.dateTimePicker1.Size = new System.Drawing.Size(223, 33);
             this.dateTimePicker1.TabIndex = 27;
             // 
             // label5
@@ -167,7 +167,7 @@ namespace Ruby_Hospital
             this.label5.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(911, 174);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 33);
+            this.label5.Size = new System.Drawing.Size(32, 24);
             this.label5.TabIndex = 28;
             this.label5.Text = "To";
             // 
@@ -175,7 +175,7 @@ namespace Ruby_Hospital
             // 
             this.dateTimePicker2.Location = new System.Drawing.Point(950, 168);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(223, 40);
+            this.dateTimePicker2.Size = new System.Drawing.Size(223, 33);
             this.dateTimePicker2.TabIndex = 29;
             // 
             // pictureBox1
@@ -193,9 +193,9 @@ namespace Ruby_Hospital
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Century Schoolbook", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(694, 724);
+            this.button2.Location = new System.Drawing.Point(709, 697);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(193, 40);
             this.button2.TabIndex = 44;
@@ -204,7 +204,7 @@ namespace Ruby_Hospital
             // 
             // Old_OPD_Receipt
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 32F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.button2);
@@ -222,6 +222,7 @@ namespace Ruby_Hospital
             this.Controls.Add(this.pictureBox2);
             this.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6);
+            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Old_OPD_Receipt";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
