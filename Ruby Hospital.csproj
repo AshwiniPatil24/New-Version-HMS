@@ -325,9 +325,6 @@
       <DependentUpon>rptIPDPrescription.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="IPDReport\rptMJPJAYConsentfrom11.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="IPDReport\rptMJPJAYConsentfrom111.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -1507,6 +1504,7 @@
     <Content Include="bin\Debug\Ruby Hospital.pdb" />
     <Content Include="bin\Debug\ShockwaveFlashObjects.dll" />
     <Content Include="bin\Debug\stdole.dll" />
+    <None Include="Resources\1000_F_99981420_H1Jwa8KzJvS1VvgmGcj0JH8xQ3E4iBeq.jpg" />
     <None Include="Resources\user.png" />
   </ItemGroup>
   <ItemGroup>

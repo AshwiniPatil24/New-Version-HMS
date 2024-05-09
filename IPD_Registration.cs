@@ -30,7 +30,7 @@ namespace Ruby_Hospital
         public string MJPJAY ;
         public int MjpjayIPD;
         public int Mpatient_id;
-        
+        public int ISloaded=0;
 
        public IPD_Registration()
         {
@@ -115,7 +115,8 @@ where Ruby_Jamner123.IPD_Registration.IPDID=@IPDID", connection1);
                 BindRoomsegment();
                 BindbedNo();
                 cmbTypeOfAddmission.SelectedIndex = 0;
-                 
+                FetchDoctor();
+                Referred_Doctor();
                 groupBox2.Visible = true;
             }
             else
@@ -574,28 +575,34 @@ where Ruby_Jamner123.IPD_Registration.IPDID=@IPDID", connection1);
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            connection1.Open();
-            SqlCommand cmd = new SqlCommand(@" Update IPD_Registration set Date_Of_Admission=@Date_Of_Admission,Room_Segment=@Room_Segment,Bed_No=@Bed_No,Mediclaim=@Mediclaim,ConsultantID=@ConsultantID,Reserred_By=@Reserred_By where IPDID=@IPDID", connection1);
-            cmd.Parameters.AddWithValue("@IPDID", MjpjayIPD);
-            cmd.Parameters.AddWithValue("@Date_Of_Admission", dateTimePicker1.Text);
-            cmd.Parameters.AddWithValue("@Room_Segment", cmbRoomSegment.Text);
-            cmd.Parameters.AddWithValue("@Bed_No", cmb_BedNo.Text);
-            cmd.Parameters.AddWithValue("@Mediclaim", cmbMediclaim.Text);
-            cmd.Parameters.AddWithValue("@ConsultantID", cmbConsultant.Text);
-            cmd.Parameters.AddWithValue("@Reserred_By", cmbReferredBy.Text);
-            cmd.ExecuteNonQuery();
-            MessageBox.Show("Record Updated Successfully");
-            frmMJPJAYPatientRegistration mjpjay = new frmMJPJAYPatientRegistration(Mpatient_id,MjpjayIPD);
-            mjpjay.Show();
+            if (ISloaded == 1)
+            {
 
+                connection1.Open();
+                SqlCommand cmd = new SqlCommand(@" Update IPD_Registration set Date_Of_Admission=@Date_Of_Admission,Room_Segment=@Room_Segment,Bed_No=@Bed_No,Mediclaim=@Mediclaim,ConsultantID=@ConsultantID,Reserred_By=@Reserred_By where IPDID=@IPDID", connection1);
+                cmd.Parameters.AddWithValue("@IPDID", MjpjayIPD);
+                cmd.Parameters.AddWithValue("@Date_Of_Admission", dateTimePicker1.Text);
+                cmd.Parameters.AddWithValue("@Room_Segment", cmbRoomSegment.Text);
+                cmd.Parameters.AddWithValue("@Bed_No", cmb_BedNo.Text);
+                cmd.Parameters.AddWithValue("@Mediclaim", cmbMediclaim.Text);
+                cmd.Parameters.AddWithValue("@ConsultantID", cmbConsultant.Text);
+                cmd.Parameters.AddWithValue("@Reserred_By", cmbReferredBy.Text);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Record Updated Successfully");
+                frmMJPJAYPatientRegistration mjpjay = new frmMJPJAYPatientRegistration(Mpatient_id, MjpjayIPD);
+                mjpjay.Show();
+            }
+            else
+            {
+                MessageBox.Show("Please click first MJPJAY");
+            }
 
         }
 
         private void btnMJPJAY_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Patient added to MYPYAY.Please select below details.");
-            //MJPJAY = "YES";
-            ///IPD_Registration_Load(sender, e);
+            ISloaded = 1;
         }
     }
 }

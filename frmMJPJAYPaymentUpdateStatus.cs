@@ -113,26 +113,26 @@ namespace Ruby_Hospital
             try
             {
                 connection1.Open();
-                   SqlCommand cmd = new SqlCommand(@"UPDATE MJPJAY_PatientDetailsnew  SET IPDID=@IPDID,PackageAmount=@PackageAmount,Doctor_Check=@Doctor_Check, Due_Amount=@Due_Amount, Partial_Amount=@Partial_Amount,Received=@Received,Partial=@Partial WHERE MJPJAY_NO=@MJPJAY_NO", connection1);
-                cmd.Parameters.AddWithValue(@"IPDID", PublicIPDID);
+                   SqlCommand cmd = new SqlCommand(@"UPDATE MJPJAY_PatientDetailsnew  SET Received=@Received WHERE MJPJAY_NO=@MJPJAY_NO", connection1);
+                
                 cmd.Parameters.AddWithValue(@"MJPJAY_NO", PatientMJPJAYID_Public1);
-                cmd.Parameters.AddWithValue(@"PackageAmount", PublicPackageAmount);
-                cmd.Parameters.AddWithValue(@"Doctor_Check", publicDoctor_Check);
-                cmd.Parameters.AddWithValue(@"Due_Amount", publicDue_Amount);
-                cmd.Parameters.AddWithValue(@"Partial_Amount", Convert.ToDecimal(txtpartial.Text));
-                if (chbReceived.CheckState == CheckState.Checked)
+                
+                if (chbReceived.Checked == true)
+                {
                     cmd.Parameters.AddWithValue(@"Received", 1);
+                }                   
                 else
+                {
                     cmd.Parameters.AddWithValue(@"Received", 0);
-
-                if (chbPartial.CheckState == CheckState.Checked)
-                    cmd.Parameters.AddWithValue(@"Partial", 1);
-                else
-                    cmd.Parameters.AddWithValue(@"Partial", 0);
+                }
+               
+                    
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Status Updated Successfully...");
                 connection1.Close();
-                this.Close();
+               this.Close();
+
+
             }
             catch (Exception ex)
             {

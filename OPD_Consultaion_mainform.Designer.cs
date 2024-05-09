@@ -142,6 +142,7 @@ namespace Ruby_Hospital
             this.dataGridViewImageColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn5 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn6 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.chkRecord = new System.Windows.Forms.CheckBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -301,6 +302,7 @@ namespace Ruby_Hospital
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(168)))), ((int)(((byte)(168)))));
             this.panel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel5.BackgroundImage")));
+            this.panel5.Controls.Add(this.chkRecord);
             this.panel5.Controls.Add(this.label16);
             this.panel5.Controls.Add(this.label17);
             this.panel5.Controls.Add(this.label14);
@@ -322,7 +324,7 @@ namespace Ruby_Hospital
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(151, 330);
+            this.label16.Location = new System.Drawing.Point(167, 330);
             this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(54, 25);
@@ -450,9 +452,9 @@ namespace Ruby_Hospital
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(464, 352);
+            this.button5.Location = new System.Drawing.Point(488, 353);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(148, 35);
+            this.button5.Size = new System.Drawing.Size(124, 35);
             this.button5.TabIndex = 32;
             this.button5.Text = "Save";
             this.button5.UseVisualStyleBackColor = false;
@@ -1439,6 +1441,19 @@ namespace Ruby_Hospital
             this.dataGridViewImageColumn6.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewImageColumn6.Width = 75;
             // 
+            // chkRecord
+            // 
+            this.chkRecord.AutoSize = true;
+            this.chkRecord.BackColor = System.Drawing.Color.Transparent;
+            this.chkRecord.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkRecord.Location = new System.Drawing.Point(1018, 356);
+            this.chkRecord.Name = "chkRecord";
+            this.chkRecord.Size = new System.Drawing.Size(165, 29);
+            this.chkRecord.TabIndex = 100;
+            this.chkRecord.Text = "Record Close";
+            this.chkRecord.UseVisualStyleBackColor = false;
+            this.chkRecord.CheckedChanged += new System.EventHandler(this.chkRecord_CheckedChanged);
+            // 
             // OPD_Consultaion_mainform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
@@ -1586,6 +1601,7 @@ namespace Ruby_Hospital
         private System.Windows.Forms.DataGridViewImageColumn btnDelete;
         private System.Windows.Forms.DataGridViewImageColumn BtnlDelete;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn6;
+        private System.Windows.Forms.CheckBox chkRecord;
     }
 }
 

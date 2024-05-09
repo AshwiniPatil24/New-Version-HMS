@@ -48,9 +48,10 @@ namespace Ruby_Hospital
                 if (Convert.ToString(dt1.Rows[0]["Registration"]) == "Active")
                 {
                     Isload = 1;
-
+                   
+                    btn_regi_slid.Visible = true;
                     Registration.Visible = true;
-                    panel_Regi_down.Visible = true;
+                    panel_Regi_down.Visible = false;
                     btn_ipdregi_slid.Visible = false;
                     btn_regi_Printform_slid.Visible = false;
                     Panel_admin_master_.Visible = false;
@@ -68,10 +69,7 @@ namespace Ruby_Hospital
                     Admin.Visible = false;
                     Report.Visible = false;
                 }
-                else
-                {
-
-                }
+               
 
                 if (Convert.ToString(dt1.Rows[0]["DoctorDashboard"]) == "Active")
                 {
@@ -95,10 +93,7 @@ namespace Ruby_Hospital
                     Admin.Visible = false;
                     Report.Visible = false;
                 }
-                else
-                {
-
-                }
+                
 
                 if (Convert.ToString(dt1.Rows[0]["PatientTransfur"]) == "Active")
                 {
@@ -404,7 +399,7 @@ namespace Ruby_Hospital
                 {
 
                 }
-
+               
             }
             connection.Close();
 

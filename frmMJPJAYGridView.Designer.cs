@@ -188,6 +188,7 @@
             this.Controls.Add(this.txtpatientsearch);
             this.Controls.Add(this.label2);
             this.Name = "frmMJPJAYGridView";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMJPJAYGridView";
             this.Load += new System.EventHandler(this.frmMJPJAYGridView_Load);
             this.panel2.ResumeLayout(false);
