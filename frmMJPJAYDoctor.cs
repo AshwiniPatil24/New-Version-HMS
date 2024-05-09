@@ -500,8 +500,8 @@ WHERE        (Ruby_Jamner123.IPD_Registration.IPDID = @IPDID)", connection1);
 
                             cmd.Parameters.AddWithValue(@"Due_Amount", Due_Amount);
                             cmd.Parameters.AddWithValue(@"Partial_Amount", Partial_Amount);
-                            cmd.Parameters.AddWithValue(@"Received", Partial_Amount);
-                            cmd.Parameters.AddWithValue(@"Partial", Partial_Amount);
+                            cmd.Parameters.AddWithValue(@"Received", Received);
+                            cmd.Parameters.AddWithValue(@"Partial", Partial);
                             cmd.Parameters.AddWithValue(@"Remark", txtRemark.Text);
                             
                             cmd.ExecuteNonQuery();

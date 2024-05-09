@@ -148,6 +148,7 @@ namespace Ruby_Hospital
                     paidAmount.Enabled = true;
                     discount.Enabled = true;
                     discAuthorityName.Enabled = true;
+                    //btnDetail.Enabled = true;
                 }
 
             }

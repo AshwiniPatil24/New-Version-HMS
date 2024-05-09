@@ -73,7 +73,7 @@ namespace Ruby_Hospital
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(183, 15, 183, 281);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 44);
+            this.label1.Size = new System.Drawing.Size(116, 36);
             this.label1.TabIndex = 2;
             this.label1.Text = "Lab List";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -107,7 +107,7 @@ namespace Ruby_Hospital
             // 
             this.textBox1.Location = new System.Drawing.Point(626, 165);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(347, 37);
+            this.textBox1.Size = new System.Drawing.Size(347, 31);
             this.textBox1.TabIndex = 35;
             // 
             // comboBox1
@@ -115,7 +115,7 @@ namespace Ruby_Hospital
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(462, 165);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(158, 38);
+            this.comboBox1.Size = new System.Drawing.Size(158, 30);
             this.comboBox1.TabIndex = 34;
             // 
             // label2
@@ -124,7 +124,7 @@ namespace Ruby_Hospital
             this.label2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(329, 165);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(161, 37);
+            this.label2.Size = new System.Drawing.Size(127, 28);
             this.label2.TabIndex = 33;
             this.label2.Text = "Search By";
             // 
@@ -171,7 +171,7 @@ namespace Ruby_Hospital
             // 
             // Lab__List
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 30F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.panel2);

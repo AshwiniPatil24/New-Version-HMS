@@ -116,7 +116,7 @@ WHERE        (Ruby_Jamner123.OPD_Patient_Registration.PatientOPDId=@OPDID)", con
                 cmd.Parameters.AddWithValue("@labTestID", Public_LabTestID);
                 cmd.Parameters.AddWithValue("@LabTest", comboBox2.Text);
                 cmd.Parameters.AddWithValue("@Charges", Public_HospCharge);
-                cmd.Parameters.AddWithValue("@TestDate", dtpLabtestDate.Text);          
+                cmd.Parameters.AddWithValue("@TestDate", System.DateTime.Now);          
                 cmd.ExecuteNonQuery();
                 OTLabTotalAmount = Convert.ToDecimal(lblabTotalAmount.Text) + Convert.ToDecimal(Public_HospCharge.ToString());
                 if (OTLabTotalAmount >= 0)

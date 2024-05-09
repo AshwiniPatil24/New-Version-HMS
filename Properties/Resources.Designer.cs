@@ -73,6 +73,16 @@ namespace Ruby_Hospital.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1000_F_99981420_H1Jwa8KzJvS1VvgmGcj0JH8xQ3E4iBeq {
+            get {
+                object obj = ResourceManager.GetObject("1000_F_99981420_H1Jwa8KzJvS1VvgmGcj0JH8xQ3E4iBeq", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _264294910_108862081637008_8238947895213189007_n {
             get {
                 object obj = ResourceManager.GetObject("264294910_108862081637008_8238947895213189007_n", resourceCulture);
