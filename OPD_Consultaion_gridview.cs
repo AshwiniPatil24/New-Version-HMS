@@ -61,8 +61,8 @@ namespace Ruby_Hospital
             SqlConnection con = new SqlConnection(@"Data Source=208.91.198.196;User ID=Ruby_Jamner123;Password=ruby@jamner");
             con.Open();
             //SqlCommand cmb = new SqlCommand(@"Select Patient_ID,Name,Mobile_Number,Doctors_Name,Referred_By,Address FROM Patient_Registration Where Purpose='OPD'", con);
-            SqlCommand cmd = new SqlCommand(@"SELECT OPD_Patient_Registration.PatientOPDIdWithSr,Patient_Registration.Name, Patient_Registration.Mobile_Number, Patient_Registration.Doctors_Name, Patient_Registration.Referred_By,OPD_Patient_Registration.PatientOPDId
-                      FROM Patient_Registration INNER JOIN OPD_Patient_Registration ON Patient_Registration.PID = OPD_Patient_Registration.PatientId where IsCheck = 0", con);
+            SqlCommand cmd = new SqlCommand(@"SELECT OPD_Patient_Registration.PatientOPDIdWithSr,Patient_Registration.Name, Patient_Registration.Mobile_Number, Patient_Registration.Doctors_Name, Patient_Registration.Referred_By,OPD_Patient_Registration.PatientOPDId,Patient_Registration.Purpose
+FROM Patient_Registration INNER JOIN OPD_Patient_Registration ON Patient_Registration.PID = OPD_Patient_Registration.PatientId where IsCheck = 0 and Patient_Registration.Purpose='OPD' AND CAST(OPD_Patient_Registration.VisitDate AS DATE) = CAST(GETDATE() AS DATE)", con);
             SqlDataAdapter adt = new SqlDataAdapter(cmd);
             DataTable o = new DataTable();
             adt.Fill(o);
@@ -125,6 +125,11 @@ namespace Ruby_Hospital
             {
                 MessageBox.Show(ex.ToString());
             }
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            show();
         }
     }
 }

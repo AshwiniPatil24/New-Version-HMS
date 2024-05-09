@@ -734,7 +734,16 @@ namespace Ruby_Hospital
             cmd.Parameters.AddWithValue("@XRay", "0");
             cmd.Parameters.AddWithValue("@OPDSurgicalProcedureID", "1");
             cmd.Parameters.AddWithValue("@VisitDate", System.DateTime.Now);
-            cmd.Parameters.AddWithValue("@IsCheck", "0");
+            //isCHECK CODE WRITE HERE.....
+            if(chkRecord.Checked==true)
+            {
+                cmd.Parameters.AddWithValue("@IsCheck", "1");
+            }
+            else
+            {
+                cmd.Parameters.AddWithValue("@IsCheck", "0");
+            }
+            
             cmd.Parameters.AddWithValue("@FollowUpDate", System.DateTime.Now);
             cmd.ExecuteNonQuery();
             //MessageBox.Show("Record Added Successfully");
@@ -795,7 +804,7 @@ namespace Ruby_Hospital
             {
                 MessageBox.Show(ex.ToString());
             }
-            opdprocedurerpt();
+            //opdprocedurerpt();
         }
         public void opdprocedurerpt()
         {
@@ -1006,7 +1015,7 @@ namespace Ruby_Hospital
                         global_OPDAmounRadiology_data();
                     }
                 }
-                opdtestrpt();
+                //opdtestrpt();
             }
             catch (Exception ex)
             {
@@ -1139,7 +1148,7 @@ namespace Ruby_Hospital
             {
                 MessageBox.Show(ex.ToString());
             }
-            labtestrpt();
+           // labtestrpt();
         }
         public void labtestrpt()
         {
@@ -1608,6 +1617,18 @@ namespace Ruby_Hospital
                 dataGridView9.AllowUserToResizeRows = false;
                 dataGridView9.AllowUserToResizeColumns = false;
             }
+        }
+
+        private void chkRecord_CheckedChanged(object sender, EventArgs e)
+        {
+            button5.Enabled = true;
+            button5.BackColor = Color.DarkGreen;
+
+        }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

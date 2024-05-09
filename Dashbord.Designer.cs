@@ -502,7 +502,7 @@ namespace Ruby_Hospital
             this.btn_regi_slid.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_regi_slid.ForeColor = System.Drawing.Color.White;
             this.btn_regi_slid.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_regi_slid.Location = new System.Drawing.Point(1, 1);
+            this.btn_regi_slid.Location = new System.Drawing.Point(-4, -2);
             this.btn_regi_slid.Name = "btn_regi_slid";
             this.btn_regi_slid.Size = new System.Drawing.Size(168, 47);
             this.btn_regi_slid.TabIndex = 0;

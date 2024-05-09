@@ -73,7 +73,7 @@ namespace Ruby_Hospital
 
         private void frmMJPJAYPaymentDetails_Load(object sender, EventArgs e)
         {
-            btnRefresh.Visible = false;
+            //btnRefresh.Visible = false;
             int w = Screen.PrimaryScreen.Bounds.Width;
             int h = Screen.PrimaryScreen.Bounds.Height;
             this.Location = new Point(0, 0);
@@ -157,7 +157,7 @@ namespace Ruby_Hospital
                     PatientMJPJAYID_Public = Convert.ToInt32(DVGMJPJAYPyment.CurrentRow.Cells["MJPJAY_NO"].Value);
                     frmMJPJAYPaymentUpdateStatus o = new frmMJPJAYPaymentUpdateStatus(PatientMJPJAYID_Public);
                     o.Show();
-
+                    //this.Close();
 
                 }
                 //this.Load(object sender, EventArgs e);
@@ -211,15 +211,51 @@ namespace Ruby_Hospital
                     }
                 }
                 MessageBox.Show("Record Save Successfully...");
-                btnRefresh.Visible = true;
+                //btnRefresh.Visible = true;
             }
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
-            frmMJPJAYPaymentDetails_Load(sender, e);
-            //frmMJPJAYPaymentDetails o = new frmMJPJAYPaymentDetails();
-            //o.Show();
+            connection1.Open();
+            SqlCommand cmd = new SqlCommand(@"select * from MJPJAY_PatientDetailsnew where  Doctor_Check=1 AND Received=0", connection1);
+            SqlDataAdapter sd = new SqlDataAdapter(cmd);
+            DataTable dtMJPJAY_Details1 = new DataTable();
+            sd.Fill(dtMJPJAY_Details1);
+            DVGMJPJAYPyment.DataSource = dtMJPJAY_Details1;
+            if (DVGMJPJAYPyment.RowCount > 0)
+            {
+                PatientIPDId_Public = Convert.ToInt32(dtMJPJAY_Details1.Rows[0]["IPDID"]);
+                PatientMJPJAY_Public = Convert.ToString(dtMJPJAY_Details1.Rows[0]["MJPJAY_NO"]);
+                PatientMJPJAYID_Public = Convert.ToInt32(dtMJPJAY_Details1.Rows[0]["MJPJAY_ID"]);
+                DVGMJPJAYPyment.Columns["Date"].Visible = false;
+                DVGMJPJAYPyment.Columns["MJPJAY_MainCategory"].Visible = false;
+                DVGMJPJAYPyment.Columns["MJPJAY_SubCategory"].Visible = false;
+                DVGMJPJAYPyment.Columns["MJPJAY_Surgery"].HeaderText = "MJPJAY Surgery Name";
+                DVGMJPJAYPyment.Columns["Surgery_Date"].HeaderText = "Surgery Date";
+                DVGMJPJAYPyment.Columns["Doctor_Check"].Visible = false;
+                DVGMJPJAYPyment.Columns["MJPJAY_ID"].Visible = false;
+                DVGMJPJAYPyment.Columns["Received"].Visible = false;
+                DVGMJPJAYPyment.Columns["Partial"].Visible = false;
+                DVGMJPJAYPyment.Columns["Partial_Amount"].Visible = false;
+                DVGMJPJAYPyment.Columns["Remark"].HeaderText = "    Add Remark     ";
+                DVGMJPJAYPyment.Columns["Anaesthesia"].Visible = false;
+                DVGMJPJAYPyment.Columns["SurgeonID1"].Visible = false;
+                DVGMJPJAYPyment.Columns["SurgeonID2"].Visible = false;
+                DVGMJPJAYPyment.Columns["AssistantID1"].Visible = false;
+                DVGMJPJAYPyment.Columns["AssistantID2"].Visible = false;
+                DVGMJPJAYPyment.Columns[1].ReadOnly = true;
+                DVGMJPJAYPyment.Columns[2].ReadOnly = true;
+                DVGMJPJAYPyment.Columns[3].ReadOnly = true;
+                DVGMJPJAYPyment.Columns[4].ReadOnly = true;
+                DVGMJPJAYPyment.Columns[5].ReadOnly = true;
+                DVGMJPJAYPyment.Columns[6].ReadOnly = true;
+                DVGMJPJAYPyment.Columns[7].ReadOnly = true;
+                DVGMJPJAYPyment.Columns[8].ReadOnly = true;
+                DVGMJPJAYPyment.Columns[9].ReadOnly = true;
+                DVGMJPJAYPyment.Columns[10].ReadOnly = true;
+            }
+            connection1.Close();
         }
 
         private void lblFillOPD_Click(object sender, EventArgs e)
