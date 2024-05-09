@@ -55,17 +55,15 @@ namespace Ruby_Hospital
             // 
             // panel1
             // 
-            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.Controls.Add(this.tabControl1);
             this.panel1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(12, 119);
             this.panel1.Name = "panel1";
-
             this.panel1.Size = new System.Drawing.Size(1198, 478);
-
-           
-
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -81,11 +79,7 @@ namespace Ruby_Hospital
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(150, 15);
             this.tabControl1.SelectedIndex = 0;
-
             this.tabControl1.Size = new System.Drawing.Size(1090, 441);
-
-          
-
             this.tabControl1.TabIndex = 1;
             // 
             // Lab_Billing
@@ -95,9 +89,7 @@ namespace Ruby_Hospital
             this.Lab_Billing.Location = new System.Drawing.Point(4, 56);
             this.Lab_Billing.Name = "Lab_Billing";
             this.Lab_Billing.Padding = new System.Windows.Forms.Padding(3);
-
             this.Lab_Billing.Size = new System.Drawing.Size(1082, 381);
-
             this.Lab_Billing.TabIndex = 0;
             this.Lab_Billing.Text = "   Lab Billing    ";
             this.Lab_Billing.UseVisualStyleBackColor = true;
@@ -111,9 +103,7 @@ namespace Ruby_Hospital
             this.labbilling.Location = new System.Drawing.Point(3, 3);
             this.labbilling.Name = "labbilling";
             this.labbilling.RowHeadersWidth = 45;
-
             this.labbilling.Size = new System.Drawing.Size(1076, 375);
-
             this.labbilling.TabIndex = 1;
             this.labbilling.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.labbilling_CellClick);
             this.labbilling.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.labbilling_CellContentClick);
@@ -125,9 +115,7 @@ namespace Ruby_Hospital
             this.Radiology_billing.Location = new System.Drawing.Point(4, 56);
             this.Radiology_billing.Name = "Radiology_billing";
             this.Radiology_billing.Padding = new System.Windows.Forms.Padding(3);
-
             this.Radiology_billing.Size = new System.Drawing.Size(1082, 381);
-
             this.Radiology_billing.TabIndex = 1;
             this.Radiology_billing.Text = "Radiology Billing";
             this.Radiology_billing.UseVisualStyleBackColor = true;
@@ -148,10 +136,8 @@ namespace Ruby_Hospital
             this.radiologybilling.Dock = System.Windows.Forms.DockStyle.Fill;
             this.radiologybilling.Location = new System.Drawing.Point(3, 3);
             this.radiologybilling.Name = "radiologybilling";
-
             this.radiologybilling.ReadOnly = true;
             this.radiologybilling.Size = new System.Drawing.Size(1076, 375);
-
             this.radiologybilling.TabIndex = 0;
             this.radiologybilling.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.radiologybilling_CellClick);
             // 
@@ -159,9 +145,7 @@ namespace Ruby_Hospital
             // 
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.Image = global::Ruby_Hospital.Properties.Resources._264294910_108862081637008_8238947895213189007_n_removebg_preview;
-
             this.pictureBox2.Location = new System.Drawing.Point(1377, 10);
-
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(168, 82);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -170,21 +154,19 @@ namespace Ruby_Hospital
             // 
             // pictureBox7
             // 
-            this.pictureBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
             this.pictureBox7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-
             this.pictureBox7.Location = new System.Drawing.Point(12, 56);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(1198, 57);
-
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 82;
             this.pictureBox7.TabStop = false;
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(7, 9);
@@ -193,7 +175,6 @@ namespace Ruby_Hospital
             this.label1.TabIndex = 83;
             this.label1.Text = "Lab and Radiology ";
             // 
-
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Teal;
@@ -219,17 +200,14 @@ namespace Ruby_Hospital
             this.label2.Size = new System.Drawing.Size(345, 34);
             this.label2.TabIndex = 2;
             this.label2.Text = "Lab and Radiology Bill";
-
             // 
             // Lab_And_Radiology_Billing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-
             this.ClientSize = new System.Drawing.Size(1222, 609);
             this.Controls.Add(this.panel2);
-
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
