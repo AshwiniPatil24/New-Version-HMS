@@ -73,7 +73,7 @@ namespace Ruby_Hospital
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(183, 15, 183, 281);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 44);
+            this.label1.Size = new System.Drawing.Size(116, 36);
             this.label1.TabIndex = 2;
             this.label1.Text = "Lab List";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -92,9 +92,7 @@ namespace Ruby_Hospital
             // OPDdatagridview
             // 
             this.OPDdatagridview.AllowUserToAddRows = false;
-            this.OPDdatagridview.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.OPDdatagridview.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.OPDdatagridview.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.OPDdatagridview.BackgroundColor = System.Drawing.Color.White;
             this.OPDdatagridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -107,7 +105,7 @@ namespace Ruby_Hospital
             // 
             this.textBox1.Location = new System.Drawing.Point(626, 165);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(347, 37);
+            this.textBox1.Size = new System.Drawing.Size(347, 31);
             this.textBox1.TabIndex = 35;
             // 
             // comboBox1
@@ -115,7 +113,7 @@ namespace Ruby_Hospital
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(462, 165);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(158, 38);
+            this.comboBox1.Size = new System.Drawing.Size(158, 30);
             this.comboBox1.TabIndex = 34;
             // 
             // label2
@@ -124,7 +122,7 @@ namespace Ruby_Hospital
             this.label2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(329, 165);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(161, 37);
+            this.label2.Size = new System.Drawing.Size(127, 28);
             this.label2.TabIndex = 33;
             this.label2.Text = "Search By";
             // 
@@ -152,9 +150,9 @@ namespace Ruby_Hospital
             // 
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.Image = global::Ruby_Hospital.Properties.Resources._264294910_108862081637008_8238947895213189007_n_removebg_preview;
-            this.pictureBox2.Location = new System.Drawing.Point(1203, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(1185, 41);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(185, 114);
+            this.pictureBox2.Size = new System.Drawing.Size(185, 97);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 32;
             this.pictureBox2.TabStop = false;
@@ -171,7 +169,7 @@ namespace Ruby_Hospital
             // 
             // Lab__List
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 30F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.panel2);
@@ -185,6 +183,8 @@ namespace Ruby_Hospital
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Century Gothic", 14.25F);
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Lab__List";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lab__List";

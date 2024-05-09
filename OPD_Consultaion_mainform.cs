@@ -60,6 +60,8 @@ namespace Ruby_Hospital
         public OPD_Consultaion_mainform()
         {
             InitializeComponent();
+            this.AutoSize = true;
+            this.WindowState = FormWindowState.Maximized;
         }
         public OPD_Consultaion_mainform(int OPDId)
         {

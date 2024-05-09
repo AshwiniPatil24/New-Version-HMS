@@ -55,6 +55,8 @@ namespace Ruby_Hospital
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.btnDelete = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel_head.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -79,27 +81,28 @@ namespace Ruby_Hospital
             // 
             this.label10.AutoSize = true;
             this.label10.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Century Schoolbook", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(0, 0);
             this.label10.Margin = new System.Windows.Forms.Padding(50, 5, 50, 90);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(504, 44);
+            this.label10.Size = new System.Drawing.Size(452, 34);
             this.label10.TabIndex = 2;
             this.label10.Text = "Referral Doctor Registration\r\n";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(529, 71);
+            this.label2.Font = new System.Drawing.Font("Century Schoolbook", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(251, 71);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(232, 28);
+            this.label2.Size = new System.Drawing.Size(205, 23);
             this.label2.TabIndex = 76;
             this.label2.Text = "Search Referred By";
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(168)))), ((int)(((byte)(168)))));
             this.groupBox1.Controls.Add(this.chbactive);
             this.groupBox1.Controls.Add(this.txtdrrgeaddress);
@@ -112,9 +115,10 @@ namespace Ruby_Hospital
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(317, 332);
+            this.groupBox1.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(51, 318);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1007, 321);
+            this.groupBox1.Size = new System.Drawing.Size(1282, 321);
             this.groupBox1.TabIndex = 80;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Basic Information";
@@ -123,16 +127,17 @@ namespace Ruby_Hospital
             // 
             this.chbactive.AutoSize = true;
             this.chbactive.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chbactive.Location = new System.Drawing.Point(385, 284);
+            this.chbactive.Location = new System.Drawing.Point(505, 289);
             this.chbactive.Name = "chbactive";
-            this.chbactive.Size = new System.Drawing.Size(18, 17);
+            this.chbactive.Size = new System.Drawing.Size(15, 14);
             this.chbactive.TabIndex = 85;
             this.chbactive.UseVisualStyleBackColor = true;
             // 
             // txtdrrgeaddress
             // 
+            this.txtdrrgeaddress.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtdrrgeaddress.ForeColor = System.Drawing.Color.Gray;
-            this.txtdrrgeaddress.Location = new System.Drawing.Point(383, 209);
+            this.txtdrrgeaddress.Location = new System.Drawing.Point(503, 214);
             this.txtdrrgeaddress.MaxLength = 50;
             this.txtdrrgeaddress.Multiline = true;
             this.txtdrrgeaddress.Name = "txtdrrgeaddress";
@@ -145,8 +150,9 @@ namespace Ruby_Hospital
             // 
             // txtdrremobileno
             // 
+            this.txtdrremobileno.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtdrremobileno.ForeColor = System.Drawing.Color.Gray;
-            this.txtdrremobileno.Location = new System.Drawing.Point(383, 157);
+            this.txtdrremobileno.Location = new System.Drawing.Point(503, 162);
             this.txtdrremobileno.MaxLength = 10;
             this.txtdrremobileno.Multiline = true;
             this.txtdrremobileno.Name = "txtdrremobileno";
@@ -161,8 +167,9 @@ namespace Ruby_Hospital
             // 
             // txtdegree
             // 
+            this.txtdegree.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtdegree.ForeColor = System.Drawing.Color.Gray;
-            this.txtdegree.Location = new System.Drawing.Point(383, 106);
+            this.txtdegree.Location = new System.Drawing.Point(503, 111);
             this.txtdegree.MaxLength = 10;
             this.txtdegree.Multiline = true;
             this.txtdegree.Name = "txtdegree";
@@ -176,8 +183,9 @@ namespace Ruby_Hospital
             // 
             // txtdrrename
             // 
+            this.txtdrrename.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtdrrename.ForeColor = System.Drawing.Color.Gray;
-            this.txtdrrename.Location = new System.Drawing.Point(383, 54);
+            this.txtdrrename.Location = new System.Drawing.Point(503, 59);
             this.txtdrrename.MaxLength = 30;
             this.txtdrrename.Multiline = true;
             this.txtdrrename.Name = "txtdrrename";
@@ -192,54 +200,60 @@ namespace Ruby_Hospital
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(332, 57);
+            this.label7.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(452, 62);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(36, 23);
+            this.label7.Size = new System.Drawing.Size(32, 20);
             this.label7.TabIndex = 2;
             this.label7.Text = "Dr.";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(271, 278);
+            this.label6.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(391, 283);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(93, 23);
+            this.label6.Size = new System.Drawing.Size(74, 20);
             this.label6.TabIndex = 1;
             this.label6.Text = "Is Active";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(282, 212);
+            this.label5.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(402, 217);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(88, 23);
+            this.label5.Size = new System.Drawing.Size(68, 20);
             this.label5.TabIndex = 1;
             this.label5.Text = "Address";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(266, 160);
+            this.label4.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(386, 165);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(109, 23);
+            this.label4.Size = new System.Drawing.Size(84, 20);
             this.label4.TabIndex = 0;
             this.label4.Text = "Mobile No";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(286, 109);
+            this.label3.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(406, 114);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 23);
+            this.label3.Size = new System.Drawing.Size(61, 20);
             this.label3.TabIndex = 1;
             this.label3.Text = "Degree";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(266, 57);
+            this.label1.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(386, 62);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 23);
+            this.label1.Size = new System.Drawing.Size(57, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Name ";
             // 
@@ -254,7 +268,7 @@ namespace Ruby_Hospital
             this.btnsave.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold);
             this.btnsave.ForeColor = System.Drawing.Color.White;
             this.btnsave.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnsave.Location = new System.Drawing.Point(751, 690);
+            this.btnsave.Location = new System.Drawing.Point(592, 690);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(131, 39);
             this.btnsave.TabIndex = 82;
@@ -292,10 +306,10 @@ namespace Ruby_Hospital
             this.txtSearchBy.Items.AddRange(new object[] {
             "Name",
             "Mobile Number"});
-            this.txtSearchBy.Location = new System.Drawing.Point(761, 71);
+            this.txtSearchBy.Location = new System.Drawing.Point(483, 71);
             this.txtSearchBy.Margin = new System.Windows.Forms.Padding(67, 6, 67, 111);
             this.txtSearchBy.Name = "txtSearchBy";
-            this.txtSearchBy.Size = new System.Drawing.Size(205, 31);
+            this.txtSearchBy.Size = new System.Drawing.Size(205, 27);
             this.txtSearchBy.TabIndex = 88;
             this.txtSearchBy.Text = "-Select Type-";
             this.txtSearchBy.SelectedIndexChanged += new System.EventHandler(this.txtSearchBy_SelectedIndexChanged);
@@ -305,12 +319,12 @@ namespace Ruby_Hospital
             this.txtSearch.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtSearch.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.txtSearch.Location = new System.Drawing.Point(976, 71);
+            this.txtSearch.Location = new System.Drawing.Point(698, 71);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(67, 6, 67, 111);
             this.txtSearch.MaxLength = 40;
             this.txtSearch.Multiline = true;
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(293, 31);
+            this.txtSearch.Size = new System.Drawing.Size(293, 27);
             this.txtSearch.TabIndex = 89;
             this.txtSearch.Text = "Enter Details";
             this.txtSearch.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtSearch_MouseClick);
@@ -322,10 +336,10 @@ namespace Ruby_Hospital
             // 
             this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox5.Image = global::Ruby_Hospital.Properties.Resources.icons8_search_50__1_1;
-            this.pictureBox5.Location = new System.Drawing.Point(1278, 71);
+            this.pictureBox5.Location = new System.Drawing.Point(1000, 71);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(39, 31);
+            this.pictureBox5.Size = new System.Drawing.Size(35, 27);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 90;
             this.pictureBox5.TabStop = false;
@@ -339,11 +353,11 @@ namespace Ruby_Hospital
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(317, 157);
+            this.dataGridView1.Location = new System.Drawing.Point(51, 159);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.Size = new System.Drawing.Size(1007, 143);
+            this.dataGridView1.Size = new System.Drawing.Size(1282, 143);
             this.dataGridView1.TabIndex = 91;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -362,7 +376,7 @@ namespace Ruby_Hospital
             this.btnDelete.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold);
             this.btnDelete.ForeColor = System.Drawing.Color.White;
             this.btnDelete.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnDelete.Location = new System.Drawing.Point(906, 690);
+            this.btnDelete.Location = new System.Drawing.Point(747, 690);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(131, 39);
             this.btnDelete.TabIndex = 92;
@@ -372,16 +386,59 @@ namespace Ruby_Hospital
             this.btnDelete.Visible = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.BackColor = System.Drawing.Color.DarkGreen;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Schoolbook", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button1.Location = new System.Drawing.Point(581, 690);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(131, 39);
+            this.button1.TabIndex = 82;
+            this.button1.Text = "Save";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.btnsave_Click);
+            // 
+            // button2
+            // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.BackColor = System.Drawing.Color.Maroon;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Century Schoolbook", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button2.Location = new System.Drawing.Point(736, 690);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(131, 39);
+            this.button2.TabIndex = 92;
+            this.button2.Text = "Delete";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Visible = false;
+            this.button2.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
             // Referred_doctor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.txtSearchBy);
             this.Controls.Add(this.txtSearch);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnsave);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label2);
@@ -391,6 +448,7 @@ namespace Ruby_Hospital
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Referred_doctor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Referred_doctor";
@@ -436,5 +494,7 @@ namespace Ruby_Hospital
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }

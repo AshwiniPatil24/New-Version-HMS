@@ -55,8 +55,9 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1370, 50);
+            this.panel2.Size = new System.Drawing.Size(1247, 41);
             this.panel2.TabIndex = 72;
             // 
             // label1
@@ -64,12 +65,12 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Century Schoolbook", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(50, 5, 50, 90);
+            this.label1.Margin = new System.Windows.Forms.Padding(38, 4, 38, 73);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(520, 44);
+            this.label1.Size = new System.Drawing.Size(451, 34);
             this.label1.TabIndex = 2;
             this.label1.Text = "IPD Old Discharge Summary";
             // 
@@ -77,44 +78,45 @@
             // 
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(439, 160);
-            this.label9.Margin = new System.Windows.Forms.Padding(50, 5, 50, 90);
+            this.label9.Font = new System.Drawing.Font("Century Schoolbook", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(356, 130);
+            this.label9.Margin = new System.Windows.Forms.Padding(38, 4, 38, 73);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(207, 28);
+            this.label9.Size = new System.Drawing.Size(158, 23);
             this.label9.TabIndex = 74;
-            this.label9.Text = "Seach Employee";
+            this.label9.Text = "Serach Patient";
             // 
             // comboBox1
             // 
             this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(660, 156);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(50, 5, 50, 90);
+            this.comboBox1.Location = new System.Drawing.Point(538, 127);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(38, 4, 38, 73);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(158, 31);
+            this.comboBox1.Size = new System.Drawing.Size(120, 29);
             this.comboBox1.TabIndex = 73;
             // 
             // textBox1
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(831, 156);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(50, 5, 50, 90);
+            this.textBox1.Location = new System.Drawing.Point(666, 127);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(38, 4, 38, 73);
             this.textBox1.MaxLength = 40;
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(224, 28);
+            this.textBox1.Size = new System.Drawing.Size(169, 29);
             this.textBox1.TabIndex = 75;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox3.Image = global::Ruby_Hospital.Properties.Resources.icons8_search_50__1_1;
-            this.pictureBox3.Location = new System.Drawing.Point(1065, 153);
+            this.pictureBox3.Location = new System.Drawing.Point(842, 126);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(49, 33);
+            this.pictureBox3.Size = new System.Drawing.Size(37, 27);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 76;
             this.pictureBox3.TabStop = false;
@@ -123,9 +125,10 @@
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = global::Ruby_Hospital.Properties.Resources.line_40935;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 211);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 171);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1358, 44);
+            this.pictureBox1.Size = new System.Drawing.Size(1237, 36);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 77;
             this.pictureBox1.TabStop = false;
@@ -133,8 +136,7 @@
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -154,7 +156,8 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.Location = new System.Drawing.Point(31, 211);
+            this.dataGridView1.Location = new System.Drawing.Point(28, 211);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -166,25 +169,26 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.Size = new System.Drawing.Size(1298, 460);
+            this.dataGridView1.Size = new System.Drawing.Size(1193, 374);
             this.dataGridView1.TabIndex = 78;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.Image = global::Ruby_Hospital.Properties.Resources.line_40935;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 746);
+            this.pictureBox2.Location = new System.Drawing.Point(0, 606);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1358, 44);
+            this.pictureBox2.Size = new System.Drawing.Size(1237, 36);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 79;
             this.pictureBox2.TabStop = false;
             // 
             // Old_PatientDischarge_List
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 799);
+            this.ClientSize = new System.Drawing.Size(1247, 609);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.pictureBox1);
@@ -193,6 +197,9 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.panel2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Old_PatientDischarge_List";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Old_PatientDischarge_List";

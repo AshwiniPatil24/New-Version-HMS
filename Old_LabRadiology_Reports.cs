@@ -18,6 +18,8 @@ namespace Ruby_Hospital
         public Old_LabRadiology_Reports()
         {
             InitializeComponent();
+            this.AutoSize = true;
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void txtSearch_Enter(object sender, EventArgs e)

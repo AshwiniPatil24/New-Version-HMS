@@ -17,6 +17,8 @@ namespace Ruby_Hospital
         public Master_Lab_test()
         {
             InitializeComponent();
+            this.AutoSize = true;
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void Master_Lab_test_Load(object sender, EventArgs e)

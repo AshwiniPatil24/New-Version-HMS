@@ -16,6 +16,8 @@ namespace Ruby_Hospital
         public IPD_Discharge_PatientList()
         {
             InitializeComponent();
+            this.AutoSize = true;
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void IPD_Discharge_PatientList_Load(object sender, EventArgs e)
@@ -66,9 +68,6 @@ namespace Ruby_Hospital
             }
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+        
     }
 }

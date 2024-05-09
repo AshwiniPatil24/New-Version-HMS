@@ -19,6 +19,8 @@ namespace Ruby_Hospital
         public Lab_And_Radiology_Billing()
         {
             InitializeComponent();
+            this.AutoSize = true;
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

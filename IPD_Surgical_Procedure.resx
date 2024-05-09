@@ -127,7 +127,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 21.75pt, style=Bold</value>
+    <value>Century Schoolbook, 21.75pt, style=Bold</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -136,7 +136,7 @@
     <value>45, 5, 45, 81</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>412, 36</value>
+    <value>469, 34</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -219,11 +219,14 @@
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Schoolbook, 12pt, style=Bold</value>
+  </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>59, 144</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>153, 19</value>
+    <value>177, 19</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>67</value>
@@ -579,7 +582,7 @@
     <value>Flat</value>
   </data>
   <data name="button16.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 14.25pt, style=Bold</value>
+    <value>Century Schoolbook, 14.25pt, style=Bold</value>
   </data>
   <data name="button16.Location" type="System.Drawing.Point, System.Drawing">
     <value>625, 681</value>
@@ -609,7 +612,7 @@
     <value>True</value>
   </data>
   <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 12pt</value>
+    <value>Century Schoolbook, 12pt</value>
   </data>
   <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -618,7 +621,7 @@
     <value>62, 29</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 21</value>
+    <value>141, 20</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -642,7 +645,7 @@
     <value>True</value>
   </data>
   <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 12pt</value>
+    <value>Century Schoolbook, 12pt</value>
   </data>
   <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -651,7 +654,7 @@
     <value>88, 71</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 21</value>
+    <value>117, 20</value>
   </data>
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -675,7 +678,7 @@
     <value>True</value>
   </data>
   <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 12pt</value>
+    <value>Century Schoolbook, 12pt</value>
   </data>
   <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -684,7 +687,7 @@
     <value>70, 38</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 21</value>
+    <value>123, 20</value>
   </data>
   <data name="label6.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -708,7 +711,7 @@
     <value>True</value>
   </data>
   <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 12pt</value>
+    <value>Century Schoolbook, 12pt</value>
   </data>
   <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -717,7 +720,7 @@
     <value>64, 87</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 21</value>
+    <value>130, 20</value>
   </data>
   <data name="label8.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -765,7 +768,7 @@
     <value>True</value>
   </data>
   <data name="label13.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 12pt</value>
+    <value>Century Schoolbook, 12pt</value>
   </data>
   <data name="label13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -774,7 +777,7 @@
     <value>138, 116</value>
   </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 21</value>
+    <value>68, 20</value>
   </data>
   <data name="label13.TabIndex" type="System.Int32, mscorlib">
     <value>79</value>
@@ -864,7 +867,7 @@
     <value>True</value>
   </data>
   <data name="label11.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 12pt</value>
+    <value>Century Schoolbook, 12pt</value>
   </data>
   <data name="label11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -873,7 +876,7 @@
     <value>94, 136</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>99, 21</value>
+    <value>94, 20</value>
   </data>
   <data name="label11.TabIndex" type="System.Int32, mscorlib">
     <value>75</value>
@@ -942,7 +945,7 @@
     <value>Flat</value>
   </data>
   <data name="button17.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 14.25pt, style=Bold</value>
+    <value>Century Schoolbook, 14.25pt, style=Bold</value>
   </data>
   <data name="button17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -978,7 +981,7 @@
     <value>None</value>
   </data>
   <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 12pt, style=Bold</value>
+    <value>Century Schoolbook, 12pt, style=Bold</value>
   </data>
   <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>58, 248</value>
@@ -1118,7 +1121,7 @@
     <value>Flat</value>
   </data>
   <data name="button6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 12pt, style=Bold</value>
+    <value>Century Schoolbook, 12pt, style=Bold</value>
   </data>
   <data name="button6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1160,7 +1163,7 @@
     <value>Flat</value>
   </data>
   <data name="button5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 12pt, style=Bold</value>
+    <value>Century Schoolbook, 12pt, style=Bold</value>
   </data>
   <data name="button5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1202,7 +1205,7 @@
     <value>Flat</value>
   </data>
   <data name="button4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 12pt, style=Bold</value>
+    <value>Century Schoolbook, 12pt, style=Bold</value>
   </data>
   <data name="button4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1233,6 +1236,9 @@
   </data>
   <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="groupBox2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Schoolbook, 12pt, style=Bold</value>
   </data>
   <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>708, 249</value>
@@ -1265,13 +1271,13 @@
     <value>True</value>
   </data>
   <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 14.25pt, style=Bold</value>
+    <value>Century Schoolbook, 14.25pt, style=Bold</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
     <value>54, 473</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 23</value>
+    <value>167, 23</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>95</value>
@@ -1298,13 +1304,13 @@
     <value>True</value>
   </data>
   <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 14.25pt, style=Bold</value>
+    <value>Century Schoolbook, 14.25pt, style=Bold</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
     <value>551, 473</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 23</value>
+    <value>170, 23</value>
   </data>
   <data name="label7.TabIndex" type="System.Int32, mscorlib">
     <value>96</value>
@@ -1431,7 +1437,7 @@
     <value>Flat</value>
   </data>
   <data name="button18.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 14.25pt, style=Bold</value>
+    <value>Century Schoolbook, 14.25pt, style=Bold</value>
   </data>
   <data name="button18.Location" type="System.Drawing.Point, System.Drawing">
     <value>797, 704</value>
@@ -1463,11 +1469,14 @@
   <data name="radioButton1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="radioButton1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Schoolbook, 12pt, style=Bold</value>
+  </data>
   <data name="radioButton1.Location" type="System.Drawing.Point, System.Drawing">
     <value>63, 65</value>
   </data>
   <data name="radioButton1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 23</value>
+    <value>76, 23</value>
   </data>
   <data name="radioButton1.TabIndex" type="System.Int32, mscorlib">
     <value>100</value>
@@ -1490,6 +1499,9 @@
   <data name="radioButton2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="radioButton2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Schoolbook, 12pt, style=Bold</value>
+  </data>
   <data name="radioButton2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -1497,7 +1509,7 @@
     <value>170, 65</value>
   </data>
   <data name="radioButton2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 23</value>
+    <value>99, 23</value>
   </data>
   <data name="radioButton2.TabIndex" type="System.Int32, mscorlib">
     <value>101</value>

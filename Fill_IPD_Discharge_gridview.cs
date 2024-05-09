@@ -15,6 +15,8 @@ namespace Ruby_Hospital
         public Fill_IPD_Discharge_gridview()
         {
             InitializeComponent();
+            this.AutoSize = true;
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void Fill_IPD_Discharge_gridview_Load(object sender, EventArgs e)

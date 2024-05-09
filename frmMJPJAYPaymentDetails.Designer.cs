@@ -49,12 +49,10 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.btnRefresh);
-            this.panel1.Controls.Add(this.btnUpdate);
             this.panel1.Controls.Add(this.DVGMJPJAYPyment);
-            this.panel1.Location = new System.Drawing.Point(3, 33);
+            this.panel1.Location = new System.Drawing.Point(12, 33);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1367, 486);
+            this.panel1.Size = new System.Drawing.Size(1346, 592);
             this.panel1.TabIndex = 0;
             // 
             // label11
@@ -74,7 +72,7 @@
             this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRefresh.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRefresh.ForeColor = System.Drawing.Color.White;
-            this.btnRefresh.Location = new System.Drawing.Point(1151, 427);
+            this.btnRefresh.Location = new System.Drawing.Point(727, 666);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(99, 34);
             this.btnRefresh.TabIndex = 248;
@@ -88,7 +86,7 @@
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(1028, 427);
+            this.btnUpdate.Location = new System.Drawing.Point(604, 666);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(117, 34);
             this.btnUpdate.TabIndex = 247;
@@ -120,9 +118,9 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.DVGMJPJAYPyment.DefaultCellStyle = dataGridViewCellStyle3;
-            this.DVGMJPJAYPyment.Location = new System.Drawing.Point(9, 65);
+            this.DVGMJPJAYPyment.Location = new System.Drawing.Point(0, 65);
             this.DVGMJPJAYPyment.Name = "DVGMJPJAYPyment";
-            this.DVGMJPJAYPyment.Size = new System.Drawing.Size(1346, 356);
+            this.DVGMJPJAYPyment.Size = new System.Drawing.Size(1346, 533);
             this.DVGMJPJAYPyment.TabIndex = 0;
             this.DVGMJPJAYPyment.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DVGMJPJAYPyment_CellContentClick);
             // 
@@ -142,7 +140,7 @@
             this.pnlBottom.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlBottom.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlBottom.Location = new System.Drawing.Point(0, 525);
+            this.pnlBottom.Location = new System.Drawing.Point(0, 724);
             this.pnlBottom.Name = "pnlBottom";
             this.pnlBottom.Size = new System.Drawing.Size(1370, 25);
             this.pnlBottom.TabIndex = 2;
@@ -176,10 +174,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 550);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.pnlBottom);
+            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.pnlTop);
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmMJPJAYPaymentDetails";
             this.Text = "frmMJPJAYPaymentDetails";
             this.Load += new System.EventHandler(this.frmMJPJAYPaymentDetails_Load);

@@ -545,7 +545,7 @@ namespace Ruby_Hospital
             this.button11.BackColor = System.Drawing.Color.Transparent;
             this.button11.FlatAppearance.BorderSize = 0;
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.Font = new System.Drawing.Font("Century Schoolbook", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button11.ForeColor = System.Drawing.Color.White;
             this.button11.Location = new System.Drawing.Point(680, -2);
             this.button11.Name = "button11";
@@ -560,7 +560,7 @@ namespace Ruby_Hospital
             this.button10.BackColor = System.Drawing.Color.Transparent;
             this.button10.FlatAppearance.BorderSize = 0;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.Font = new System.Drawing.Font("Century Schoolbook", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.ForeColor = System.Drawing.Color.White;
             this.button10.Location = new System.Drawing.Point(4, 2);
             this.button10.Name = "button10";
@@ -583,7 +583,7 @@ namespace Ruby_Hospital
             this.Report.BackgroundImage = global::Ruby_Hospital.Properties.Resources.bg;
             this.Report.FlatAppearance.BorderSize = 0;
             this.Report.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Report.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Report.Font = new System.Drawing.Font("Century Schoolbook", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Report.ForeColor = System.Drawing.Color.White;
             this.Report.Location = new System.Drawing.Point(1189, -4);
             this.Report.Name = "Report";
@@ -598,7 +598,7 @@ namespace Ruby_Hospital
             this.Admin.BackgroundImage = global::Ruby_Hospital.Properties.Resources.bg;
             this.Admin.FlatAppearance.BorderSize = 0;
             this.Admin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Admin.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Admin.Font = new System.Drawing.Font("Century Schoolbook", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Admin.ForeColor = System.Drawing.Color.White;
             this.Admin.Location = new System.Drawing.Point(1030, -1);
             this.Admin.Name = "Admin";
@@ -614,7 +614,7 @@ namespace Ruby_Hospital
             this.Bill.BackColor = System.Drawing.Color.Transparent;
             this.Bill.FlatAppearance.BorderSize = 0;
             this.Bill.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Bill.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bill.Font = new System.Drawing.Font("Century Schoolbook", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bill.ForeColor = System.Drawing.Color.White;
             this.Bill.Location = new System.Drawing.Point(879, -4);
             this.Bill.Name = "Bill";
@@ -630,7 +630,7 @@ namespace Ruby_Hospital
             this.IPD.BackColor = System.Drawing.Color.Transparent;
             this.IPD.FlatAppearance.BorderSize = 0;
             this.IPD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.IPD.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IPD.Font = new System.Drawing.Font("Century Schoolbook", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IPD.ForeColor = System.Drawing.Color.White;
             this.IPD.Location = new System.Drawing.Point(481, 0);
             this.IPD.Name = "IPD";
@@ -646,7 +646,7 @@ namespace Ruby_Hospital
             this.OPD.BackColor = System.Drawing.Color.Transparent;
             this.OPD.FlatAppearance.BorderSize = 0;
             this.OPD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.OPD.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OPD.Font = new System.Drawing.Font("Century Schoolbook", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.OPD.ForeColor = System.Drawing.Color.White;
             this.OPD.Location = new System.Drawing.Point(310, -1);
             this.OPD.Name = "OPD";
@@ -662,7 +662,7 @@ namespace Ruby_Hospital
             this.Registration.BackColor = System.Drawing.Color.Transparent;
             this.Registration.FlatAppearance.BorderSize = 0;
             this.Registration.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Registration.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Registration.Font = new System.Drawing.Font("Century Schoolbook", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Registration.ForeColor = System.Drawing.Color.White;
             this.Registration.Location = new System.Drawing.Point(139, -3);
             this.Registration.Name = "Registration";
@@ -1283,6 +1283,8 @@ namespace Ruby_Hospital
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Dashbord";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashbord";

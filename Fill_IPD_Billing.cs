@@ -32,7 +32,9 @@ namespace Ruby_Hospital
         {
             InitializeComponent();
             this.Show();
-            
+            this.AutoSize = true;
+            this.WindowState = FormWindowState.Maximized;
+
         }
 
         public Fill_IPD_Billing(int PID, int ID)

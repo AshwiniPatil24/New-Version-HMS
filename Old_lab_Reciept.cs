@@ -15,6 +15,8 @@ namespace Ruby_Hospital
         public Old_lab_Reciept()
         {
             InitializeComponent();
+            this.AutoSize = true;
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void Old_lab_Reciept_Load(object sender, EventArgs e)

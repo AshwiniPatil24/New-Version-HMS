@@ -112,6 +112,8 @@ namespace Ruby_Hospital
             // 
             // panel2
             // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.Teal;
             this.panel2.BackgroundImage = global::Ruby_Hospital.Properties.Resources.bg;
             this.panel2.Controls.Add(this.label19);
@@ -148,7 +150,7 @@ namespace Ruby_Hospital
             this.panel2.Controls.Add(this.pictureBox7);
             this.panel2.Location = new System.Drawing.Point(61, 223);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1219, 346);
+            this.panel2.Size = new System.Drawing.Size(1256, 346);
             this.panel2.TabIndex = 72;
             // 
             // label19
@@ -415,7 +417,7 @@ namespace Ruby_Hospital
             this.pictureBox7.Image = global::Ruby_Hospital.Properties.Resources.line_40935;
             this.pictureBox7.Location = new System.Drawing.Point(-17, 93);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(1258, 92);
+            this.pictureBox7.Size = new System.Drawing.Size(1295, 92);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 75;
             this.pictureBox7.TabStop = false;
@@ -432,7 +434,7 @@ namespace Ruby_Hospital
             // button3
             // 
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(881, 638);
+            this.button3.Location = new System.Drawing.Point(733, 637);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(85, 33);
             this.button3.TabIndex = 70;
@@ -450,7 +452,7 @@ namespace Ruby_Hospital
             // 
             this.button2.BackColor = System.Drawing.Color.DarkGreen;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(777, 638);
+            this.button2.Location = new System.Drawing.Point(629, 637);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(85, 33);
             this.button2.TabIndex = 71;
@@ -465,7 +467,7 @@ namespace Ruby_Hospital
             this.panel1.Controls.Add(this.label5);
             this.panel1.Location = new System.Drawing.Point(-1, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1335, 47);
+            this.panel1.Size = new System.Drawing.Size(1376, 47);
             this.panel1.TabIndex = 64;
             // 
             // label5
@@ -482,9 +484,9 @@ namespace Ruby_Hospital
             // 
             this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox3.Image = global::Ruby_Hospital.Properties.Resources.line_40935;
-            this.pictureBox3.Location = new System.Drawing.Point(-1, 109);
+            this.pictureBox3.Location = new System.Drawing.Point(-1, 120);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(1327, 44);
+            this.pictureBox3.Size = new System.Drawing.Size(1364, 44);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 73;
             this.pictureBox3.TabStop = false;
@@ -493,9 +495,9 @@ namespace Ruby_Hospital
             // 
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.Image = global::Ruby_Hospital.Properties.Resources.line_40935;
-            this.pictureBox2.Location = new System.Drawing.Point(-1, 575);
+            this.pictureBox2.Location = new System.Drawing.Point(-1, 586);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1327, 44);
+            this.pictureBox2.Size = new System.Drawing.Size(1364, 44);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 65;
             this.pictureBox2.TabStop = false;
@@ -504,9 +506,9 @@ namespace Ruby_Hospital
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = global::Ruby_Hospital.Properties.Resources.line_40935;
-            this.pictureBox1.Location = new System.Drawing.Point(-1, 177);
+            this.pictureBox1.Location = new System.Drawing.Point(-1, 188);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1327, 44);
+            this.pictureBox1.Size = new System.Drawing.Size(1364, 44);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 66;
             this.pictureBox1.TabStop = false;
@@ -525,7 +527,7 @@ namespace Ruby_Hospital
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1333, 727);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.pictureBox4);

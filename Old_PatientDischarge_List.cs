@@ -16,6 +16,8 @@ namespace Ruby_Hospital
         public Old_PatientDischarge_List()
         {
             InitializeComponent();
+            this.AutoSize = true;
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void Old_PatientDischarge_List_Load(object sender, EventArgs e)

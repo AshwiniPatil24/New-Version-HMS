@@ -17,6 +17,8 @@ namespace Ruby_Hospital
         public OPD_Billing_List()
         {
             InitializeComponent();
+            this.AutoSize = true;
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void OPD_Billing_List_Load(object sender, EventArgs e)

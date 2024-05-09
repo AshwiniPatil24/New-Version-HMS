@@ -15,6 +15,8 @@ namespace Ruby_Hospital
         public Lab__List()
         {
             InitializeComponent();
+            this.AutoSize = true;
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void Lab__List_Load(object sender, EventArgs e)

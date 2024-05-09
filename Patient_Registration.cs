@@ -35,6 +35,8 @@ namespace Ruby_Hospital
         public Patient_Registration()
         {
             InitializeComponent();
+            this.AutoSize = true;
+            this.WindowState = FormWindowState.Maximized;
         }
         public Patient_Registration(DataTable data)
         {
