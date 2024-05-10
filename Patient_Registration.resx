@@ -450,6 +450,9 @@
   <data name="txtcity.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
   </data>
+  <data name="txtcity.Text" xml:space="preserve">
+    <value>Enter City</value>
+  </data>
   <data name="&gt;&gt;txtcity.Name" xml:space="preserve">
     <value>txtcity</value>
   </data>
@@ -822,6 +825,42 @@
   <data name="groupBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
+  <data name="rdOther.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="rdOther.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rdOther.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Schoolbook, 12pt</value>
+  </data>
+  <data name="rdOther.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rdOther.Location" type="System.Drawing.Point, System.Drawing">
+    <value>787, 36</value>
+  </data>
+  <data name="rdOther.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 24</value>
+  </data>
+  <data name="rdOther.TabIndex" type="System.Int32, mscorlib">
+    <value>193</value>
+  </data>
+  <data name="rdOther.Text" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="&gt;&gt;rdOther.Name" xml:space="preserve">
+    <value>rdOther</value>
+  </data>
+  <data name="&gt;&gt;rdOther.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rdOther.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;rdOther.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="txtloginEmp.Location" type="System.Drawing.Point, System.Drawing">
     <value>198, 455</value>
   </data>
@@ -844,7 +883,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;txtloginEmp.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="label36.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -877,7 +916,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label36.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="label31.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -889,7 +928,7 @@
     <value>NoControl</value>
   </data>
   <data name="label31.Location" type="System.Drawing.Point, System.Drawing">
-    <value>631, 34</value>
+    <value>559, 34</value>
   </data>
   <data name="label31.Size" type="System.Drawing.Size, System.Drawing">
     <value>13, 15</value>
@@ -910,7 +949,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label31.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="label30.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -943,7 +982,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label30.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="label29.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -976,7 +1015,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label29.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="label10.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -985,7 +1024,7 @@
     <value>Calibri, 9.75pt</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>107, 33</value>
+    <value>89, 33</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
     <value>13, 15</value>
@@ -1006,7 +1045,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="txtregistration.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 11.25pt</value>
@@ -1036,7 +1075,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;txtregistration.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="txtconsultacharges.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 11.25pt</value>
@@ -1069,7 +1108,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;txtconsultacharges.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="label25.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1102,7 +1141,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label25.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="label24.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1135,7 +1174,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label24.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="panel4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -1162,7 +1201,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="btnfemale.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -1177,7 +1216,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnfemale.Location" type="System.Drawing.Point, System.Drawing">
-    <value>787, 37</value>
+    <value>705, 37</value>
   </data>
   <data name="btnfemale.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 24</value>
@@ -1198,7 +1237,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;btnfemale.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="btnPrint.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
@@ -1240,7 +1279,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;btnPrint.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="btnmale.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -1255,7 +1294,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnmale.Location" type="System.Drawing.Point, System.Drawing">
-    <value>718, 37</value>
+    <value>639, 37</value>
   </data>
   <data name="btnmale.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 24</value>
@@ -1276,7 +1315,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;btnmale.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="label5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -1291,7 +1330,7 @@
     <value>NoControl</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>639, 38</value>
+    <value>573, 38</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 20</value>
@@ -1312,7 +1351,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="txtdate.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 11.25pt</value>
@@ -1336,7 +1375,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;txtdate.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="txtarogyacard.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -1372,7 +1411,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;txtarogyacard.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="txtaadhaar.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 11.25pt</value>
@@ -1405,7 +1444,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;txtaadhaar.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <data name="txtmail.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 11.25pt</value>
@@ -1438,7 +1477,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;txtmail.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>19</value>
   </data>
   <data name="txtDrName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -1471,7 +1510,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;txtDrName.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>20</value>
   </data>
   <data name="txtalternateno.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -1507,7 +1546,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;txtalternateno.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>21</value>
   </data>
   <data name="txtweight.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -1531,7 +1570,7 @@
     <value>11</value>
   </data>
   <data name="txtweight.Text" xml:space="preserve">
-    <value>Enter the Weight </value>
+    <value>Enter The Weight </value>
   </data>
   <data name="&gt;&gt;txtweight.Name" xml:space="preserve">
     <value>txtweight</value>
@@ -1543,7 +1582,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;txtweight.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>22</value>
   </data>
   <data name="txtage.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -1570,7 +1609,7 @@
     <value>10</value>
   </data>
   <data name="txtage.Text" xml:space="preserve">
-    <value>Enter the Age</value>
+    <value>Enter The Age</value>
   </data>
   <data name="&gt;&gt;txtage.Name" xml:space="preserve">
     <value>txtage</value>
@@ -1582,7 +1621,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;txtage.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>23</value>
   </data>
   <data name="txtmobilenumber.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 11.25pt</value>
@@ -1615,7 +1654,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;txtmobilenumber.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>24</value>
   </data>
   <data name="label17.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1651,7 +1690,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>25</value>
   </data>
   <data name="label26.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1684,7 +1723,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label26.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>26</value>
   </data>
   <data name="txtname.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -1693,13 +1732,13 @@
     <value>Century Gothic, 11.25pt</value>
   </data>
   <data name="txtname.Location" type="System.Drawing.Point, System.Drawing">
-    <value>198, 35</value>
+    <value>182, 35</value>
   </data>
   <data name="txtname.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="txtname.Size" type="System.Drawing.Size, System.Drawing">
-    <value>429, 32</value>
+    <value>372, 32</value>
   </data>
   <data name="txtname.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1718,7 +1757,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;txtname.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>27</value>
   </data>
   <data name="label15.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1751,7 +1790,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>28</value>
   </data>
   <data name="label14.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1784,7 +1823,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
-    <value>28</value>
+    <value>29</value>
   </data>
   <data name="label9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1799,13 +1838,13 @@
     <value>44, 305</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 20</value>
+    <value>135, 20</value>
   </data>
   <data name="label9.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
   <data name="label9.Text" xml:space="preserve">
-    <value>Aadhaar Card No:</value>
+    <value>Aadhar Card No:</value>
   </data>
   <data name="&gt;&gt;label9.Name" xml:space="preserve">
     <value>label9</value>
@@ -1817,7 +1856,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>29</value>
+    <value>30</value>
   </data>
   <data name="label13.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1850,7 +1889,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
-    <value>30</value>
+    <value>31</value>
   </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1883,7 +1922,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>31</value>
+    <value>32</value>
   </data>
   <data name="label19.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1916,7 +1955,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
-    <value>32</value>
+    <value>33</value>
   </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1949,7 +1988,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>33</value>
+    <value>34</value>
   </data>
   <data name="label18.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1982,7 +2021,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
-    <value>34</value>
+    <value>35</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2015,7 +2054,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>35</value>
+    <value>36</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2048,7 +2087,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>36</value>
+    <value>37</value>
   </data>
   <data name="txtnationality.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -2081,7 +2120,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;txtnationality.ZOrder" xml:space="preserve">
-    <value>37</value>
+    <value>38</value>
   </data>
   <data name="txtpurpose.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -2120,7 +2159,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;txtpurpose.ZOrder" xml:space="preserve">
-    <value>38</value>
+    <value>39</value>
   </data>
   <data name="cbmmaritalstatus.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 11.25pt</value>
@@ -2162,7 +2201,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;cbmmaritalstatus.ZOrder" xml:space="preserve">
-    <value>39</value>
+    <value>40</value>
   </data>
   <data name="txtprofix.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 11.25pt</value>
@@ -2174,7 +2213,7 @@
     <value>Miss</value>
   </data>
   <data name="txtprofix.Location" type="System.Drawing.Point, System.Drawing">
-    <value>120, 35</value>
+    <value>104, 35</value>
   </data>
   <data name="txtprofix.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 28</value>
@@ -2192,7 +2231,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;txtprofix.ZOrder" xml:space="preserve">
-    <value>40</value>
+    <value>41</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2204,7 +2243,7 @@
     <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 39</value>
+    <value>3, 39</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>92, 20</value>
@@ -2225,7 +2264,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>41</value>
+    <value>42</value>
   </data>
   <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Schoolbook, 12pt, style=Bold</value>

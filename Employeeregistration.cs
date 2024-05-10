@@ -76,11 +76,12 @@ namespace Ruby_Hospital
 
         private void Employee_Load(object sender, EventArgs e)
         {
-            
-            int w = Screen.PrimaryScreen.Bounds.Width;
-            int h = Screen.PrimaryScreen.Bounds.Height;
-            this.Location = new Point(0, 0);
-            this.Size = new Size(w, h);
+            txtMaritalStatus.SelectedIndex = 0;
+            txtgender.SelectedIndex = 0;
+            //int w = Screen.PrimaryScreen.Bounds.Width;
+            //int h = Screen.PrimaryScreen.Bounds.Height;
+            //this.Location = new Point(0, 0);
+            //this.Size = new Size(w, h);
             show();
             Department();
             Designation();
@@ -104,6 +105,13 @@ namespace Ruby_Hospital
                 txtDepartment.DataSource = dt;
                 txtDepartment.DisplayMember = "Department";
                 txtDepartment.ValueMember = "ID";
+
+                DataRow drr3;
+                drr3 = dt.NewRow();
+                drr3["ID"] = "0";
+                drr3["Department"] = "---Select---";
+                dt.Rows.Add(drr3);
+                dt.DefaultView.Sort = "ID asc";
             }
 
         }
@@ -121,6 +129,15 @@ namespace Ruby_Hospital
                 cmbRole.DataSource = dt;
                 cmbRole.DisplayMember = "Role";
                 cmbRole.ValueMember = "ID";
+
+
+
+                DataRow drr3;
+                drr3 = dt.NewRow();
+                drr3["ID"] = "0";
+                drr3["Role"] = "---Select---";
+                dt.Rows.Add(drr3);
+                dt.DefaultView.Sort = "ID asc";
             }
         }
 
@@ -139,6 +156,15 @@ namespace Ruby_Hospital
                 txtDesignation.DataSource = dt;
                 txtDesignation.DisplayMember = "Designation";
                 txtDesignation.ValueMember = "ID";
+
+
+
+                DataRow drr3;
+                drr3 = dt.NewRow();
+                drr3["ID"] = "0";
+                drr3["Designation"] = "---Select---";
+                dt.Rows.Add(drr3);
+                dt.DefaultView.Sort = "ID asc";
             }
         }
         private void radiocontractor_CheckedChanged(object sender, EventArgs e)
@@ -450,7 +476,7 @@ Where Mobile_Number=@Mobile_Number and name=@name", con);
         {
             if (txtname.Text == "Fisrtname                    Middle                  Lastname")
             {
-                txtname.Clear();
+                //txtname.Clear();
             }
 
         }
@@ -537,6 +563,7 @@ Where Mobile_Number=@Mobile_Number and name=@name", con);
             {
                 txtname.Text = "";
             }
+            txtname.Clear();
         }
 
         private void txtMobileNumber_KeyPress(object sender, KeyPressEventArgs e)
@@ -561,13 +588,14 @@ Where Mobile_Number=@Mobile_Number and name=@name", con);
             {
                 txtMobileNumber.Text = "";
             }
+            txtMobileNumber.Clear();
         }
 
         private void txtMobileNumber_MouseClick(object sender, MouseEventArgs e)
         {
             if (txtMobileNumber.Text == "123456789")
             {
-                txtMobileNumber.Clear();
+                //txtMobileNumber.Clear();
             }
         }
 
@@ -585,13 +613,14 @@ Where Mobile_Number=@Mobile_Number and name=@name", con);
             {
                 txtcurrentAddress.Text = "";
             }
+            txtcurrentAddress.Clear();
         }
 
         private void txtcurrentAddress_MouseClick(object sender, MouseEventArgs e)
         {
             if (txtcurrentAddress.Text == "Enter the Address")
             {
-                txtcurrentAddress.Clear();
+                //txtcurrentAddress.Clear();
             }
         }
 
@@ -615,7 +644,7 @@ Where Mobile_Number=@Mobile_Number and name=@name", con);
         {
             if (txtAlternateNumber.Text == "Alternate Mobile No")
             {
-                txtAlternateNumber.Clear();
+                //txtAlternateNumber.Clear();
             }
         }
 
@@ -625,6 +654,7 @@ Where Mobile_Number=@Mobile_Number and name=@name", con);
             {
                 txtPermanentAddress.Text = "";
             }
+            txtPermanentAddress.Clear();
         }
 
         private void txtPermanentAddress_Leave(object sender, EventArgs e)
@@ -639,7 +669,7 @@ Where Mobile_Number=@Mobile_Number and name=@name", con);
         {
             if (txtPermanentAddress.Text == "")
             {
-                txtPermanentAddress.Clear();
+               //
             }
         }
 
@@ -663,7 +693,7 @@ Where Mobile_Number=@Mobile_Number and name=@name", con);
         {
             if (txtExperience.Text == "Enter  The Working Experience")
             {
-                txtExperience.Clear();
+               // txtExperience.Clear();
             }
         }
 
@@ -673,6 +703,7 @@ Where Mobile_Number=@Mobile_Number and name=@name", con);
             {
                 txtuid.Text = "";
             }
+            txtuid.Clear();
         }
 
         private void txtuid_Leave(object sender, EventArgs e)
@@ -687,7 +718,7 @@ Where Mobile_Number=@Mobile_Number and name=@name", con);
         {
             if (txtuid.Text == "Enter  Your UID ")
             {
-                txtuid.Clear();
+                //txtuid.Clear();
             }
         }
 
@@ -722,7 +753,8 @@ Where Mobile_Number=@Mobile_Number and name=@name", con);
                         String PatientName = txtSearch.Text;
                         SqlConnection con = new SqlConnection(@"Data Source=208.91.198.196;User ID=Ruby_Jamner123;Password=ruby@jamner");
                         con.Open();
-                        SqlCommand cmd = new SqlCommand("Select * from Employee_registration where Name LIKE @name +'%'", con);
+                        SqlCommand cmd = new SqlCommand(@"SELECT        Employee_Of, Name, Gender, Role, Experience, Mobile_Number, Department, Joining_Date, Status
+FROM            Ruby_Jamner123.Employee_registration where Name LIKE @name +'%'", con);
                         cmd.Parameters.AddWithValue("@name", txtSearch.Text);
                         SqlDataAdapter adt = new SqlDataAdapter(cmd);
                         DataTable dt = new DataTable();

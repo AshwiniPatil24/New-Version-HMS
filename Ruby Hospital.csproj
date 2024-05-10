@@ -894,6 +894,9 @@
     <EmbeddedResource Include="Discharge_Details.resx">
       <DependentUpon>Discharge_Details.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DisplayEmployees.resx">
+      <DependentUpon>DisplayEmployees.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Employee_Login_Details.resx">
       <DependentUpon>Employee_Login_Details.cs</DependentUpon>
     </EmbeddedResource>

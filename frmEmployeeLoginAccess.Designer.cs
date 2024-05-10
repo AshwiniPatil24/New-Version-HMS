@@ -67,11 +67,11 @@
             // 
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(250, 81);
+            this.label9.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(241, 81);
             this.label9.Margin = new System.Windows.Forms.Padding(50, 5, 50, 90);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(199, 23);
+            this.label9.Size = new System.Drawing.Size(211, 23);
             this.label9.TabIndex = 17;
             this.label9.Text = "Search Employee By";
             // 
@@ -79,7 +79,7 @@
             // 
             this.txtSearchBy.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtSearchBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.txtSearchBy.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchBy.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearchBy.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.txtSearchBy.FormattingEnabled = true;
             this.txtSearchBy.Items.AddRange(new object[] {
@@ -89,13 +89,13 @@
             this.txtSearchBy.Location = new System.Drawing.Point(459, 81);
             this.txtSearchBy.Margin = new System.Windows.Forms.Padding(50, 5, 50, 90);
             this.txtSearchBy.Name = "txtSearchBy";
-            this.txtSearchBy.Size = new System.Drawing.Size(155, 27);
+            this.txtSearchBy.Size = new System.Drawing.Size(155, 28);
             this.txtSearchBy.TabIndex = 16;
             // 
             // txtSearch
             // 
             this.txtSearch.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtSearch.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.txtSearch.Location = new System.Drawing.Point(630, 81);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(50, 5, 50, 90);
@@ -110,18 +110,18 @@
             // 
             // btnsave
             // 
-            this.btnsave.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnsave.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnsave.BackColor = System.Drawing.Color.DarkGreen;
             this.btnsave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnsave.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.btnsave.FlatAppearance.BorderSize = 0;
             this.btnsave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnsave.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnsave.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsave.ForeColor = System.Drawing.Color.White;
             this.btnsave.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnsave.Location = new System.Drawing.Point(495, 490);
+            this.btnsave.Location = new System.Drawing.Point(515, 490);
             this.btnsave.Name = "btnsave";
-            this.btnsave.Size = new System.Drawing.Size(134, 30);
+            this.btnsave.Size = new System.Drawing.Size(119, 30);
             this.btnsave.TabIndex = 25;
             this.btnsave.Text = "Save";
             this.btnsave.UseVisualStyleBackColor = false;
@@ -129,6 +129,7 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackgroundImage = global::Ruby_Hospital.Properties.Resources.bg;
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
@@ -179,10 +180,10 @@
             // 
             this.chkDischaeges.AutoSize = true;
             this.chkDischaeges.BackColor = System.Drawing.Color.Transparent;
-            this.chkDischaeges.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkDischaeges.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkDischaeges.Location = new System.Drawing.Point(395, 107);
             this.chkDischaeges.Name = "chkDischaeges";
-            this.chkDischaeges.Size = new System.Drawing.Size(122, 27);
+            this.chkDischaeges.Size = new System.Drawing.Size(111, 24);
             this.chkDischaeges.TabIndex = 19;
             this.chkDischaeges.Text = "Discharge";
             this.chkDischaeges.UseVisualStyleBackColor = false;
@@ -191,10 +192,10 @@
             // 
             this.chkUserManagement.AutoSize = true;
             this.chkUserManagement.BackColor = System.Drawing.Color.Transparent;
-            this.chkUserManagement.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkUserManagement.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkUserManagement.Location = new System.Drawing.Point(677, 237);
             this.chkUserManagement.Name = "chkUserManagement";
-            this.chkUserManagement.Size = new System.Drawing.Size(199, 27);
+            this.chkUserManagement.Size = new System.Drawing.Size(180, 24);
             this.chkUserManagement.TabIndex = 18;
             this.chkUserManagement.Text = "User Management";
             this.chkUserManagement.UseVisualStyleBackColor = false;
@@ -203,10 +204,10 @@
             // 
             this.chkChangeBilling.AutoSize = true;
             this.chkChangeBilling.BackColor = System.Drawing.Color.Transparent;
-            this.chkChangeBilling.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkChangeBilling.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkChangeBilling.Location = new System.Drawing.Point(677, 151);
             this.chkChangeBilling.Name = "chkChangeBilling";
-            this.chkChangeBilling.Size = new System.Drawing.Size(164, 27);
+            this.chkChangeBilling.Size = new System.Drawing.Size(155, 24);
             this.chkChangeBilling.TabIndex = 17;
             this.chkChangeBilling.Text = "Change Billing";
             this.chkChangeBilling.UseVisualStyleBackColor = false;
@@ -215,10 +216,10 @@
             // 
             this.chkprint.AutoSize = true;
             this.chkprint.BackColor = System.Drawing.Color.Transparent;
-            this.chkprint.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkprint.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkprint.Location = new System.Drawing.Point(395, 193);
             this.chkprint.Name = "chkprint";
-            this.chkprint.Size = new System.Drawing.Size(217, 27);
+            this.chkprint.Size = new System.Drawing.Size(201, 24);
             this.chkprint.TabIndex = 16;
             this.chkprint.Text = "Prints and Download";
             this.chkprint.UseVisualStyleBackColor = false;
@@ -227,10 +228,10 @@
             // 
             this.chkAddNote.AutoSize = true;
             this.chkAddNote.BackColor = System.Drawing.Color.Transparent;
-            this.chkAddNote.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkAddNote.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkAddNote.Location = new System.Drawing.Point(395, 277);
             this.chkAddNote.Name = "chkAddNote";
-            this.chkAddNote.Size = new System.Drawing.Size(126, 27);
+            this.chkAddNote.Size = new System.Drawing.Size(113, 24);
             this.chkAddNote.TabIndex = 15;
             this.chkAddNote.Text = "Add Notes";
             this.chkAddNote.UseVisualStyleBackColor = false;
@@ -239,10 +240,10 @@
             // 
             this.chkViewReport.AutoSize = true;
             this.chkViewReport.BackColor = System.Drawing.Color.Transparent;
-            this.chkViewReport.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkViewReport.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkViewReport.Location = new System.Drawing.Point(395, 237);
             this.chkViewReport.Name = "chkViewReport";
-            this.chkViewReport.Size = new System.Drawing.Size(147, 27);
+            this.chkViewReport.Size = new System.Drawing.Size(137, 24);
             this.chkViewReport.TabIndex = 14;
             this.chkViewReport.Text = "View Reports";
             this.chkViewReport.UseVisualStyleBackColor = false;
@@ -251,10 +252,10 @@
             // 
             this.chkAssignSurgery.AutoSize = true;
             this.chkAssignSurgery.BackColor = System.Drawing.Color.Transparent;
-            this.chkAssignSurgery.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkAssignSurgery.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkAssignSurgery.Location = new System.Drawing.Point(395, 151);
             this.chkAssignSurgery.Name = "chkAssignSurgery";
-            this.chkAssignSurgery.Size = new System.Drawing.Size(162, 27);
+            this.chkAssignSurgery.Size = new System.Drawing.Size(156, 24);
             this.chkAssignSurgery.TabIndex = 13;
             this.chkAssignSurgery.Text = "Assign Surgery";
             this.chkAssignSurgery.UseVisualStyleBackColor = false;
@@ -263,10 +264,10 @@
             // 
             this.chkAssignProc.AutoSize = true;
             this.chkAssignProc.BackColor = System.Drawing.Color.Transparent;
-            this.chkAssignProc.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkAssignProc.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkAssignProc.Location = new System.Drawing.Point(89, 277);
             this.chkAssignProc.Name = "chkAssignProc";
-            this.chkAssignProc.Size = new System.Drawing.Size(188, 27);
+            this.chkAssignProc.Size = new System.Drawing.Size(173, 24);
             this.chkAssignProc.TabIndex = 12;
             this.chkAssignProc.Text = "Assign Procedure";
             this.chkAssignProc.UseVisualStyleBackColor = false;
@@ -275,10 +276,10 @@
             // 
             this.ChkBilling.AutoSize = true;
             this.ChkBilling.BackColor = System.Drawing.Color.Transparent;
-            this.ChkBilling.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ChkBilling.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChkBilling.Location = new System.Drawing.Point(677, 107);
             this.ChkBilling.Name = "ChkBilling";
-            this.ChkBilling.Size = new System.Drawing.Size(84, 27);
+            this.ChkBilling.Size = new System.Drawing.Size(86, 24);
             this.ChkBilling.TabIndex = 11;
             this.ChkBilling.Text = "Billing";
             this.ChkBilling.UseVisualStyleBackColor = false;
@@ -287,10 +288,10 @@
             // 
             this.ChkCreateMaster.AutoSize = true;
             this.ChkCreateMaster.BackColor = System.Drawing.Color.Transparent;
-            this.ChkCreateMaster.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ChkCreateMaster.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChkCreateMaster.Location = new System.Drawing.Point(677, 193);
             this.ChkCreateMaster.Name = "ChkCreateMaster";
-            this.ChkCreateMaster.Size = new System.Drawing.Size(160, 27);
+            this.ChkCreateMaster.Size = new System.Drawing.Size(147, 24);
             this.ChkCreateMaster.TabIndex = 10;
             this.ChkCreateMaster.Text = "Create Master";
             this.ChkCreateMaster.UseVisualStyleBackColor = false;
@@ -299,10 +300,10 @@
             // 
             this.chkPatientTra.AutoSize = true;
             this.chkPatientTra.BackColor = System.Drawing.Color.Transparent;
-            this.chkPatientTra.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkPatientTra.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkPatientTra.Location = new System.Drawing.Point(89, 193);
             this.chkPatientTra.Name = "chkPatientTra";
-            this.chkPatientTra.Size = new System.Drawing.Size(166, 27);
+            this.chkPatientTra.Size = new System.Drawing.Size(169, 24);
             this.chkPatientTra.TabIndex = 9;
             this.chkPatientTra.Text = "Patient Transfur";
             this.chkPatientTra.UseVisualStyleBackColor = false;
@@ -324,10 +325,10 @@
             // 
             this.chkDoctordash.AutoSize = true;
             this.chkDoctordash.BackColor = System.Drawing.Color.Transparent;
-            this.chkDoctordash.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkDoctordash.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkDoctordash.Location = new System.Drawing.Point(89, 151);
             this.chkDoctordash.Name = "chkDoctordash";
-            this.chkDoctordash.Size = new System.Drawing.Size(197, 27);
+            this.chkDoctordash.Size = new System.Drawing.Size(176, 24);
             this.chkDoctordash.TabIndex = 7;
             this.chkDoctordash.Text = "Doctor Dashboard";
             this.chkDoctordash.UseVisualStyleBackColor = false;
@@ -336,10 +337,10 @@
             // 
             this.ChkAssignTest.AutoSize = true;
             this.ChkAssignTest.BackColor = System.Drawing.Color.Transparent;
-            this.ChkAssignTest.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ChkAssignTest.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChkAssignTest.Location = new System.Drawing.Point(89, 237);
             this.ChkAssignTest.Name = "ChkAssignTest";
-            this.ChkAssignTest.Size = new System.Drawing.Size(127, 27);
+            this.ChkAssignTest.Size = new System.Drawing.Size(125, 24);
             this.ChkAssignTest.TabIndex = 6;
             this.ChkAssignTest.Text = "Assign Test";
             this.ChkAssignTest.UseVisualStyleBackColor = false;
@@ -348,11 +349,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.MintCream;
             this.label4.Location = new System.Drawing.Point(87, 63);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(236, 23);
+            this.label4.Size = new System.Drawing.Size(204, 20);
             this.label4.TabIndex = 5;
             this.label4.Text = "Select Employee Access";
             // 
@@ -360,10 +361,10 @@
             // 
             this.chkRegistration.AutoSize = true;
             this.chkRegistration.BackColor = System.Drawing.Color.Transparent;
-            this.chkRegistration.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkRegistration.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkRegistration.Location = new System.Drawing.Point(91, 107);
             this.chkRegistration.Name = "chkRegistration";
-            this.chkRegistration.Size = new System.Drawing.Size(137, 27);
+            this.chkRegistration.Size = new System.Drawing.Size(132, 24);
             this.chkRegistration.TabIndex = 4;
             this.chkRegistration.Text = "Registration";
             this.chkRegistration.UseVisualStyleBackColor = false;
@@ -373,10 +374,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(391, 14);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(142, 21);
+            this.label3.Size = new System.Drawing.Size(148, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "Employee Name:";
             // 
@@ -384,10 +385,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(87, 15);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 21);
+            this.label2.Size = new System.Drawing.Size(78, 20);
             this.label2.TabIndex = 0;
             this.label2.Text = "Emp ID:";
             // 
@@ -424,14 +425,14 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Century", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(50, 5, 50, 90);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(379, 36);
+            this.label1.Size = new System.Drawing.Size(372, 34);
             this.label1.TabIndex = 2;
-            this.label1.Text = " Employee Access Details";
+            this.label1.Text = "Employee Access Details";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox3

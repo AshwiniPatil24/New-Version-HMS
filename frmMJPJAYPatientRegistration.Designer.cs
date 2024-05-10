@@ -71,6 +71,7 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.btnPrintMJPJAYConsent);
             this.panel1.Controls.Add(this.DVGMJPJAYAddSurgery);
@@ -80,19 +81,20 @@
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Controls.Add(this.lblPatientInformation);
-            this.panel1.Location = new System.Drawing.Point(3, 31);
+            this.panel1.Location = new System.Drawing.Point(3, 52);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1332, 593);
+            this.panel1.Size = new System.Drawing.Size(1332, 613);
             this.panel1.TabIndex = 0;
             // 
             // btnPrintMJPJAYConsent
             // 
+            this.btnPrintMJPJAYConsent.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnPrintMJPJAYConsent.BackColor = System.Drawing.Color.Maroon;
             this.btnPrintMJPJAYConsent.Enabled = false;
             this.btnPrintMJPJAYConsent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPrintMJPJAYConsent.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrintMJPJAYConsent.ForeColor = System.Drawing.Color.White;
-            this.btnPrintMJPJAYConsent.Location = new System.Drawing.Point(705, 548);
+            this.btnPrintMJPJAYConsent.Location = new System.Drawing.Point(705, 558);
             this.btnPrintMJPJAYConsent.Name = "btnPrintMJPJAYConsent";
             this.btnPrintMJPJAYConsent.Size = new System.Drawing.Size(188, 34);
             this.btnPrintMJPJAYConsent.TabIndex = 200;
@@ -104,6 +106,7 @@
             // DVGMJPJAYAddSurgery
             // 
             this.DVGMJPJAYAddSurgery.AllowUserToAddRows = false;
+            this.DVGMJPJAYAddSurgery.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.DVGMJPJAYAddSurgery.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.DVGMJPJAYAddSurgery.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -125,7 +128,7 @@
             dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.DVGMJPJAYAddSurgery.DefaultCellStyle = dataGridViewCellStyle8;
-            this.DVGMJPJAYAddSurgery.Location = new System.Drawing.Point(349, 386);
+            this.DVGMJPJAYAddSurgery.Location = new System.Drawing.Point(349, 396);
             this.DVGMJPJAYAddSurgery.Name = "DVGMJPJAYAddSurgery";
             dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
@@ -177,11 +180,12 @@
             // 
             // btnSubmit
             // 
+            this.btnSubmit.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnSubmit.BackColor = System.Drawing.Color.DarkGreen;
             this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSubmit.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit.ForeColor = System.Drawing.Color.White;
-            this.btnSubmit.Location = new System.Drawing.Point(576, 548);
+            this.btnSubmit.Location = new System.Drawing.Point(576, 558);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(114, 34);
             this.btnSubmit.TabIndex = 6;
@@ -191,6 +195,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.BackgroundImage = global::Ruby_Hospital.Properties.Resources.bg;
             this.groupBox1.Controls.Add(this.txtPackageAmount);
             this.groupBox1.Controls.Add(this.txtSubSurgery);
@@ -208,7 +213,7 @@
             this.groupBox1.Controls.Add(this.txtMJPJAYNO);
             this.groupBox1.Controls.Add(this.lblPhone);
             this.groupBox1.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(42, 174);
+            this.groupBox1.Location = new System.Drawing.Point(42, 177);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1273, 171);
             this.groupBox1.TabIndex = 123;
@@ -377,6 +382,7 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -396,7 +402,7 @@
             dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle11;
-            this.dataGridView1.Location = new System.Drawing.Point(45, 70);
+            this.dataGridView1.Location = new System.Drawing.Point(45, 54);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -414,7 +420,7 @@
             // 
             this.lblPatientInformation.AutoSize = true;
             this.lblPatientInformation.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPatientInformation.Location = new System.Drawing.Point(38, 38);
+            this.lblPatientInformation.Location = new System.Drawing.Point(50, 25);
             this.lblPatientInformation.Name = "lblPatientInformation";
             this.lblPatientInformation.Size = new System.Drawing.Size(188, 23);
             this.lblPatientInformation.TabIndex = 121;
@@ -423,10 +429,11 @@
             // pnlBottom
             // 
             this.pnlBottom.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlBottom.BackgroundImage = global::Ruby_Hospital.Properties.Resources.bg;
             this.pnlBottom.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlBottom.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlBottom.Location = new System.Drawing.Point(0, 630);
+            this.pnlBottom.Location = new System.Drawing.Point(0, 671);
             this.pnlBottom.Name = "pnlBottom";
             this.pnlBottom.Size = new System.Drawing.Size(1347, 27);
             this.pnlBottom.TabIndex = 2;
@@ -461,7 +468,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1347, 657);
+            this.ClientSize = new System.Drawing.Size(1347, 698);
             this.Controls.Add(this.pnlTop);
             this.Controls.Add(this.pnlBottom);
             this.Controls.Add(this.panel1);

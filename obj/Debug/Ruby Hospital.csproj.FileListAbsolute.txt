@@ -747,3 +747,4 @@ D:\New-Version-HMS\obj\Debug\Ruby Hospital.csproj.CoreCompileInputs.cache
 D:\New-Version-HMS\obj\Debug\Ruby Hospital.csproj.CopyComplete
 D:\New-Version-HMS\obj\Debug\Ruby Hospital.exe
 D:\New-Version-HMS\obj\Debug\Ruby Hospital.pdb
+D:\New-Version-HMS\obj\Debug\Ruby_Hospital.DisplayEmployees.resources
