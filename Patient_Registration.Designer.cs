@@ -117,6 +117,7 @@ namespace Ruby_Hospital
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.rdOther = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -298,6 +299,7 @@ namespace Ruby_Hospital
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(168)))), ((int)(((byte)(168)))));
             this.groupBox1.BackgroundImage = global::Ruby_Hospital.Properties.Resources.bg;
+            this.groupBox1.Controls.Add(this.rdOther);
             this.groupBox1.Controls.Add(this.txtloginEmp);
             this.groupBox1.Controls.Add(this.label36);
             this.groupBox1.Controls.Add(this.label31);
@@ -447,7 +449,6 @@ namespace Ruby_Hospital
             this.btnmale.BackColor = System.Drawing.Color.Transparent;
             this.btnmale.Checked = true;
             this.btnmale.Name = "btnmale";
-            this.btnmale.TabStop = true;
             this.btnmale.UseVisualStyleBackColor = false;
             // 
             // label5
@@ -469,6 +470,7 @@ namespace Ruby_Hospital
             this.txtarogyacard.ForeColor = System.Drawing.Color.Gray;
             this.txtarogyacard.Name = "txtarogyacard";
             this.txtarogyacard.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtarogyacard_MouseClick);
+            this.txtarogyacard.TextChanged += new System.EventHandler(this.txtarogyacard_TextChanged);
             this.txtarogyacard.Enter += new System.EventHandler(this.txtarogyacard_Enter);
             this.txtarogyacard.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtaadhaar_KeyPress);
             this.txtarogyacard.Leave += new System.EventHandler(this.txtarogyacard_Leave);
@@ -873,6 +875,13 @@ namespace Ruby_Hospital
             // 
             this.errorProvider2.ContainerControl = this;
             // 
+            // rdOther
+            // 
+            resources.ApplyResources(this.rdOther, "rdOther");
+            this.rdOther.BackColor = System.Drawing.Color.Transparent;
+            this.rdOther.Name = "rdOther";
+            this.rdOther.UseVisualStyleBackColor = false;
+            // 
             // Patient_Registration
             // 
             resources.ApplyResources(this, "$this");
@@ -1000,5 +1009,6 @@ namespace Ruby_Hospital
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.TextBox txtloginEmp;
+        private System.Windows.Forms.RadioButton rdOther;
     }
 }

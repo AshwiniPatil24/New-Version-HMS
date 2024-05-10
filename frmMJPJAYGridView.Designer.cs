@@ -51,7 +51,7 @@
             this.txtpatient.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtpatient.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtpatient.ForeColor = System.Drawing.Color.Gray;
-            this.txtpatient.Location = new System.Drawing.Point(773, 127);
+            this.txtpatient.Location = new System.Drawing.Point(773, 52);
             this.txtpatient.Multiline = true;
             this.txtpatient.Name = "txtpatient";
             this.txtpatient.Size = new System.Drawing.Size(186, 28);
@@ -70,7 +70,7 @@
             "Name",
             "Aadhaar Id",
             "Contact"});
-            this.txtpatientsearch.Location = new System.Drawing.Point(608, 127);
+            this.txtpatientsearch.Location = new System.Drawing.Point(608, 52);
             this.txtpatientsearch.Name = "txtpatientsearch";
             this.txtpatientsearch.Size = new System.Drawing.Size(143, 28);
             this.txtpatientsearch.TabIndex = 2;
@@ -84,7 +84,7 @@
             this.label2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label2.Location = new System.Drawing.Point(416, 129);
+            this.label2.Location = new System.Drawing.Point(416, 54);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(164, 25);
             this.label2.TabIndex = 4;
@@ -102,7 +102,7 @@
             this.panel2.Font = new System.Drawing.Font("Century Gothic", 14.25F);
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1370, 47);
+            this.panel2.Size = new System.Drawing.Size(1249, 47);
             this.panel2.TabIndex = 8;
             // 
             // pictureBox1
@@ -153,7 +153,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dataGridView1.Location = new System.Drawing.Point(23, 224);
+            this.dataGridView1.Location = new System.Drawing.Point(23, 149);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -164,9 +164,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-
-            this.dataGridView1.Size = new System.Drawing.Size(1209, 397);
-
+            this.dataGridView1.Size = new System.Drawing.Size(1209, 472);
             this.dataGridView1.TabIndex = 41;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -175,9 +173,9 @@
             this.pictureBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
             this.pictureBox7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox7.Location = new System.Drawing.Point(4, 178);
+            this.pictureBox7.Location = new System.Drawing.Point(4, 97);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(1366, 46);
+            this.pictureBox7.Size = new System.Drawing.Size(1233, 46);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 40;
             this.pictureBox7.TabStop = false;
@@ -187,9 +185,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-
             this.ClientSize = new System.Drawing.Size(1249, 577);
-
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.panel2);

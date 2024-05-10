@@ -29,6 +29,9 @@ namespace Ruby_Hospital
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel_head = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -54,6 +57,7 @@ namespace Ruby_Hospital
             // panel_head
             // 
             this.panel_head.BackColor = System.Drawing.Color.Teal;
+            this.panel_head.BackgroundImage = global::Ruby_Hospital.Properties.Resources.bg;
             this.panel_head.Controls.Add(this.label10);
             this.panel_head.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_head.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -65,13 +69,14 @@ namespace Ruby_Hospital
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Century", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(0, 0);
             this.label10.Margin = new System.Windows.Forms.Padding(50, 5, 50, 90);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(259, 36);
+            this.label10.Size = new System.Drawing.Size(278, 34);
             this.label10.TabIndex = 2;
             this.label10.Text = "OPD Consultation";
             // 
@@ -79,33 +84,33 @@ namespace Ruby_Hospital
             // 
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(463, 168);
+            this.label9.Font = new System.Drawing.Font("Century", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(431, 146);
             this.label9.Margin = new System.Windows.Forms.Padding(50, 5, 50, 90);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(143, 23);
+            this.label9.Size = new System.Drawing.Size(158, 25);
             this.label9.TabIndex = 44;
             this.label9.Text = "Search Patient";
             // 
             // txtopdsearch
             // 
             this.txtopdsearch.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtopdsearch.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtopdsearch.Font = new System.Drawing.Font("Century", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtopdsearch.FormattingEnabled = true;
             this.txtopdsearch.Items.AddRange(new object[] {
             "Name"});
-            this.txtopdsearch.Location = new System.Drawing.Point(630, 165);
+            this.txtopdsearch.Location = new System.Drawing.Point(598, 143);
             this.txtopdsearch.Margin = new System.Windows.Forms.Padding(50, 5, 50, 90);
             this.txtopdsearch.Name = "txtopdsearch";
-            this.txtopdsearch.Size = new System.Drawing.Size(140, 29);
+            this.txtopdsearch.Size = new System.Drawing.Size(140, 33);
             this.txtopdsearch.TabIndex = 43;
             this.txtopdsearch.Text = "--Select--";
             // 
             // txtopdname
             // 
             this.txtopdname.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtopdname.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtopdname.Location = new System.Drawing.Point(777, 166);
+            this.txtopdname.Font = new System.Drawing.Font("Century", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtopdname.Location = new System.Drawing.Point(745, 144);
             this.txtopdname.Margin = new System.Windows.Forms.Padding(50, 5, 50, 90);
             this.txtopdname.MaxLength = 40;
             this.txtopdname.Multiline = true;
@@ -126,13 +131,37 @@ namespace Ruby_Hospital
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle11;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dataGridView1.Size = new System.Drawing.Size(1298, 467);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
@@ -142,7 +171,7 @@ namespace Ruby_Hospital
             // 
             this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox4.Image = global::Ruby_Hospital.Properties.Resources._1000_F_99981420_H1Jwa8KzJvS1VvgmGcj0JH8xQ3E4iBeq;
-            this.pictureBox4.Location = new System.Drawing.Point(1078, 164);
+            this.pictureBox4.Location = new System.Drawing.Point(1066, 136);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(52, 40);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -152,11 +181,11 @@ namespace Ruby_Hospital
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox5.Image = global::Ruby_Hospital.Properties.Resources.line_40935;
-            this.pictureBox5.Location = new System.Drawing.Point(47, 709);
+            this.pictureBox5.Location = new System.Drawing.Point(38, 691);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(1522, 44);
+            this.pictureBox5.Size = new System.Drawing.Size(1320, 44);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 50;
             this.pictureBox5.TabStop = false;
@@ -175,7 +204,7 @@ namespace Ruby_Hospital
             // 
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox3.Image = global::Ruby_Hospital.Properties.Resources.icons8_search_50__1_1;
-            this.pictureBox3.Location = new System.Drawing.Point(1031, 166);
+            this.pictureBox3.Location = new System.Drawing.Point(1004, 138);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(41, 38);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -185,11 +214,11 @@ namespace Ruby_Hospital
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::Ruby_Hospital.Properties.Resources.line_40935;
-            this.pictureBox1.Location = new System.Drawing.Point(47, 128);
+            this.pictureBox1.Location = new System.Drawing.Point(38, 86);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1522, 44);
+            this.pictureBox1.Size = new System.Drawing.Size(1320, 44);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 42;
             this.pictureBox1.TabStop = false;

@@ -61,6 +61,10 @@ namespace Ruby_Hospital
                 {
                     btnfemale.Checked = true;
                 }
+                else if (gender.Equals("Other", StringComparison.OrdinalIgnoreCase))
+                {
+                    rdOther.Checked = true;
+                }
                 txtprofix.DataBindings.Add("Text", dt, "Prefixes");
                 txtname.DataBindings.Add("Text", dt, "Name");
                 txtarogyacard.DataBindings.Add("Text", dt, "AROGYA_Card");
@@ -468,9 +472,13 @@ namespace Ruby_Hospital
                         {
                             cmd.Parameters.AddWithValue("@Gender", "Male");
                         }
-                        else
+                        if (btnfemale.Checked == true)
                         {
                             cmd.Parameters.AddWithValue("@Gender", "Female");
+                        }
+                        if (rdOther.Checked == true)
+                        {
+                            cmd.Parameters.AddWithValue("@Gender", "Other");
                         }
                         cmd.Parameters.AddWithValue("@Age", txtage.Text);
                         cmd.Parameters.AddWithValue("@Marital_Status", cbmmaritalstatus.Text);
@@ -575,9 +583,13 @@ namespace Ruby_Hospital
                         {
                             cmd.Parameters.AddWithValue("@Gender", "Male");
                         }
-                        else
+                        if (btnfemale.Checked == true)
                         {
                             cmd.Parameters.AddWithValue("@Gender", "Female");
+                        }
+                        if (rdOther.Checked == true)
+                        {
+                            cmd.Parameters.AddWithValue("@Gender", "Other");
                         }
                         cmd.Parameters.AddWithValue("@DOB", txtdate.Text);
                         if (txtage.Text.Equals("Enter the Age"))
@@ -898,13 +910,18 @@ namespace Ruby_Hospital
                 cmd.Parameters.AddWithValue("@Patient_ID", textBox1.Text);
                 cmd.Parameters.AddWithValue("@Prefixes", txtprofix.Text);
                 cmd.Parameters.AddWithValue("@Name", txtname.Text);
+
                 if (btnmale.Checked == true)
                 {
                     cmd.Parameters.AddWithValue("@Gender", "Male");
                 }
-                else
+                if (btnfemale.Checked == true)
                 {
                     cmd.Parameters.AddWithValue("@Gender", "Female");
+                }
+                if (rdOther.Checked == true)
+                {
+                    cmd.Parameters.AddWithValue("@Gender", "Other");
                 }
 
                 cmd.Parameters.AddWithValue("@DOB", txtdate.Text);
@@ -1033,6 +1050,7 @@ namespace Ruby_Hospital
                 txtname.Text = "";
                 txtname.ForeColor = Color.Black;
             }
+            txtname.Clear();
         }
 
         private void txtname_Leave(object sender, EventArgs e)
@@ -1217,42 +1235,42 @@ namespace Ruby_Hospital
 
         private void txtname_MouseClick(object sender, MouseEventArgs e)
         {
-            txtname.Clear();
+            //txtname.Clear();
         }
 
         private void txtmobilenumber_MouseClick(object sender, MouseEventArgs e)
         {
-            txtmobilenumber.Clear();
+            //txtmobilenumber.Clear();
         }
 
         private void txtarogyacard_MouseClick(object sender, MouseEventArgs e)
         {
-            txtarogyacard.Clear();
+            //txtarogyacard.Clear();
         }
 
         private void txtage_MouseClick(object sender, MouseEventArgs e)
         {
-            txtage.Clear();
+            //txtage.Clear();
         }
 
         private void txtweight_MouseClick(object sender, MouseEventArgs e)
         {
-            txtweight.Clear();
+            //txtweight.Clear();
         }
 
         private void txtalternateno_MouseClick(object sender, MouseEventArgs e)
         {
-            txtalternateno.Clear();
+            //txtalternateno.Clear();
         }
 
         private void txtremark_MouseClick(object sender, MouseEventArgs e)
         {
-            txtDrName.Clear();
+            //txtDrName.Clear();
         }
 
         private void txtaddress_MouseClick(object sender, MouseEventArgs e)
         {
-            txtaddress.Clear();
+            //txtaddress.Clear();
         }
 
         private void btnGOTOIPD_Click(object sender, EventArgs e)
@@ -1335,6 +1353,7 @@ namespace Ruby_Hospital
                 txtweight.Text = "";
                 txtweight.ForeColor = Color.Black;
             }
+            txtweight.Clear();
         }
 
         private void txtweight_Leave(object sender, EventArgs e)
@@ -1507,6 +1526,8 @@ namespace Ruby_Hospital
                 label23.Visible = false;
                 cmbDoctor.Visible = false;
                 label16.Visible = false;
+                label34.Visible = false;
+                label35.Visible = false;
             }
             else
             {
@@ -1535,12 +1556,12 @@ namespace Ruby_Hospital
 
         private void txtconsultacharges_MouseClick_1(object sender, MouseEventArgs e)
         {
-            txtconsultacharges.Clear();
+            //txtconsultacharges.Clear();
         }
 
         private void txtpatient_MouseClick(object sender, MouseEventArgs e)
         {
-            txtpatient.Clear();
+           // txtpatient.Clear();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -1761,7 +1782,7 @@ namespace Ruby_Hospital
 
         private void txtregistration_MouseClick(object sender, MouseEventArgs e)
         {
-            txtregistration.Clear();
+            //txtregistration.Clear();
         }
 
         private void txtregistration_Enter(object sender, EventArgs e)
@@ -1770,6 +1791,11 @@ namespace Ruby_Hospital
         }
 
         private void txtnationality_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtarogyacard_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -160,7 +160,7 @@ WHERE        (Ruby_Jamner123.OPD_Patient_Registration.PatientOPDId=@OPDID)", con
             dataGridView2.Columns["DleStatus"].Visible = false;
             dataGridView2.ColumnHeadersDefaultCellStyle.Font = new Font(dataGridView2.Font, FontStyle.Bold);
             con.Close();
-            button3.Visible = true;
+            //button3.Visible = true;
         }
 
         public void Save_AmountOnlyLab()
