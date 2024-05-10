@@ -51,8 +51,10 @@ where Ruby_Jamner123.IPD_Registration.DischargeDate is NULL", connection);
 
                     dataGridView1.Columns["IPDID"].Visible = false;
                     dataGridView1.Columns["ConsultantID"].HeaderText = "Consultant Name";
+                   dataGridView1.Columns["Adhaar_ID"].HeaderText = "Aadhar_ID";
+                   dataGridView1.Columns["Reserred_By"].HeaderText = "Referred_By";
 
-                }
+            }
             }
 
             //private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)

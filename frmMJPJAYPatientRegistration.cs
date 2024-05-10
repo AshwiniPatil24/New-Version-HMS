@@ -61,6 +61,8 @@ where Ruby_Jamner123.IPD_Registration.IPDID=@IPDID", connection1);
             {
 
                 dataGridView1.DataSource = dt;
+                dataGridView1.Columns["Adhaar_ID"].HeaderText = "Aadhar_ID";
+                dataGridView1.Columns["Reserred_By"].HeaderText = "Referred_By";
             }
             connection1.Close();
         }

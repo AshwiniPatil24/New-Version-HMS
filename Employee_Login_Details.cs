@@ -136,7 +136,8 @@ values (@EMP_id,@Name,@Username,@Password,@date)", con);
                         String PatientName = txtSearch.Text;
                         SqlConnection con = new SqlConnection(@"Data Source=208.91.198.196;User ID=Ruby_Jamner123;Password=ruby@jamner");
                         con.Open();
-                        SqlCommand cmd = new SqlCommand("Select * from Employee_registration where Name LIKE @name +'%'", con);
+                        SqlCommand cmd = new SqlCommand(@"SELECT        Employee_Of, Name, Gender, Role, Status
+FROM            Ruby_Jamner123.Employee_registration where Name LIKE @name +'%'", con);
                         cmd.Parameters.AddWithValue("@name", txtSearch.Text);
                         SqlDataAdapter adt = new SqlDataAdapter(cmd);
                         DataTable dt = new DataTable();

@@ -34,10 +34,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
-            this.btnRefresh = new System.Windows.Forms.Button();
-            this.btnUpdate = new System.Windows.Forms.Button();
             this.DVGMJPJAYPyment = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.btnRefresh = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.pnlBottom = new System.Windows.Forms.Panel();
             this.pnlTop = new System.Windows.Forms.Panel();
             this.lblFillOPD = new System.Windows.Forms.Label();
@@ -51,55 +51,22 @@
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.DVGMJPJAYPyment);
-
             this.panel1.Location = new System.Drawing.Point(0, 33);
-
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1346, 592);
+            this.panel1.Size = new System.Drawing.Size(1370, 644);
             this.panel1.TabIndex = 0;
             // 
             // label11
             // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(9, 22);
+            this.label11.Location = new System.Drawing.Point(26, 22);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(308, 23);
             this.label11.TabIndex = 249;
             this.label11.Text = "MJPJAY Payment Status Update";
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.BackColor = System.Drawing.Color.Orange;
-            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRefresh.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRefresh.ForeColor = System.Drawing.Color.White;
-
-            this.btnRefresh.Location = new System.Drawing.Point(655, 427);
-
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(99, 34);
-            this.btnRefresh.TabIndex = 248;
-            this.btnRefresh.Text = "Refersh";
-            this.btnRefresh.UseVisualStyleBackColor = false;
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.BackColor = System.Drawing.Color.DarkGreen;
-            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdate.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.ForeColor = System.Drawing.Color.White;
-
-            this.btnUpdate.Location = new System.Drawing.Point(532, 427);
-
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(117, 34);
-            this.btnUpdate.TabIndex = 247;
-            this.btnUpdate.Text = "Save";
-            this.btnUpdate.UseVisualStyleBackColor = false;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // DVGMJPJAYPyment
             // 
@@ -118,7 +85,6 @@
             this.DVGMJPJAYPyment.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DVGMJPJAYPyment.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1});
-
             dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle7.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -127,7 +93,7 @@
             dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.DVGMJPJAYPyment.DefaultCellStyle = dataGridViewCellStyle7;
-            this.DVGMJPJAYPyment.Location = new System.Drawing.Point(9, 65);
+            this.DVGMJPJAYPyment.Location = new System.Drawing.Point(21, 60);
             this.DVGMJPJAYPyment.Name = "DVGMJPJAYPyment";
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
@@ -137,7 +103,7 @@
             dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.DVGMJPJAYPyment.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
-
+            this.DVGMJPJAYPyment.Size = new System.Drawing.Size(1337, 550);
             this.DVGMJPJAYPyment.TabIndex = 0;
             this.DVGMJPJAYPyment.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DVGMJPJAYPyment_CellContentClick);
             // 
@@ -150,6 +116,34 @@
             this.Column1.Name = "Column1";
             this.Column1.Text = "Update Status";
             this.Column1.UseColumnTextForButtonValue = true;
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.BackColor = System.Drawing.Color.Orange;
+            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefresh.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefresh.ForeColor = System.Drawing.Color.White;
+            this.btnRefresh.Location = new System.Drawing.Point(655, 683);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(99, 34);
+            this.btnRefresh.TabIndex = 248;
+            this.btnRefresh.Text = "Refersh";
+            this.btnRefresh.UseVisualStyleBackColor = false;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.BackColor = System.Drawing.Color.DarkGreen;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.White;
+            this.btnUpdate.Location = new System.Drawing.Point(532, 683);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(117, 34);
+            this.btnUpdate.TabIndex = 247;
+            this.btnUpdate.Text = "Save";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // pnlBottom
             // 

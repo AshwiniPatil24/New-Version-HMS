@@ -664,9 +664,9 @@ namespace Ruby_Hospital
             this.Registration.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Registration.Font = new System.Drawing.Font("Century Schoolbook", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Registration.ForeColor = System.Drawing.Color.White;
-            this.Registration.Location = new System.Drawing.Point(139, -3);
+            this.Registration.Location = new System.Drawing.Point(139, 0);
             this.Registration.Name = "Registration";
-            this.Registration.Size = new System.Drawing.Size(171, 104);
+            this.Registration.Size = new System.Drawing.Size(171, 101);
             this.Registration.TabIndex = 1;
             this.Registration.Text = "Reception ";
             this.Registration.UseVisualStyleBackColor = false;

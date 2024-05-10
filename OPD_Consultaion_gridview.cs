@@ -37,24 +37,7 @@ namespace Ruby_Hospital
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            //if (e.RowIndex < 0 || e.ColumnIndex < 0)
-            //    return;
-            //string columnName = this.dataGridView1.Columns[e.ColumnIndex].Name;
-
-            //if (columnName.Equals("Name") == true)
-            //{
-            //    try
-            //    {
-            //        OPDPId = Convert.ToInt32(dataGridView1.CurrentRow.Cells["PatientOPDId"].Value);
-            //        OPD_Consultaion_mainform o = new OPD_Consultaion_mainform(OPDPId);
-            //        o.Show();
-                   
-            //    }
-            //    catch (Exception ex)
-            //    {
-            //        MessageBox.Show(ex.ToString());
-            //    }
-            //}
+          
         }
         public void show()
         {

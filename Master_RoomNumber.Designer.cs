@@ -59,7 +59,7 @@
             this.btnDelete.Font = new System.Drawing.Font("Century Schoolbook", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.White;
             this.btnDelete.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnDelete.Location = new System.Drawing.Point(730, 523);
+            this.btnDelete.Location = new System.Drawing.Point(590, 457);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(104, 38);
             this.btnDelete.TabIndex = 100;
@@ -79,7 +79,7 @@
             this.btnsave.Font = new System.Drawing.Font("Century Schoolbook", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsave.ForeColor = System.Drawing.Color.White;
             this.btnsave.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnsave.Location = new System.Drawing.Point(607, 523);
+            this.btnsave.Location = new System.Drawing.Point(445, 457);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(96, 38);
             this.btnsave.TabIndex = 99;
@@ -89,8 +89,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(168)))), ((int)(((byte)(168)))));
             this.groupBox1.BackgroundImage = global::Ruby_Hospital.Properties.Resources.bg;
             this.groupBox1.Controls.Add(this.txtDate);
@@ -101,16 +100,17 @@
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.groupBox1.Location = new System.Drawing.Point(-4, 187);
+            this.groupBox1.Location = new System.Drawing.Point(6, 145);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1378, 296);
+            this.groupBox1.Size = new System.Drawing.Size(1223, 270);
             this.groupBox1.TabIndex = 98;
             this.groupBox1.TabStop = false;
             // 
             // txtDate
             // 
+            this.txtDate.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txtDate.Location = new System.Drawing.Point(609, 195);
+            this.txtDate.Location = new System.Drawing.Point(482, 192);
             this.txtDate.Name = "txtDate";
             this.txtDate.Size = new System.Drawing.Size(129, 27);
             this.txtDate.TabIndex = 88;
@@ -118,10 +118,11 @@
             // 
             // label8
             // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(507, 197);
+            this.label8.Location = new System.Drawing.Point(341, 192);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(82, 20);
             this.label8.TabIndex = 87;
@@ -131,8 +132,9 @@
             // 
             this.txtNoOFBeds.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNoOFBeds.Enabled = false;
+            this.txtNoOFBeds.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNoOFBeds.ForeColor = System.Drawing.Color.Gray;
-            this.txtNoOFBeds.Location = new System.Drawing.Point(609, 139);
+            this.txtNoOFBeds.Location = new System.Drawing.Point(482, 115);
             this.txtNoOFBeds.MaxLength = 10;
             this.txtNoOFBeds.Multiline = true;
             this.txtNoOFBeds.Name = "txtNoOFBeds";
@@ -143,8 +145,9 @@
             // 
             this.txtRoomName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtRoomName.Enabled = false;
+            this.txtRoomName.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRoomName.ForeColor = System.Drawing.Color.Gray;
-            this.txtRoomName.Location = new System.Drawing.Point(609, 81);
+            this.txtRoomName.Location = new System.Drawing.Point(482, 48);
             this.txtRoomName.MaxLength = 30;
             this.txtRoomName.Multiline = true;
             this.txtRoomName.Name = "txtRoomName";
@@ -161,10 +164,11 @@
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(462, 142);
+            this.label6.Location = new System.Drawing.Point(341, 120);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(131, 20);
             this.label6.TabIndex = 1;
@@ -172,10 +176,11 @@
             // 
             // label7
             // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(470, 83);
+            this.label7.Location = new System.Drawing.Point(341, 48);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(120, 20);
             this.label7.TabIndex = 0;
@@ -183,10 +188,10 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox3.Image = global::Ruby_Hospital.Properties.Resources.icons8_search_50__1_1;
             this.pictureBox3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox3.Location = new System.Drawing.Point(935, 99);
+            this.pictureBox3.Location = new System.Drawing.Point(778, 67);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(34, 29);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -196,14 +201,13 @@
             // 
             // txtSearchName
             // 
-            this.txtSearchName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSearchName.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.txtSearchName.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtSearchName.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearchName.ForeColor = System.Drawing.Color.Gray;
-            this.txtSearchName.Location = new System.Drawing.Point(665, 99);
+            this.txtSearchName.Location = new System.Drawing.Point(530, 67);
             this.txtSearchName.Multiline = true;
             this.txtSearchName.Name = "txtSearchName";
-            this.txtSearchName.Size = new System.Drawing.Size(264, 29);
+            this.txtSearchName.Size = new System.Drawing.Size(239, 29);
             this.txtSearchName.TabIndex = 96;
             this.txtSearchName.Text = "Enter Room Segment";
             this.txtSearchName.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtSearchName_MouseClick);
@@ -212,9 +216,10 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Schoolbook", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(483, 102);
+            this.label3.Location = new System.Drawing.Point(338, 69);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(174, 23);
             this.label3.TabIndex = 95;
@@ -230,7 +235,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1370, 38);
+            this.panel2.Size = new System.Drawing.Size(1241, 38);
             this.panel2.TabIndex = 94;
             // 
             // label1
@@ -251,7 +256,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(1241, 531);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnsave);
             this.Controls.Add(this.groupBox1);
